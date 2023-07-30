@@ -1,0 +1,57 @@
+body {
+    background-color: #F4FFF9;
+}
+
+.navBar {
+    background-color: #008AD7;
+    margin-top: -8px;
+    padding: 12px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.links {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+}
+
+.login {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+.cadastro {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+.botaoForm {
+    margin-right: 30px;
+}
+
+.textosIniciais {
+    margin: 10%;
+}
+
+.titulo {
+    color: #008AD7;
+    font-weight: 700;
+}
+
+.subtitulo {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    color: #000000;
+}
