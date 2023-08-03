@@ -47,10 +47,11 @@ body {
 .titulo {
     color: #008AD7;
     font-weight: 700;
+    font-size: 48px;
 }
 
 .subtitulo {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
     line-height: normal;
     color: #000000;
@@ -80,4 +81,109 @@ body {
         height: auto;
         margin-top: -60px;
     }
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+ }
+ 
+  .img1{
+    animation: go-back 1.5s;
+ }
+
+ .titulo span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.titulo span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #008AD7;
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.titulo span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.titulo span:nth-of-type(1)::before,
+.titulo span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.titulo span:nth-of-type(2)::before,
+.titulo span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+.subtitulo span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.subtitulo span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #070707;
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.subtitulo span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.subtitulo span:nth-of-type(1)::before,
+.subtitulo span:nth-of-type(1)::after{
+    animation-delay: 2s;
+}
+
+.subtitulo span:nth-of-type(2)::before,
+.subtitulo span:nth-of-type(2)::after{
+    animation-delay: 2s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
 }
