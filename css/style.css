@@ -187,3 +187,24 @@ body {
     0% {transform: translateX(0)}
     100% {transform: translateX(200%)}
 }
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+ }
+ 
+  .img2{
+    animation: go-back 1.5s;
+ }
