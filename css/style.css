@@ -1,9 +1,9 @@
 body {
-    background-color: #F4FFF9;
+    background-color: #2A2731;
 }
 
 .navBar {
-    background-color: #008AD7;
+    background-color: #000000;
     margin-top: -8px;
     padding: 12px;
 }
@@ -45,9 +45,9 @@ body {
 }
 
 .titulo {
-    color: #008AD7;
+    color: #ffffff;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 100px;
 }
 
 .subtitulo {
@@ -66,22 +66,70 @@ body {
     height: auto;
   }
 
-@media screen and (max-width: 767px ) { /*CELULARES*/
+  @media screen and  (max-width: 1920px ) { /*DESKTOP Grande*/
+      .titulo {
+          font-size: 175%;
+          width: 123%;
+      }
+
+      .botoes{
+        margin-left: 1220px;
+      }
+  
+      .subtitulo {
+          font-size: 110%;
+      }
+  } /*DESKTOP*/
+
+  @media screen and  (max-width: 1200px ) { /*DESKTOP Médio*/
+      .titulo {
+          font-size: 175%;
+          width: 123%;
+      }
+
+      .botoes{
+        margin-left: 500px;
+      }
+  
+      .subtitulo {
+          font-size: 110%;
+      }
+  } /*DESKTOP*/
+
+@media screen and (max-width: 576px ) { /*CELULAR*/
     .secao1 {
         flex-direction: column;
         align-items: center; /*Centralizando a imagem e o titulo*/
     }
 
-    .textosIniciais {
-        width: 88%; 
+    .titulo {
+        font-size: 153%;
+    }
+
+    .subtitulo {
+        font-size: 105%;
+    }
+
+    .barraPesquisa {
+        width: 49%;
+        justify-content: center;
+    }
+
+    .botoes {
+        margin-left: 0px;
+    }
+
+    .criarConta {
+        display: none;
     }
 
     .imagem1{
-        width: 100%;
+        width: 86%;
         height: auto;
         margin-top: -60px;
     }
-}
+} /*CELULAR*/
+
 
 @keyframes go-back {
     0% {
