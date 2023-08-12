@@ -11,6 +11,7 @@ body {
 .navBar {
     background-color: #000000;
     margin-top: -8px;
+    margin-bottom: -8px;
     padding: 12px;
 }
 
@@ -77,14 +78,14 @@ body {
     height: auto;
   }
 
-  @media screen and (max-width: 1372) { /*DESKTOP Grande*/
-      h2{
-        font-size: 48px;
+  @media screen and (max-width: 1372px) { /*DESKTOP Grande*/
+      .titulo{
+        font-size: 38px;
       }
 
       .imagem1{
-        width: 472px;
-        height: 472px;
+        width: 550px;
+        height: auto;
       }
     
     .botoes{
@@ -102,7 +103,7 @@ body {
     }
 
     .titulo {
-        font-size: 24px;
+        font-size: 23px;
     }
 
 
@@ -131,6 +132,7 @@ body {
         display: flex;
         align-items: center;
         height: auto;
+        width: 100%;
         margin-top: -60px;
     }
 } /*CELULAR*/
