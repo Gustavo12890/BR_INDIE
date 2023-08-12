@@ -1,3 +1,9 @@
+/*SERVE PARA DEBUGAR A RESPONSIVIDADE*/
+
+/* * {
+    border: 1px solid red;
+ } */
+
 body {
     background-color: #2A2731;
 }
@@ -28,6 +34,11 @@ body {
     text-decoration: none;
 }
 
+.content-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .cadastro {
     background-color: #FFFFFF;
     color: #000000;
@@ -45,16 +56,16 @@ body {
 }
 
 .titulo {
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 48px;
 }
 
 .subtitulo {
     font-size: 30px;
     font-weight: 600;
     line-height: normal;
-    color: #000000;
+    color: #ffffff;
 }
 
 .secao1 {
@@ -66,29 +77,18 @@ body {
     height: auto;
   }
 
-  @media screen and  (max-width: 1920px ) { /*DESKTOP Grande*/
-      .titulo {
-          font-size: 175%;
-          width: 123%;
+  @media screen and (max-width: 1372) { /*DESKTOP Grande*/
+      h2{
+        font-size: 48px;
       }
 
-      .botoes{
-        margin-left: 1220px;
+      .imagem1{
+        width: 472px;
+        height: 472px;
       }
-  
-      .subtitulo {
-          font-size: 110%;
-      }
-  } /*DESKTOP*/
-
-  @media screen and  (max-width: 1200px ) { /*DESKTOP Médio*/
-      .titulo {
-          font-size: 175%;
-          width: 123%;
-      }
-
-      .botoes{
-        margin-left: 500px;
+    
+    .botoes{
+        margin-left: 0%;
       }
   
       .subtitulo {
@@ -99,15 +99,15 @@ body {
 @media screen and (max-width: 576px ) { /*CELULAR*/
     .secao1 {
         flex-direction: column;
-        align-items: center; /*Centralizando a imagem e o titulo*/
     }
 
     .titulo {
-        font-size: 153%;
+        font-size: 24px;
     }
 
+
     .subtitulo {
-        font-size: 105%;
+        font-size: 100%;
     }
 
     .barraPesquisa {
@@ -116,7 +116,11 @@ body {
     }
 
     .botoes {
-        margin-left: 0px;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
     }
 
     .criarConta {
@@ -124,7 +128,8 @@ body {
     }
 
     .imagem1{
-        width: 86%;
+        display: flex;
+        align-items: center;
         height: auto;
         margin-top: -60px;
     }
