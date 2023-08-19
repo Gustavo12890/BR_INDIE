@@ -8,6 +8,7 @@ body {
     background-color: #2A2731;
 }
 
+/*CSS BARRA DE NAVEGAÇÃO*/
 .navBar {
     background-color: #000000;
     margin-top: -8px;
@@ -27,7 +28,7 @@ body {
     text-align: center;
 }
 
-.login {
+.btnLogin {
     background-color: #FFFFFF;
     color: #000000;
     font-weight: 500;
@@ -35,108 +36,37 @@ body {
     text-decoration: none;
 }
 
-.content-container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.cadastro {
+.btnCadastro {
     background-color: #FFFFFF;
     color: #000000;
     font-weight: 500;
     border: none;
     text-decoration: none;
 }
-
-.botaoForm {
-    margin-right: 30px;
-}
-
-.textosIniciais {
-    margin: 10%;
-}
+/*CSS BARRA DE NAVEGAÇÃO*/
 
 .titulo {
     color: #fff;
     font-weight: 700;
-    font-size: 48px;
 }
 
-.subtitulo {
-    font-size: 30px;
+.frase {
     font-weight: 600;
     line-height: normal;
     color: #ffffff;
 }
 
-.secao1 {
-    display: flex;
+.textos {
+    margin-top: 13%;
 }
 
-.imagem1 img {
-    max-width: 100%;
-    height: auto;
-  }
+.textosObjetivo {
+    margin-top: 150px;
+}
 
-  @media screen and (max-width: 1372px) { /*DESKTOP Grande*/
-      .titulo{
-        font-size: 38px;
-      }
-
-      .imagem1{
-        width: 550px;
-        height: auto;
-      }
-    
-    .botoes{
-        margin-left: 0%;
-      }
-  
-      .subtitulo {
-          font-size: 110%;
-      }
-  } /*DESKTOP*/
-
-@media screen and (max-width: 576px ) { /*CELULAR*/
-    .secao1 {
-        flex-direction: column;
-    }
-
-    .titulo {
-        font-size: 23px;
-    }
-
-
-    .subtitulo {
-        font-size: 100%;
-    }
-
-    .barraPesquisa {
-        width: 49%;
-        justify-content: center;
-    }
-
-    .botoes {
-        margin-top: 12px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        justify-content: center;
-    }
-
-    .criarConta {
-        display: none;
-    }
-
-    .imagem1{
-        display: flex;
-        align-items: center;
-        height: auto;
-        width: 100%;
-        margin-top: -60px;
-    }
-} /*CELULAR*/
-
+.img2 {
+    margin-top: -70px;
+}
 
 @keyframes go-back {
     0% {
@@ -260,6 +190,3 @@ background: #eee;
     }
  }
  
-  .img2{
-    animation: go-back 1.5s;
- }
