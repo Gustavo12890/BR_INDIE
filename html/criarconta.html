@@ -3,116 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <script src="../bootstrap/js/bootstrap.js"></script>
-    <title>Criar conta</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/criarConta.css">
+
+    <title>teste brindie forms</title>
 </head>
+
 <body>
-<!--BARRA DE NAVEGAÇÃO-->
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid navBar">
-            <a class="navbar-brand logo" href="index.html">BR INDIE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link links" aria-current="page" href="#">Encontrar Jogos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link links" href="#">Enviar Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link links" href="#">Comunidade</a>
-                    </li>
-                 </ul>
-                </div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 barraPesquisa" type="search" placeholder="Pesquisar por jogos" aria-label="Search">
-                    <button class="btn btn-primary botaoForm" type="submit">Pesquisar</button>
-                </form>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a href="login.html" class="btn btn-primary login" type="submit" href="entrar.html">Entrar</a>
-                    <a href="criarconta.html"class="btn btn-primary cadastro" type="submit" href="criarconta.html">Criar Conta</a>
-                    
-                </div>
-            </div>
-        </nav>
-</header>
-<!--BARRA DE NAGEVAÇÃO-->
-
-<!--FORMULÁRIO DE CADASTRO-->
-<section>
-  <div class='air air1'></div>
-  <div class='air air2'></div>
-  <div class='air air3'></div>
-  <div class='air air4'></div>
-  <div class="container h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-lg-12 col-xl-11">
-          <div class="card text-black" style="border-radius: 25px;">
-            <div class="card-body p-md-5">
-              <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-  
-                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Cadastre-se!</p>
-  
-                  <form class="mx-1 mx-md-4">
-  
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="text" id="form3Example1c" class="form-control" />
-                        <label class="form-label" for="form3Example1c">Nome de usuário</label>
-                      </div>
+    <header>
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid navBar">
+                <a class="navbar-brand logo" href="index.html">BR INDIE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link links" aria-current="page" href="#">Encontrar Jogos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" href="#">Enviar Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" href="#">Comunidade</a>
+                        </li>
+                     </ul>
                     </div>
-  
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="email" id="form3Example3c" class="form-control" />
-                        <label class="form-label" for="form3Example3c">E-mail</label>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="email" id="form3Example3c" class="form-control" />
-                        <label class="form-label" for="form3Example3c">Senha</label>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="email" id="form3Example3c" class="form-control" />
-                        <label class="form-label" for="form3Example3c">Confirmar senha</label>
-                      </div>
-                    </div>
-  
-                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="button" class="btn btn-primary btn-lg">Cadastrar</button>
-                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 barraPesquisa" type="search" placeholder="Pesquisar por jogos" aria-label="Search">
+                        <button class="btn btn-primary botaoForm" type="submit">Pesquisar</button>
                     </form>
-  
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="login.html" class="btn btn-primary login" type="submit" href="entrar.html">Entrar</a>
+                        <a href="criarconta.html"class="btn btn-primary cadastro" type="submit" href="criarconta.html">Criar Conta</a>
+                        
+                    </div>
                 </div>
-                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                    
-                    <img src="../img/cadastro1.png"
-                    class="img-fluid img2"  alt="Sample image">
-                </div>
-              </div>
+            </nav>
+        </header>
+    <div class="background-container">
+        <img class="img-cadastro" src="img/fundoRoxo.jpg" alt="fundo">
+        <div class="form-container">
+            <div class="form-cadastro">
+                <form id="cadastroForm" class="form-cadastro-inner">
+                    <label class="form-texto">Nome de usuário:</label>
+                    <input class="caixa-input" type="text" id="nomeUser" required><br><br>
+    
+                    <label class="form-texto">Email:</label>
+                    <input class="caixa-input" type="email" id="email" required><br><br>
+    
+                    <label class="form-texto">Senha:</label>
+                    <input class="caixa-input" type="password" id="senha" required><br><br>
+    
+                    <label class="form-texto">Confirmação de Senha:</label>
+                    <input class="caixa-input" type="password" id="confirmSenha" required><br><br>
+                </form>
             </div>
-          </div>
+            <div class="form-direito">
+                <form id="cadastroForm2" class="form-direito-conteudo">
+                    <label class="form-texto" for="nascimento">Data de Nascimento:</label>
+                    <input class="caixa-input" type="date" id="nascimento" required><br><br>
+                    <label class="form-texto">Qual o tipo de conta?</label><br>
+                    <input class="form-radio" type="radio" id="contaComum" name="tipoConta" value="comum" required>
+                    <label class="form-texto" for="contaComum">Comum</label><br>
+                    <input class="form-radio" type="radio" id="contaDesenvolvedor" name="tipoConta" value="desenvolvedor" required>
+                    <label class="form-texto" for="contaDesenvolvedor">Desenvolvedor</label><br><br>
+                    <p class="form-texto">Já possui uma conta? <a href="#">Entre</a></p>
+                    <button class="btn-cadastro" id="btnCadastrar">Cadastrar</button>
+                </form>
+                <p class="form-texto">Ao se cadastrar, você aceita os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a></p>
+            </div>
         </div>
-      </div>
     </div>
-</section>
-<!--FORMULÁRIO DE CADASTRO-->
+
+    <script type= "text/javascript" src="javascript/criarConta.js"></script> 
 </body>
+
 </html>
