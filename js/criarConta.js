@@ -1,31 +1,30 @@
-function validarEmail(email) {
-    const emailRejeitado = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+document.getElementById("btnCadastrar").addEventListener("click", function(event) {
+event.preventDefault();
+//Variaveis
+const email = document.getElementById("email").value;
+const password = document.getElementById("senha").value;
+const confirmSenha = document.getElementById("confirmSenha").value;
+const nascimento = document.getElementById("nascimento").value;
+const tipoContas = document.querySelectorAll('input[name="tipoConta"]:checked');
+
+let isValid = true;
+
+function validarEmail(email) { //validação email
+    const emailRejeitado = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//caracteres obrigatorios
     return emailRejeitado.test(email);
 }
 
-function validarNascimento(nascimento) {
+function validarNascimento(nascimento) { //validação data
     const dataAtual = new Date();
     const dataSelecionada = new Date(nascimento);
     return dataSelecionada < dataAtual;
 }
-
-document.getElementById("btnCadastrar").addEventListener("click", function(event) {
-    event.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("senha").value;
-    const confirmSenha = document.getElementById("confirmSenha").value;
-    const nascimento = document.getElementById("nascimento").value;
-    const tipoContas = document.querySelectorAll('input[name="tipoConta"]:checked');
-
-    let isValid = true;
-
     if (!validarEmail(email)) {
         alert("Email inválido");
         isValid = false;
     }
 
-    if (password !== confirmSenha) {
+    if (password !== confirmSenha) { // comparação das senhas
         alert("As senhas não coincidem");
         isValid = false;
     }
@@ -35,7 +34,7 @@ document.getElementById("btnCadastrar").addEventListener("click", function(event
         isValid = false;
     }
 
-    if (tipoContas.length === 0) {
+    if (tipoContas.length === 0) {// não deixa o cadastro ser feito se não for selecionado um tipo de conta
         alert("Selecione pelo menos um tipo de conta");
         isValid = false;
     }
