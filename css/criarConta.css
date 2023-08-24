@@ -6,6 +6,41 @@
     min-height: 100vh;
 }
 
+.navBar {
+    background-color: #000000;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding: 12px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.links {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btnLogin {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+.btnCadastro {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
 .img-cadastro {
     position: absolute;
     top: 0;
@@ -62,7 +97,7 @@ input[type="date"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -70,7 +105,7 @@ input[type="date"] {
 }
 
 .btn-cadastro:hover {
-    background-color: #0056b3;
+    background-color: rgba(218, 107, 218);
 }
 
 .form-texto{
