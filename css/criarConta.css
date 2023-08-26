@@ -1,0 +1,78 @@
+.background-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.img-cadastro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.form-container {
+    max-width: 85%; /* tamanho da div do form */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%; /* Espaço entre os dois form */
+    margin: 0 auto;
+}
+
+.form-cadastro,
+.form-direito {
+    background: rgba(218, 107, 218, 0.3); /* Green background with 30% opacity */
+    flex: 1;
+    padding: 30px; /* Tamanho aumentado */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.form-direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+.form-radio{
+    margin-top:5%;
+}
+
+.btn-cadastro {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-cadastro:hover {
+    background-color: #0056b3;
+}
+
+.form-texto{
+    color:rgb(255, 255, 255);
+}
