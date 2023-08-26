@@ -1,104 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/login.css">
-    <script src="../bootstrap/js/bootstrap.js"></script>
-    <title>BR INDIE</title>
-</head>
-<body>
-    
-<!--BARRA DE NAVEGAÇÃO-->
+    <title>Formulário de Login</title>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid navBar">
-                <a class="navbar-brand logo" href="index.html">BR INDIE</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link links" aria-current="page" href="#">Encontrar Jogos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link links" href="#">Enviar Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link links" href="#">Comunidade</a>
-                        </li>
-                     </ul>
-                    </div>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 barraPesquisa" type="search" placeholder="Pesquisar por jogos" aria-label="Search">
-                        <button class="btn btn-primary botaoForm" type="submit">Pesquisar</button>
-                    </form>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="login.html" class="btn btn-primary login" type="submit">Entrar</a>
-                        <a href="criarconta.html"class="btn btn-primary cadastro" type="submit" >Criar Conta</a>
-                        
-                    </div>
-                </div>
-            </nav>
-        </header>
-    <!--BARRA DE NAVEGAÇÃO-->
-
-    <!--Tela de login-->
-    <!-- Lincoln - 05/08/2023 - 22:32 - Utilizei a propriedade z-index para mandar as animações pro fundo da tela. -->
-    <section>
-        <div class='air air1'></div>
-        <div class='air air2'></div>
-        <div class='air air3'></div>
-        <div class='air air4'></div>
-        <div class="container h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-              <div class="col-lg-12 col-xl-11">
-                <div class="card text-black" style="border-radius: 25px;">
-                  <div class="card-body p-md-5">
-                    <div class="row justify-content-center">
-                      <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-        
-                        <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Entre com a sua conta!</p>
-        
-                        <form class="mx-1 mx-md-4">
-        
-                          <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                            <div class="form-outline flex-fill mb-0">
-                              <input type="text" id="form3Example1c" class="form-control" />
-                              <label class="form-label" for="form3Example1c">E-mail</label>
-                            </div>
-                          </div>
-        
-                          <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                            <div class="form-outline flex-fill mb-0">
-                              <input type="email" id="form3Example3c" class="form-control" />
-                              <label class="form-label" for="form3Example3c">Senha</label>
-                            </div>
-                          </div>
-        
-                          <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                            <button type="button" class="btn btn-primary btn-lg">Entrar</button>
-                          </div>
-                          </form>
-        
-                      </div>
-                      <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                          
-                          <img src="../img/login1.png"
-                          class="img-fluid img2"  alt="Sample image">
-                      </div>
-                    </div>
+      <!--NavBar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid navBar">
+              <a class="navbar-brand logo" href="index.html">BR INDIE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link links" aria-current="page" href="#">Encontrar Jogos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link links" href="#">Enviar Projetos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link links" href="#">Comunidade</a>
+                      </li>
+                   </ul>
                   </div>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2 barraPesquisa" type="search" placeholder="Pesquisar por jogos" aria-label="Search">
+                      <button class="btn btn-primary botaoForm" type="submit">Pesquisar</button>
+                  </form>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="login.html" class="btn btn-primary login" type="submit" href="entrar.html">Entrar</a>
+                    <a href="criarconta.html"class="btn btn-primary cadastro" type="submit" href="criarconta.html">Criar Conta</a>
+                    
                 </div>
-              </div>
             </div>
+        </nav>
+    </header>
+    <div class="background-container">
+      <img class="img-cadastro" src="../img/fundoLogin.jpg" alt="fundo">
+          <div class="center-container">
+              <div class="login-card">
+                  <h1>Login</h1>
+                  <form id="loginForm">
+                      <label for="emailOrUsername">Email ou Usuário:</label>
+                      <input type="text" id="emailUsuario" required>
+                      <label for="password">Senha:</label>
+                    <input type="password" id="senha" required>
+                    <button type="submit">Entrar</button>
+                  </form>
+                  <p>Não tem uma conta? <a href="../html/criarConta.html">Crie uma agora mesmo</a></p>
+              </div>
           </div>
-      </section>
-      
-
-    <!----------------->
+      </div>
+  </body>
+  </html>
