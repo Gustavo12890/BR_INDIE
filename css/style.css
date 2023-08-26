@@ -217,7 +217,7 @@ section .cards {
 }
 
 section .cards .text-card{
-    background: #8BA2FF;
+    background: #7c5bbb;
     margin: 20px;
     padding: 20px;
 }
@@ -251,6 +251,13 @@ section .cards .text-card h3{
     opacity: 1;
 }
 /*Animação dos cards */
+
+.text-card {
+    border-radius: 40px;
+    text-align: justify;
+    border: 3px solid black;
+    box-shadow: 12px 12px 20px #000000;
+}
 
 /*Animação da primeira imagem */
 .img1 {
