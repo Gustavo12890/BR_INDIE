@@ -28,7 +28,7 @@
 
 .form-cadastro,
 .form-direito {
-    background: rgba(218, 107, 218, 0.3); /* Green background with 30% opacity */
+    background: rgba(218, 107, 218, 0.3); /* 0.3 é a opacidade */
     flex: 1;
     padding: 30px; /* Tamanho aumentado */
     border: 1px solid #ccc;
@@ -75,4 +75,32 @@ input[type="date"] {
 
 .form-texto{
     color:rgb(255, 255, 255);
+}
+
+@media (max-width: 754px) {
+    .form-container {
+        flex-direction: column; /* Empilhar os formulários verticalmente */
+        gap: 0; /* tira o espaço entre os formulários */
+        margin-top: 5%;
+        margin-bottom:5%;
+    }
+
+    .form-cadastro,
+    .form-direito {
+
+        background: rgba(218, 107, 218, 0.3); /* 0.3 é a opacidade */
+        flex: 1;
+        padding: 30px; /* Tamanho aumentado */
+        border: 1px solid #ccc;
+        border-radius:0;
+    }
+
+    .form-direito {
+        border-top: 1px transparent;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .form-cadastro{
+        border-bottom: 1px transparent;
+        border-radius: 20px 20px 0px 0px ;
+    }
 }
