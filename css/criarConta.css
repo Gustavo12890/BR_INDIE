@@ -1,3 +1,42 @@
+.navBar {
+    background-color: #000000;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding: 12px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.links {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btnLogin {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+.btnCadastro {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+
+
 .background-container {
     position: relative;
     display: flex;
