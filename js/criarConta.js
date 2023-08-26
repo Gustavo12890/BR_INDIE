@@ -1,30 +1,31 @@
-document.getElementById("btnCadastrar").addEventListener("click", function(event) {
-event.preventDefault();
-//Variaveis
-const email = document.getElementById("email").value;
-const password = document.getElementById("senha").value;
-const confirmSenha = document.getElementById("confirmSenha").value;
-const nascimento = document.getElementById("nascimento").value;
-const tipoContas = document.querySelectorAll('input[name="tipoConta"]:checked');
-
-let isValid = true;
-
-function validarEmail(email) { //validação email
-    const emailRejeitado = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//caracteres obrigatorios
+function validarEmail(email) {
+    const emailRejeitado = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRejeitado.test(email);
 }
 
-function validarNascimento(nascimento) { //validação data
+function validarNascimento(nascimento) {
     const dataAtual = new Date();
     const dataSelecionada = new Date(nascimento);
     return dataSelecionada < dataAtual;
 }
+
+document.getElementById("btnCadastrar").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("senha").value;
+    const confirmSenha = document.getElementById("confirmSenha").value;
+    const nascimento = document.getElementById("nascimento").value;
+    const tipoContas = document.querySelectorAll('input[name="tipoConta"]:checked');
+
+    let isValid = true;
+
     if (!validarEmail(email)) {
         alert("Email inválido");
         isValid = false;
     }
 
-    if (password !== confirmSenha) { // comparação das senhas
+    if (password !== confirmSenha) {
         alert("As senhas não coincidem");
         isValid = false;
     }
@@ -34,7 +35,7 @@ function validarNascimento(nascimento) { //validação data
         isValid = false;
     }
 
-    if (tipoContas.length === 0) {// não deixa o cadastro ser feito se não for selecionado um tipo de conta
+    if (tipoContas.length === 0) {
         alert("Selecione pelo menos um tipo de conta");
         isValid = false;
     }
