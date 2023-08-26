@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <title>BR INDIE</title>
+</head>
+<body>
+<!--BARRA DE NAVEGAÇÃO-->
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid navBar">
+      <a class="navbar-brand logo link-hover" href="#"><img src="../img/Logo.png" alt="" style="width: 50px; height: auto;"> INDIE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="../img/list.svg">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5" >
+          <li class="nav-item">
+            <a class="nav-link link-hover" aria-current="page" href="#">Encontrar Jogos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-hover" href="#">Enviar Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-hover" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-hover" href="#">Sobre</a>
+          </li>
+        </ul>
+        <form class="d-flex justify-content-center">
+          <button class="btn btn-primary btn-login rounded-4 me-4" type="submit" style="width: 80px;">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    </header>
+<!--BARRA DE NAVEGAÇÃO-->
+
+<!--SEÇÃO 1-->
+<div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 textos">
+        <h2 class="titulo fs-1 text-break"><span>CRIE, CONHEÇA, DIVIRTA-SE <br>E COMPARTILHE.</span></h2>
+        <p class="frase fs-3"><span>Um mundo de possibilidades infinitas.</span></p>
+        <button class="btn btn-primary btn-login p-2 rounded-4 mt-2 fs-5" type="submit" style="width: 35%; margin-left: 135px;">Cadastre-se</button>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <img class="img-fluid img1" src="../img/ImgLP.png" alt="">
+      </div>
+    </div>
+  </div>
+<!--SEÇÃO 1-->
+
+<!--SEÇÃO 2-->
+<div class="container">
+    <div class="row d-flex flex-row-reverse textosObjetivo">
+      <div class="col">
+        <h2 class="titulo fs-1 text-end text-center"><span>OBJETIVO</span></h2>
+        <p class="text-light float-end fs-4 mt-3" style="width: 100%; text-align: justify;">Estamos aqui para apoiar desenvolvedores independentes, proporcionando a eles uma plataforma onde podem exibir suas ideias inovadoras. Através da interação direta com os jogadores, buscamos refinamento constante, visando elevar a qualidade dos jogos nacionais. Faça parte dessa jornada conosco e contribua para o crescimento do mercado de games no Brasil.</p>
+      </div>
+      <div class="col">
+        <img class="img-fluid img2" src="../img/videogame.png" alt="">
+      </div>
+    </div>
+  </div>
+<!--SEÇÃO 2-->
+
+<!--SEÇÃO 3 - CARDS-->
+<section class="secaoCards">
+  <div class="container reveal">
+      <h2 class="h2Cards">Título</h2>
+      <div class="cards">
+          <div class="text-card">
+              <h3 class="h3Cards">Título</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur omnis mollitia saepe nam architecto necessitatibus laudantium, veritatis quisquam porro provident, quis voluptate ex quidem, tenetur odit quibusdam consequuntur libero.</p>
+          </div>
+          <div class="text-card">
+              <h3 class="h3Cards">Título</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur omnis mollitia saepe nam architecto necessitatibus laudantium, veritatis quisquam porro provident, quis voluptate ex quidem, tenetur odit quibusdam consequuntur libero.</p>
+          </div>
+          <div class="text-card">
+              <h3 class="h3Cards">Título</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur omnis mollitia saepe nam architecto necessitatibus laudantium, veritatis quisquam porro provident, quis voluptate ex quidem, tenetur odit quibusdam consequuntur libero.</p>
+          </div>
+      </div>
+  </div>
+</section>
+<!--SEÇÃO 3 - CARDS-->
+<script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal() {
+  var reveals = document.querySelectorAll('.reveal')
+
+  for(var i = 0; i < reveals.length; i++) {
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+      }
+      else {
+          reveals[i].classList.remove('active');
+      }
+  }
+  } 
+</script>
+</body>
+</html>
