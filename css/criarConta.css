@@ -11,14 +11,7 @@ body {
     color: #8BA2FF;
 }
 
-.background-container {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.img-cadastro {
+.background-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,34 +23,34 @@ body {
 }
 
 .form-container {
-    max-width: 85%; /* tamanho da div do form */
+    max-width: 85%;
+    /* tamanho da div do form */
     width: 90%;
     display: flex;
     justify-content: space-between;
-    gap: 10%; /* Espaço entre os dois form */
+    gap: 10%;
+    /* Espaço entre os dois form */
     margin: 0 auto;
 }
 
-.form-cadastro,
+.form-cadastro, 
 .form-direito {
-    background: rgba(218, 107, 218, 0.3); /* 0.3 é a opacidade */
+    background: rgba(218, 107, 218, 0.3);
+    /* 0.3 é a opacidade */
     flex: 1;
-    padding: 30px; /* Tamanho aumentado */
+    padding: 30px;
+    /* Tamanho aumentado */
     border: 1px solid #ccc;
     border-radius: 20px;
 }
 
-.form-direito{
+.form-direito {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"] {
+.input-cadastro {
     background-color: #ffffff;
     width: 100%;
     padding: 8px;
@@ -66,8 +59,8 @@ input[type="date"] {
     border-radius: 10px;
 }
 
-.form-radio{
-    margin-top:5%;
+.radio-cadastro {
+    margin-top: 5%;
 }
 
 .btn-cadastro {
@@ -85,34 +78,39 @@ input[type="date"] {
     background-color: #6a88ff;
 }
 
-.form-texto{
-    color:rgb(255, 255, 255);
+.label-cadastro {
+    color: white;
 }
 
 @media (max-width: 754px) {
     .form-container {
-        flex-direction: column; /* Empilhar os formulários verticalmente */
-        gap: 0; /* tira o espaço entre os formulários */
+        flex-direction: column;
+        /* Empilhar os formulários verticalmente */
+        gap: 0;
+        /* Tira o espaço entre os formulários */
         margin-top: 5%;
-        margin-bottom:5%;
+        margin-bottom: 5%;
     }
 
     .form-cadastro,
     .form-direito {
 
-        background: rgba(218, 107, 218, 0.3); /* 0.3 é a opacidade */
+        background: rgba(218, 107, 218, 0.3);
+        /* 0.3 é a opacidade */
         flex: 1;
-        padding: 30px; /* Tamanho aumentado */
+        padding: 30px;
+        /* Tamanho aumentado */
         border: 1px solid #ccc;
-        border-radius:0;
+        border-radius: 0;
     }
 
     .form-direito {
         border-top: 1px transparent;
         border-radius: 0px 0px 20px 20px;
     }
-    .form-cadastro{
+
+    .form-cadastro {
         border-bottom: 1px transparent;
-        border-radius: 20px 20px 0px 0px ;
+        border-radius: 20px 20px 0px 0px;
     }
 }

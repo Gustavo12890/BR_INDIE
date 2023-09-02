@@ -39,6 +39,29 @@ body {
 .titulo {
     color: #8BA2FF;
     font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.marginBarra {
+    margin-bottom: 60px;
+}
+
+.barra {
+    opacity: 0.5;
+    background-color: #2A2731;
+    border-radius: 20px;
+}
+
+.barra:focus {
+    background-color: #2A2731;
+    color: #ffffff;
+    border: 2px solid #8BA2FF;
+    box-shadow: 0 0 2px 2px #8BA2FF;
+}
+
+.barra::placeholder {
+    color: #ffffff;
 }
 
 .card {
@@ -51,6 +74,10 @@ body {
     transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px #000000;
     top: -4px;
+}
+
+.marginCards {
+    margin-bottom: 30px;
 }
 
 @media  (min-width: 1200px) and (max-width: 1400px) {

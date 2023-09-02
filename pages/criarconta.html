@@ -9,45 +9,48 @@
     <title>Criar conta</title>
 </head>
 <body>
-    <div class="background-container">
-        <a class="navbar-brand logo link-hover fs-5 ms-4" href="index.html"><img src="../img/img_landing/logo.png"
-                alt="" style="width: 60px; height: auto;"> INDIE</a>
+    <div class="d-flex position-relative justify-content-center align-items-center" style="min-height: 100vh;">
+        <a class="navbar-brand logo link-hover fs-5 ms-4" href="index.html">
+            <img src="../img/img_landing/logo.png" alt="" style="width: 60px; height: auto;"> INDIE</a>
         <img class="img-cadastro" src="" alt="fundo">
         <div class="form-container mt-4">
             <div class="form-cadastro">
-                <form id="cadastroForm" class="form-cadastro-inner">
-                    <label class="form-texto">Nome de usuário:</label>
-                    <input class="caixa-input" type="text" id="nomeUser" required><br><br>
+                <form>
+                    <label class="label-cadastro">Nome de usuário:</label>
+                    <input class="input-cadastro" type="text" id="nomeUser" required><br><br>
 
-                    <label class="form-texto">Email:</label>
-                    <input class="caixa-input" type="email" id="email" required><br><br>
+                    <label class="label-cadastro">Email:</label>
+                    <input class="input-cadastro" type="email" id="email" required><br><br>
 
-                    <label class="form-texto">Senha:</label>
-                    <input class="caixa-input" type="password" id="senha" required><br><br>
+                    <label class="label-cadastro">Senha:</label>
+                    <input class="input-cadastro" type="password" id="senha" required><br><br>
 
-                    <label class="form-texto">Confirmação de Senha:</label>
-                    <input class="caixa-input" type="password" id="confirmSenha" required><br><br>
+                    <label class="label-cadastro">Confirmação de Senha:</label>
+                    <input class="input-cadastro" type="password" id="confirmSenha" required><br><br>
                 </form>
             </div>
             <div class="form-direito">
-                <form id="cadastroForm2" class="form-direito-conteudo">
-                    <label class="form-texto" for="nascimento">Data de Nascimento:</label>
-                    <input class="caixa-input" type="date" id="nascimento" required><br><br>
-                    <label class="form-texto">Qual o tipo de conta?</label><br>
-                    <input class="form-radio" type="radio" id="contaComum" name="tipoConta" value="comum" required>
-                    <label class="form-texto" for="contaComum">Comum</label><br>
-                    <input class="form-radio" type="radio" id="contaDesenvolvedor" name="tipoConta"
-                        value="desenvolvedor" required>
-                    <label class="form-texto" for="contaDesenvolvedor">Desenvolvedor</label><br><br>
-                    <p class="form-texto">Já possui uma conta? <a href="../pages/login.html">Entre</a></p>
-                    <button class="btn-cadastro" id="btnCadastrar">Cadastrar</button>
+                <form>
+                    <label class="label-cadastro" for="nascimento">Data de Nascimento:</label>
+                    <input class="input-cadastro" type="date" id="nascimento" required><br><br>
+
+                    <label class="label-cadastro">Qual o tipo de conta?</label><br>
+                    <input class="radio-cadastro" type="radio" id="contaComum" name="tipoConta" value="comum" required>
+
+                    <label class="label-cadastro" for="contaComum">Comum</label><br>
+                    <input class="radio-cadastro" type="radio" id="contaDesenvolvedor" name="tipoConta" value="desenvolvedor" required>
+
+                    <label class="label-cadastro" for="contaDesenvolvedor">Desenvolvedor</label><br><br>
+                    <p class="label-cadastro">Já possui uma conta? <a href="../pages/login.html">Entre</a></p>
+                    <button class="btn-cadastro">Cadastrar</button>
                 </form>
-                <p class="form-texto">Ao se cadastrar, você aceita os <a href="#">Termos de Uso</a> e a <a
-                        href="#">Política de Privacidade</a></p>
+                <p class="label-cadastro">Ao se cadastrar, você aceita os 
+                    <a href="#">Termos de Uso</a> e a 
+                    <a href="#">Política de Privacidade</a>
+                </p>
             </div>
         </div>
     </div>
-
     <script type="text/javascript" src="../js/criarConta.js"></script>
 </body>
 
