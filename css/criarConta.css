@@ -2,8 +2,13 @@ body {
     font-family: Poppins;
 }
 
-.logo {
-    color: #FFFFFF;
+.header-login{
+    position: absolute;
+    z-index: 99999;
+}
+
+.logo{
+    color:white;
     font-weight: bold;
 }
 
@@ -35,12 +40,11 @@ body {
 
 .form-cadastro, 
 .form-direito {
-    background: rgba(218, 107, 218, 0.3);
+    background: rgba(42, 39, 49, 0.3);
     /* 0.3 é a opacidade */
     flex: 1;
     padding: 30px;
     /* Tamanho aumentado */
-    border: 1px solid #ccc;
     border-radius: 20px;
 }
 
@@ -82,6 +86,16 @@ body {
     color: white;
 }
 
+#linklogin{
+    color: #8BA2FF;
+    text-decoration: none;
+}
+
+#linklogin:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 754px) {
     .form-container {
         flex-direction: column;
@@ -95,12 +109,11 @@ body {
     .form-cadastro,
     .form-direito {
 
-        background: rgba(218, 107, 218, 0.3);
+        background: rgba(42, 39, 49, 0.3);
         /* 0.3 é a opacidade */
         flex: 1;
         padding: 30px;
         /* Tamanho aumentado */
-        border: 1px solid #ccc;
         border-radius: 0;
     }
 
