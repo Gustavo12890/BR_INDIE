@@ -1,33 +1,17 @@
-.img-cadastro {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(40%);
-  z-index: -1;
-}
-
-
-.background-container {
-    position: relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-
-.center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+    z-index: -1;
 }
 
-.login-card {
-    background: rgba(218, 107, 218, 0.3); /* Green background with 30% opacity */
+.card-login {
+    background: rgba(218, 107, 218, 0.3);
+    /* Green background with 30% opacity */
     width: 300px;
     padding: 20px;
     border-radius: 5px;
@@ -35,25 +19,24 @@
     text-align: center;
 }
 
-h1 {
+#titleLogin {
     margin-bottom: 20px;
     color: #ffffff;
 }
 
-form {
+#formLogin {
     text-align: left;
     margin-bottom: 20px;
 }
 
-label {
+.label-login {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #ffffff;
 }
 
-input[type="text"],
-input[type="password"] {
+.input-login {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -61,7 +44,7 @@ input[type="password"] {
     border-radius: 3px;
 }
 
-button {
+#btnLogin {
     display: block;
     width: 100%;
     padding: 10px;
@@ -72,19 +55,15 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#btnLogin:hover {
     background-color: #0056b3;
 }
 
-p {
-    color: #ffffff;
-}
-
-a {
+#linkLogin{
     color: #007BFF;
     text-decoration: none;
 }
 
-a:hover {
+#linkLogin:hover {
     text-decoration: underline;
 }
