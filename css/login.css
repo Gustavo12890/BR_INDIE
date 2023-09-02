@@ -1,3 +1,17 @@
+.header-login{
+    position: absolute;
+    z-index: 99999;
+}
+
+.logo{
+    color:white;
+    font-weight: bold;
+}
+
+.logo:hover {
+    color: #8BA2FF;
+}
+
 .background-img {
     position: absolute;
     top: 0;
@@ -10,9 +24,10 @@
 }
 
 .card-login {
-    background: rgba(218, 107, 218, 0.3);
-    /* Green background with 30% opacity */
-    width: 300px;
+    background: rgba(42, 39, 49, 0.3);
+    /* 0.3 é a opacidade */
+    width: 500px;
+    height: 400px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -48,7 +63,7 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #8BA2FF;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -56,11 +71,11 @@
 }
 
 #btnLogin:hover {
-    background-color: #0056b3;
+    background-color: #6a88ff;
 }
 
 #linkLogin{
-    color: #007BFF;
+    color: #8BA2FF;
     text-decoration: none;
 }
 
