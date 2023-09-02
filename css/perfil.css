@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* navbar css*/
+.navBar {
+    background-color: #000000;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding: 12px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.link-hover{
+    color: #ffffff;
+}
+
+.link-hover:hover{
+    color: #8BA2FF;
+}
+
+.btn-login {
+    background-color: #8BA2FF;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    background-color: #6a88ff;
+}
+/* navbar css*/
+
+.perfil-capa {
+    position: relative;
+    width: 100%;
+}
+
+.capa-foto {
+    width: 851px; /* Largura aproximada de uma foto de capa típica do Facebook */
+    height: 315px; /* Altura aproximada de uma foto de capa típica do Facebook */
+}
+.perfil-nome {
+    margin-right: 25px;
+}
+
+.data-nasc {
+    font-size: 16px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-foto {
+    width: 150px; /* Tamanho da foto de perfil */
+    height: 150px;
+    border-radius: 50%; /* Para torná-la redonda */
+    margin-top: -75px; /* Ajuste para centralizar verticalmente */
+}
+
+.perfil-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para os elementos de estatísticas do perfil */
+.perfil-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Ajuste de largura máxima para os elementos de estatísticas */
+    margin-top: 20px;
+}
+
+.perfil-stats-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button-seguir {
+    margin-left: auto; /* Move o botão de seguir para a direita */
+}
+
+.perfil-bio {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333; /* Cor do texto da biografia */
+    /* Outros estilos conforme necessário */
+}
+
+
+
+
+
+/* Estilos adicionais podem ser adicionados conforme necessário */
