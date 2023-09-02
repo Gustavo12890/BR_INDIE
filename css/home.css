@@ -1,0 +1,56 @@
+body {
+    background-color: #2A2731;
+    font-family: Poppins;
+}
+
+.navBar {
+    background-color: #000000;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding: 12px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.link-hover{
+    color: #ffffff;
+}
+
+.link-hover:hover{
+    color: #8BA2FF;
+}
+
+.btn-login {
+    background-color: #8BA2FF;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    background-color: #6a88ff;
+}
+
+.titulo {
+    color: #8BA2FF;
+    font-weight: 700;
+}
+
+.card {
+    background-color: #2A2731;
+    color: white;
+    box-shadow: 0 0 17px 0px white;
+    width: 18rem;
+}
+
+@media  (min-width: 1200px) and (max-width: 1400px) {
+    .card {
+        width: 15rem;
+        height: auto;
+    }
+}
