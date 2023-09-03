@@ -5,13 +5,46 @@ body {
     padding: 0;
 }
 
+.navBar {
+    background-color: #000000;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding: 12px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.link-hover{
+    color: #ffffff;
+}
+
+.link-hover:hover{
+    color: #8BA2FF;
+}
+
+.btn-login {
+    background-color: #8BA2FF;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    background-color: #6a88ff;
+}
+
 .container {
-    max-width: 800px;
+    max-width: 1200px;
+    margin-top:2%;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(218, 107, 218, 0.3); /* 0.3 é a opacidade */
+    background: rgba(42, 39, 49, 0.3); /* 0.3 é a opacidade */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
     border-radius:20px;
 }
 
@@ -67,6 +100,21 @@ form button:hover {
 
 .form-texto{
     color: white;
+    
+}
+
+#titulo{
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    width:65%;
+    display: block;
+}
+
+.form-titulo{
+    display: block;
+    margin-bottom: 10px;
+    color:white;
 }
 
 .caixa-input{
@@ -75,19 +123,75 @@ form button:hover {
     border-radius: 10px;
 }
 
-.form-cor{ 
-    height:50px;
-}
+
 
 .form-btn{
-    margin-top:3%;
+    margin-top:2%;
     display:block;
     margin-left:25%;
     width: 50%;
     padding: 10px;
-    background-color: rgba(218, 107, 218);
+    background-color: #8BA2FF;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.form-btn:hover{
+    background-color:#6a88ff;
+}
+
+.img-container{
+    display:flex;
+    margin-top:2%;
+    margin-bottom:1%;
+}
+
+.image-wrapper {
+    display: inline-block;
+    margin-right: 20px; /* Espaço entre cada par de label e imagem (opcional) */
+}
+
+.form-group {
+    margin-top:2%;
+    display: flex;
+    flex-direction: row;
+    margin-left:10%;
+    gap:10%;
+}
+
+.form-genero {
+    margin-bottom: 3%;
+}
+
+.form-cor {
+    display: flex;
+    align-items: center;
+    width:98.5%;
+}
+
+.formcor-tamanho{
+    height:50px;
+    margin-left:2%;
+    margin-top:2%;
+}
+
+.form-texto-cor{
+    width:16%;
+    color:white;
+    word-break:break-all;
+    text-align:inherit
+}
+
+
+
+.input-genero{
+    width:300px;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+
+

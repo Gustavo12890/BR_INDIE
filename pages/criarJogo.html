@@ -8,118 +8,204 @@
     <title>Criar Jogo</title>
 </head>
 <body>
-    <header>
-        <!--NavBar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid navBar">
-                <a class="navbar-brand logo" href="index.html">BR INDIE</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link links" aria-current="page" href="#">Encontrar Jogos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link links" href="#">Enviar Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link links" href="#">Comunidade</a>
-                        </li>
-                     </ul>
-                    </div>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 barraPesquisa" type="search" placeholder="Pesquisar por jogos" aria-label="Search">
-                        <button class="btn btn-primary botaoForm" type="submit">Pesquisar</button>
-                    </form>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="login.html" class="btn btn-primary login" type="submit" href="entrar.html">Entrar</a>
-                        <a href="criarconta.html"class="btn btn-primary cadastro" type="submit" href="criarconta.html">Criar Conta</a>
-                        
-                    </div>
-                </div>
-            </nav>
-        </header>
+    <!--BARRA DE NAVEGAÇÃO-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid navBar">
+        <a class="navbar-brand logo link-hover" href="#"><img src="../img/img_landing/logo.png" alt=""
+            style="width: 50px; height: auto;"> INDIE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="../img/img_landing/list.svg">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link link-hover" aria-current="page" href="#">Encontrar Jogos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover" href="#">Enviar Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover" href="#">Sobre</a>
+            </li>
+          </ul>
+          <form class="d-flex justify-content-center" action="login.html">
+            <button class="btn btn-primary btn-login rounded-4 me-4" type="submit" style="width: 80px;">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--BARRA DE NAVEGAÇÃO-->
     <!--Formulário--> 
     <div class="background-container">
     <img class="img-cadastro" src="../img/img_criar_jogo/celestewp.png" alt="fundo">
         <div class="container">
             <form id="jogo-form">
-                <label class="form-texto" for="titulo">Título:</label>
-                <input class="caixa-input"  type="text" id="titulo" required>
+                <label class="form-titulo" for="titulo">Título:</label>
+                <input class="caixa-titulo"  type="text" id="titulo" required>
                 
                 <label class="form-texto" for="descricao">Descrição:</label>
                 <textarea class="caixa-input"  id="descricao" rows="5" maxlength="5000" required></textarea>
-
-                <label class="form-texto" for="capa-image">Imagem da Capa:</label>
-                <input style="margin-bottom: 2%;" class="form-texto" type="file" id="capa-image" accept="image/*"><br>
-
-                <label class="form-texto" for="image-1">Imagem 1:</label>
-                <input  class="form-texto" type="file" id="image-1" accept="image/*"><br>
-                
-                <label class="form-texto" for="image-2">Imagem 2:</label>
-                <input class="form-texto" type="file" id="image-2" accept="image/*"><br>
-                
-                <label class="form-texto" for="image-3">Imagem 3:</label>
-                <input class="form-texto" type="file" id="image-3" accept="image/*"><br>
                 <!--Primeiro genero-->
-                <label class="form-texto" for="genero-1">Gênero 1:</label>
-                <select class="caixa-input"  id="genero-1" required>
-                    <option value="" disabled selected>Selecione um gênero</option>
-                    <option value="Ação">Ação</option>
-                    <option value="Aventura">Aventura</option>
-                    <option value="RPG">RPG</option>
-                    <option value="FPS">FPS</option>
-                    <option value="Simulação">Simulação</option>
-                    <option value="Terror">Terror</option>
-                    <option value="Plataforma">Plataforma</option>
-                    <option value="Quebra-Cabeças">Quebra-Cabeças</option>
-                    <option value="Esportes">Esportes</option>
-                    <option value="Corrida">Corrida</option>
-                    <option value="Luta">Luta</option>
-                    <option value="MMORPG">MMORPG</option>
-                    <option value="Roguelike">Roguelike</option>
-                    <option value="Mundo Aberto">Mundo Aberto</option>
-                    <option value="Battle Royale">Battle Royale</option>
-                    <option value="Stealth">Stealth</option>
-                    <option value="Música e Ritmo">Música e Ritmo</option>
-                    <option value="Visual Novel">Visual Novel</option>
-                    <option value="Cartas">Cartas</option>
-                </select>
-                <!--Primeiro genero-->
-                <!--Segundo genero-->
-                <label class="form-texto" for="genero-2">Gênero 2 (opcional):</label>
-                <select class="caixa-input"  id="genero-2">
-                    <option value="" selected>Nenhum</option>
-                    <option value="Ação">Ação</option>
-                    <option value="Aventura">Aventura</option>
-                    <option value="RPG">RPG</option>
-                    <option value="FPS">FPS</option>
-                    <option value="Simulação">Simulação</option>
-                    <option value="Terror">Terror</option>
-                    <option value="Plataforma">Plataforma</option>
-                    <option value="Quebra-Cabeças">Quebra-Cabeças</option>
-                    <option value="Esportes">Esportes</option>
-                    <option value="Corrida">Corrida</option>
-                    <option value="Luta">Luta</option>
-                    <option value="MMORPG">MMORPG</option>
-                    <option value="Roguelike">Roguelike</option>
-                    <option value="Mundo Aberto">Mundo Aberto</option>
-                    <option value="Battle Royale">Battle Royale</option>
-                    <option value="Stealth">Stealth</option>
-                    <option value="Música e Ritmo">Música e Ritmo</option>
-                    <option value="Visual Novel">Visual Novel</option>
-                    <option value="Cartas">Cartas</option>
-                </select>
-                <!--Segundo genero-->
-                <label class="form-texto" for="background-color">Cor de Background:</label>
-                <input class="form-cor" type="color" id="background-color" value="#ffffff">
+                <div class="form-group">
+                    <div class="form-genero">
+                        <label class="form-texto" for="genero-1">Gênero 1:</label>
+                        <select class="input-genero"  id="genero-1" required>
+                            <option value="" disabled selected>Selecione um gênero</option>
+                            <option value="Ação">Ação</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="RPG">RPG</option>
+                            <option value="FPS">FPS</option>
+                            <option value="Simulação">Simulação</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Plataforma">Plataforma</option>
+                            <option value="Quebra-Cabeças">Quebra-Cabeças</option>
+                            <option value="Esportes">Esportes</option>
+                            <option value="Corrida">Corrida</option>
+                            <option value="Luta">Luta</option>
+                            <option value="MMORPG">MMORPG</option>
+                            <option value="Roguelike">Roguelike</option>
+                            <option value="Mundo Aberto">Mundo Aberto</option>
+                            <option value="Battle Royale">Battle Royale</option>
+                            <option value="Stealth">Stealth</option>
+                            <option value="Música e Ritmo">Música e Ritmo</option>
+                            <option value="Visual Novel">Visual Novel</option>
+                            <option value="Cartas">Cartas</option>
+                        </select>
+                        <!--Primeiro genero-->
+                    </div>
+                    <!--Segundo genero-->
+                    <div class="form-genero">
+                        <label class="form-texto" for="genero-2">Gênero 2 (opcional):</label>
+                        <select class="input-genero"  id="genero-2">
+                            <option value="" selected>Nenhum</option>
+                            <option value="Ação">Ação</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="RPG">RPG</option>
+                            <option value="FPS">FPS</option>
+                            <option value="Simulação">Simulação</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Plataforma">Plataforma</option>
+                            <option value="Quebra-Cabeças">Quebra-Cabeças</option>
+                            <option value="Esportes">Esportes</option>
+                            <option value="Corrida">Corrida</option>
+                            <option value="Luta">Luta</option>
+                            <option value="MMORPG">MMORPG</option>
+                            <option value="Roguelike">Roguelike</option>
+                            <option value="Mundo Aberto">Mundo Aberto</option>
+                            <option value="Battle Royale">Battle Royale</option>
+                            <option value="Stealth">Stealth</option>
+                            <option value="Música e Ritmo">Música e Ritmo</option>
+                            <option value="Visual Novel">Visual Novel</option>
+                            <option value="Cartas">Cartas</option>
+                        </select>
+                        <!--Segundo genero-->
+                    </div>
+                </div>
+                <label class="form-texto" for="capa-image" >Imagem da Capa:</label>
+                <input style="margin-bottom: 2%;" class="form-texto" type="file" id="capa-image" onchange="previewCapa()"  accept="image/*"><br>
+                <img id="input-capa" style=" border: solid black; height:200px" class="w-100">
                 
+                <div class="img-container">
+                    <div class="image-wrapper">
+                        <label class="form-texto" for="image-1">Imagem 1:</label>
+                        <input style="margin-bottom: 4%;"  class="form-texto" type="file" id="image-1" onchange="previewImagem1()" accept="image/*"><br>
+                        <img id="input-img1" style="width: 100%; height: 150px" class="input-img">
+                    </div>
+                    
+                    <div class="image-wrapper">
+                        <label class="form-texto" for="image-2">Imagem 2:</label>
+                        <input style="margin-bottom: 4%;"class="form-texto" type="file" id="image-2" onchange="previewImagem2()" accept="image/*"><br>
+                        <img id="input-img2" style="width: 100%; height: 150px" class="input-img">
+                    </div>
+                
+                    <div class="image-wrapper">
+                        <label class="form-texto" for="image-3">Imagem 3:</label>
+                        <input style="margin-bottom: 4%;" class="form-texto" type="file" id="image-3" onchange="previewImagem3()" accept="image/*"><br>
+                        <img id="input-img3" style="width: 100%; height: 150px" class="input-img">
+                    </div>
+                </div>
+                <div class="form-cor">
+                    <label class="form-texto-cor" for="background-color">Cor de Background:</label>
+                    <input class="formcor-tamanho" type="color" id="background-color" value="#ffffff">
+                </div>
                 <button class="form-btn" type="submit">Enviar</button>
             </form>
         </div>
     </div>
+
     <script src="../js/criarJogo.js"></script>
+    <script>
+    function previewCapa() {
+        var capa = document.getElementById('capa-image').files[0];
+        var preview = document.getElementById('input-capa');
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        if (capa) {
+            reader.readAsDataURL(capa);
+        } else {
+            preview.src = "";
+        }
+    }
+
+    function previewImagem1() {
+        var imagem1 = document.getElementById('image-1').files[0];
+        var preview1 = document.getElementById('input-img1');
+        var reader1 = new FileReader();
+
+        reader1.onloadend = function () {
+            preview1.src = reader1.result;
+        }
+
+        if (imagem1) {
+            reader1.readAsDataURL(imagem1);
+        } else {
+            preview1.src = "";
+        }
+    }
+
+    function previewImagem2() {
+        var imagem2 = document.getElementById('image-2').files[0];
+        var preview2 = document.getElementById('input-img2');
+        var reader2 = new FileReader();
+
+        reader2.onloadend = function () {
+            preview2.src = reader2.result;
+        }
+
+        if (imagem2) {
+            reader2.readAsDataURL(imagem2);
+        } else {
+            preview2.src = "";
+        }
+    }
+
+    function previewImagem3() {
+        var imagem3 = document.getElementById('image-3').files[0];
+        var preview3 = document.getElementById('input-img3');
+        var reader3 = new FileReader();
+
+        reader3.onloadend = function () {
+            preview3.src = reader3.result;
+        }
+
+        if (imagem3) {
+            reader3.readAsDataURL(imagem3);
+        } else {
+            preview3.src = "";
+        }
+    }
+
+    </script>
+
 </body>
 </html>

@@ -15,4 +15,9 @@ document.getElementById('jogo-form').addEventListener('submit', function(event) 
     
     // Aqui você pode processar os valores capturados do formulário, como enviá-los para um servidor
     // ou executar outras ações com eles.
+
+
+      
+
+    
 });
