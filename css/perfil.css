@@ -1,8 +1,30 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Poppins;
 }
+
+
+/* CSS BARRA DE SCROLL */
+/* tamanho da estrutura */
+::-webkit-scrollbar {
+    width: 10px;
+}   
+    /* cor da estrutura */
+    ::-webkit-scrollbar-track {
+    background: none; 
+    
+}   
+    /* barra */
+    ::-webkit-scrollbar-thumb {
+    background: none; 
+    border-radius:10px;
+}
+    /* hover da barra*/
+    ::-webkit-scrollbar-thumb:hover {
+    background: #6a88ff; 
+}
+
 /* navbar css*/
 .navBar {
     background-color: #000000;
