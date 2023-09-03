@@ -1,9 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Poppins;
-}
-
 
 /* CSS BARRA DE SCROLL */
 /* tamanho da estrutura */
@@ -12,7 +6,7 @@ body {
 }   
     /* cor da estrutura */
     ::-webkit-scrollbar-track {
-    background: none; 
+    background: #2A2731; 
     
 }   
     /* barra */
@@ -26,6 +20,9 @@ body {
 }
 
 /* navbar css*/
+
+/* navbar css*/
+
 .navBar {
     background-color: #000000;
     margin-top: -8px;
@@ -47,6 +44,7 @@ body {
     color: #8BA2FF;
 }
 
+
 .btn-login {
     background-color: #8BA2FF;
     color: #ffffff;
@@ -58,23 +56,34 @@ body {
 .btn-login:hover {
     background-color: #6a88ff;
 }
+
 /* navbar css*/
 
 .perfil-capa {
     position: relative;
     width: 100%;
+    z-index: 0;
+
 }
 
 .capa-foto {
     width: 851px; /* Largura aproximada de uma foto de capa típica do Facebook */
     height: 315px; /* Altura aproximada de uma foto de capa típica do Facebook */
+    width: 100%;
+    object-fit: cover;
+
+    
 }
+
+
 .perfil-nome {
     margin-right: 25px;
+    color:#FFFFFF;
 }
 
 .data-nasc {
     font-size: 16px;
+    color:#FFFFFF;
 }
 section {
     display: flex;
@@ -87,6 +96,7 @@ section {
     height: 150px;
     border-radius: 50%; /* Para torná-la redonda */
     margin-top: -75px; /* Ajuste para centralizar verticalmente */
+    z-index: 12;
 }
 
 .perfil-info {
@@ -102,6 +112,7 @@ section {
     width: 100%;
     max-width: 400px; /* Ajuste de largura máxima para os elementos de estatísticas */
     margin-top: 20px;
+    color:#FFFFFF;
 }
 
 .perfil-stats-left {
@@ -112,12 +123,18 @@ section {
 
 .button-seguir {
     margin-left: auto; /* Move o botão de seguir para a direita */
+    background-color: #8BA2FF;
+    color: #ffffff;
+    font-weight: 200;
+    border: none;
+    text-decoration: none;
+    border-radius: 10;
 }
 
 .perfil-bio {
     margin-top: 10px;
     font-size: 16px;
-    color: #333; /* Cor do texto da biografia */
+    color: #ffffff; /* Cor do texto da biografia */
     /* Outros estilos conforme necessário */
 }
 
