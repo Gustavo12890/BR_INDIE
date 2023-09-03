@@ -59,6 +59,13 @@ body {
     background-color: #6a88ff;
 }
 
+.perfil-foto {
+    width: 60px; /* Tamanho da foto de perfil */
+    height: 60px;
+    border-radius: 50%; /* Para torná-la redonda */
+    margin-right: 30px;
+}
+
 .titulo {
     color: #8BA2FF;
     font-weight: 700;
