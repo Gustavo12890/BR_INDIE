@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/perfil.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <title>Perfil do Usuário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/perfil.css">
+  <title>Perfil do Usuário</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid navBar">
-              <a  style="color: white;" class="navbar-brand logo link-hover" href="index.html"><img src="../img/img_landing/logo.png" alt="" style="width: 50px; height: auto;"> INDIE</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="../img/img_landing/list.svg">
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5" >
-                  <li class="nav-item">
-                    <a  style="color: white;" class="nav-link link-hover" aria-current="page" href="home.html">Encontrar Jogos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a style="color: white;"class="nav-link link-hover" href="#">Sobre</a>
-                  </li>
-                </ul>
-              </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid navBar">
+        <a class="navbar-brand logo link-hover" href="index.html"><img src="../img/img_landing/logo.png" alt=""
+            style="width: 50px; height: auto;"> INDIE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="../img/img_landing/list.svg">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link link-hover" aria-current="page" href="#">Encontrar Jogos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover" href="criarJogo.html">Enviar Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover" href="#">Sobre</a>
+            </li>
+          </ul>
+          <a class="text-decoration-none" href="perfil.html">
+            <div class="icone-perfil d-flex align-items-center justify-content-center">
+              <p class="me-3 text-white fs-6 mt-3">Jolyne Kujo</p>
+              <img class="navbar-foto"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU"
+                alt="Foto de Perfil">
             </div>
-          </nav>
-    </header>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <section style="    background-color: #2A2731">
-        <div class="perfil-capa">
-            <img class="capa-foto" src="https://i.pinimg.com/736x/13/99/b3/1399b380c61a2b146c8f1b919f99030e--ocean-art-jojos-bizarre-adventure.jpg" alt="Foto de Capa">
-        </div>
-        <img  class="perfil-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
-        <div class="perfil-info">
-            <h1 class="perfil-nome">Jolyne Kujo</h1>
-            <p class="data-nasc">01 de janeiro de 2020</p>
-            <p class="perfil-bio">Biografia do usuário aqui.</p>
-        </div>
-        <div class="perfil-stats">
-            <div class="perfil-stats-left">
-                <p >Seguidores: 1000</p>
-                <p >Projetos Criados: 50</p>
-            </div>
-            <button class="button-seguir btn btn-primary btn-login rounded-4 me-4" type="submit" style="width: 80px;">Seguir</button>
-        </div>
-    </section>
+  <section style="    background-color: #2A2731">
+    <div class="perfil-capa">
+      <img class="capa-foto"
+        src="https://i.pinimg.com/736x/13/99/b3/1399b380c61a2b146c8f1b919f99030e--ocean-art-jojos-bizarre-adventure.jpg"
+        alt="Foto de Capa">
+    </div>
+    <img class="perfil-foto"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU"
+      alt="Foto de Perfil">
+    <div class="perfil-info">
+      <h1 class="perfil-nome">Jolyne Kujo</h1>
+      <p class="data-nasc">01 de janeiro de 2020</p>
+      <p class="perfil-bio">Biografia do usuário aqui.</p>
+    </div>
+    <div class="perfil-stats">
+      <div class="perfil-stats-left">
+        <p>Seguidores: 1000</p>
+        <p>Projetos Criados: 50</p>
+      </div>
+      <button class="button-seguir btn btn-primary btn-login rounded-4 me-4" type="submit"
+        style="width: 80px;">Seguir</button>
+    </div>
+  </section>
 
-    <!--Footerzaço-->
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
+  <!--Footerzaço-->
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
       <!-- Section: Social media -->
-    
+
       <!-- Section: Social media -->
-  
+
       <!-- Section: Text -->
       <section class="mb-4">
         <p>
-          Nós somos BR Indie, uma plataforma gratuita, e independente, onde os jogadores e desenvolvedores de jogos podem se expressar e mostrar a sua criatividade. Temos como objetivo fomentar essa grande comunidade de criadores independentes.
+          Nós somos BR Indie, uma plataforma gratuita, e independente, onde os jogadores e desenvolvedores de jogos
+          podem se expressar e mostrar a sua criatividade. Temos como objetivo fomentar essa grande comunidade de
+          criadores independentes.
         </p>
       </section>
       <!-- Section: Text -->
-  
+
       <!-- Section: Links -->
       <section class="">
         <!--Grid row-->
@@ -72,7 +95,7 @@
           <!--Grid column-->
           <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
-  
+
             <ul class="list-unstyled mb-0">
               <li>
                 <a href="#!" class="text-white">Link 1</a>
@@ -89,11 +112,11 @@
             </ul>
           </div>
           <!--Grid column-->
-  
+
           <!--Grid column-->
           <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
-  
+
             <ul class="list-unstyled mb-0">
               <li>
                 <a href="#!" class="text-white">Link 1</a>
@@ -110,11 +133,11 @@
             </ul>
           </div>
           <!--Grid column-->
-  
+
           <!--Grid column-->
           <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
-  
+
             <ul class="list-unstyled mb-0">
               <li>
                 <a href="#!" class="text-white">Link 1</a>
@@ -131,11 +154,11 @@
             </ul>
           </div>
           <!--Grid column-->
-  
+
           <!--Grid column-->
           <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
-  
+
             <ul class="list-unstyled mb-0">
               <li>
                 <a href="#!" class="text-white">Link 1</a>
@@ -158,7 +181,7 @@
       <!-- Section: Links -->
     </div>
     <!-- Grid container -->
-  
+
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       ©2023 BR Indie Enterprises
@@ -169,4 +192,5 @@
   <!-- Footer -->
   <!--Footerzaço-->
 </body>
+
 </html>

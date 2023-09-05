@@ -57,13 +57,19 @@
     background-color: #6a88ff;
 }
 
+.navbar-foto {
+    width: 60px; /* Tamanho da foto de perfil */
+    height: 60px;
+    border-radius: 50%; /* Para torná-la redonda */
+    margin-right: 30px;
+}
+
 /* navbar css*/
 
 .perfil-capa {
     position: relative;
     width: 100%;
     z-index: 0;
-
 }
 
 .capa-foto {
@@ -71,10 +77,7 @@
     height: 315px; /* Altura aproximada de uma foto de capa típica do Facebook */
     width: 100%;
     object-fit: cover;
-
-    
 }
-
 
 .perfil-nome {
     margin-right: 25px;
