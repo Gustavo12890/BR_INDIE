@@ -84,7 +84,7 @@ body {
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #000000;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .radio-cadastro {
@@ -98,7 +98,7 @@ body {
     background-color: #8BA2FF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
