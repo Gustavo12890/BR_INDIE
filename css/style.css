@@ -256,7 +256,7 @@ section .cards .text-card h3{
         font-size: 40px;
     }
 
-    secton .cards {
+    section .cards {
         flex-direction: column;
     }
 }
