@@ -56,82 +56,93 @@
                 <label class="form-texto" for="descricao">Descrição:</label>
                 <textarea class="caixa-input"  id="descricao" rows="5" maxlength="5000" required></textarea>
                 <!--Primeiro genero-->
-                <div class="form-group">
-                    <div class="form-genero">
-                        <label class="form-texto" for="genero-1">Gênero 1:</label>
-                        <select class="input-genero"  id="genero-1" required>
-                            <option value="" disabled selected>Selecione um gênero</option>
-                            <option value="Ação">Ação</option>
-                            <option value="Aventura">Aventura</option>
-                            <option value="RPG">RPG</option>
-                            <option value="FPS">FPS</option>
-                            <option value="Simulação">Simulação</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Plataforma">Plataforma</option>
-                            <option value="Quebra-Cabeças">Quebra-Cabeças</option>
-                            <option value="Esportes">Esportes</option>
-                            <option value="Corrida">Corrida</option>
-                            <option value="Luta">Luta</option>
-                            <option value="MMORPG">MMORPG</option>
-                            <option value="Roguelike">Roguelike</option>
-                            <option value="Mundo Aberto">Mundo Aberto</option>
-                            <option value="Battle Royale">Battle Royale</option>
-                            <option value="Stealth">Stealth</option>
-                            <option value="Música e Ritmo">Música e Ritmo</option>
-                            <option value="Visual Novel">Visual Novel</option>
-                            <option value="Cartas">Cartas</option>
-                        </select>
-                        <!--Primeiro genero-->
-                    </div>
-                    <!--Segundo genero-->
-                    <div class="form-genero">
-                        <label class="form-texto" for="genero-2">Gênero 2 (opcional):</label>
-                        <select class="input-genero"  id="genero-2">
-                            <option value="" selected>Nenhum</option>
-                            <option value="Ação">Ação</option>
-                            <option value="Aventura">Aventura</option>
-                            <option value="RPG">RPG</option>
-                            <option value="FPS">FPS</option>
-                            <option value="Simulação">Simulação</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Plataforma">Plataforma</option>
-                            <option value="Quebra-Cabeças">Quebra-Cabeças</option>
-                            <option value="Esportes">Esportes</option>
-                            <option value="Corrida">Corrida</option>
-                            <option value="Luta">Luta</option>
-                            <option value="MMORPG">MMORPG</option>
-                            <option value="Roguelike">Roguelike</option>
-                            <option value="Mundo Aberto">Mundo Aberto</option>
-                            <option value="Battle Royale">Battle Royale</option>
-                            <option value="Stealth">Stealth</option>
-                            <option value="Música e Ritmo">Música e Ritmo</option>
-                            <option value="Visual Novel">Visual Novel</option>
-                            <option value="Cartas">Cartas</option>
-                        </select>
+                    <div class="form-genero-container">
+                        <div class="form-genero">
+                            <label class="form-texto" for="genero-1">Gênero 1:</label>
+                            <select class="input-genero"  id="genero-1" required>
+                                <option value="" disabled selected>Selecione um gênero</option>
+                                <option value="Ação">Ação</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="RPG">RPG</option>
+                                <option value="FPS">FPS</option>
+                                <option value="Simulação">Simulação</option>
+                                <option value="Terror">Terror</option>
+                                <option value="Plataforma">Plataforma</option>
+                                <option value="Quebra-Cabeças">Quebra-Cabeças</option>
+                                <option value="Esportes">Esportes</option>
+                                <option value="Corrida">Corrida</option>
+                                <option value="Luta">Luta</option>
+                                <option value="MMORPG">MMORPG</option>
+                                <option value="Roguelike">Roguelike</option>
+                                <option value="Mundo Aberto">Mundo Aberto</option>
+                                <option value="Battle Royale">Battle Royale</option>
+                                <option value="Stealth">Stealth</option>
+                                <option value="Música e Ritmo">Música e Ritmo</option>
+                                <option value="Visual Novel">Visual Novel</option>
+                                <option value="Cartas">Cartas</option>
+                            </select>
+                            <!--Primeiro genero-->
+                        </div>
                         <!--Segundo genero-->
-                    </div>
-                </div>
-                <label class="form-texto" for="capa-image" >Imagem da Capa:</label>
-                <input style="margin-bottom: 2%;" class="form-texto" type="file" id="capa-image" onchange="previewCapa()"  accept="image/*"><br>
-                <img id="input-capa" style=" border: solid black; height:200px" class="w-100">
-                
+                        <div class="form-genero">
+                            <label class="form-texto" for="genero-2">Gênero 2 (opcional):</label>
+                            <select class="input-genero"  id="genero-2">
+                                <option value="" selected>Nenhum</option>
+                                <option value="Ação">Ação</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="RPG">RPG</option>
+                                <option value="FPS">FPS</option>
+                                <option value="Simulação">Simulação</option>
+                                <option value="Terror">Terror</option>
+                                <option value="Plataforma">Plataforma</option>
+                                <option value="Quebra-Cabeças">Quebra-Cabeças</option>
+                                <option value="Esportes">Esportes</option>
+                                <option value="Corrida">Corrida</option>
+                                <option value="Luta">Luta</option>
+                                <option value="MMORPG">MMORPG</option>
+                                <option value="Roguelike">Roguelike</option>
+                                <option value="Mundo Aberto">Mundo Aberto</option>
+                                <option value="Battle Royale">Battle Royale</option>
+                                <option value="Stealth">Stealth</option>
+                                <option value="Música e Ritmo">Música e Ritmo</option>
+                                <option value="Visual Novel">Visual Novel</option>
+                                <option value="Cartas">Cartas</option>
+                            </select>
+                            <!--Segundo genero-->
+                        </div>
+                    </div> 
+                <div class="txt-img-container-capa">
+                    <p class="img-texto-capa"><strong>Imagem da capa:</strong></p>
+                    <label class="btn-img" for="capa-image" >Enviar arquivo</label>
+                </div>      
+                <input class="form-texto" type="file" id="capa-image" onchange="previewCapa()"  accept="image/*"><br>
+                <img class="img-capa" id="input-capa"  class="w-100">
                 <div class="img-container">
                     <div class="image-wrapper">
-                        <label class="form-texto" for="image-1">Imagem 1:</label>
-                        <input style="margin-bottom: 4%;"  class="form-texto" type="file" id="image-1" onchange="previewImagem1()" accept="image/*"><br>
-                        <img id="input-img1" style="width: 100%; height: 150px" class="input-img">
+                    <div class="txt-img-container">
+                        <p class="img-texto"><strong>Imagem 1:</strong></p>
+                        <label class="btn-img" for="image-1">Enviar arquivo</label>
+                    </div>
+                        <input   class="form-texto-img" type="file" id="image-1" onchange="previewImagem1()" accept="image/*"><br>
+                        <img class="form-img" id="input-img1"  class="input-img">
                     </div>
                     
                     <div class="image-wrapper">
-                        <label class="form-texto" for="image-2">Imagem 2:</label>
-                        <input style="margin-bottom: 4%;"class="form-texto" type="file" id="image-2" onchange="previewImagem2()" accept="image/*"><br>
-                        <img id="input-img2" style="width: 100%; height: 150px" class="input-img">
+                        <div class="txt-img-container">
+                            <p class="img-texto"><strong>Imagem 2:</strong></p>
+                            <label class="btn-img"for="image-2">Enviar arquivo</label>
+                        </div>
+                        <input class="" type="file" id="image-2" onchange="previewImagem2()" accept="image/*"><br>
+                        <img  class="form-img" id="input-img2"  class="input-img">
                     </div>
                 
                     <div class="image-wrapper">
-                        <label class="form-texto" for="image-3">Imagem 3:</label>
-                        <input style="margin-bottom: 4%;" class="form-texto" type="file" id="image-3" onchange="previewImagem3()" accept="image/*"><br>
-                        <img id="input-img3" style="width: 100%; height: 150px" class="input-img">
+                        <div class="txt-img-container">
+                        <p class="img-texto"><strong>Imagem 3:</strong></p>
+                        <label class="btn-img" for="image-3">Enviar arquivo</label>
+                        </div>
+                        <input  class="form-texto-img" type="file" id="image-3" onchange="previewImagem3()" accept="image/*"><br>
+                        <img  class="form-img" id="input-img3"  class="input-img">
                     </div>
                 </div>
                 <div class="form-cor">

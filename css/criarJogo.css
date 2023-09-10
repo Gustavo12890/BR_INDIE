@@ -114,7 +114,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    
 }
 
 .img-cadastro {
@@ -136,21 +136,24 @@ form button:hover {
 #titulo{
     background-color: #ffffff;
     border: 3px solid #000000;
-    border-radius: 10px;
-    width:65%;
+    border-radius: 20px;
+    width:100%;
     display: block;
+    
 }
 
 .form-titulo{
     display: block;
     margin-bottom: 10px;
     color:white;
+    border-radius: 20px;
 }
 
 .caixa-input{
+    
     background-color: #ffffff;
     border: 3px solid #000000;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
@@ -164,7 +167,7 @@ form button:hover {
     background-color: #8BA2FF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -172,46 +175,116 @@ form button:hover {
     background-color:#6a88ff;
 }
 
+input[type="file"] {
+    display: none;
+}
+
+.img-texto{
+    color:white;
+    margin-top:6%;
+    margin-right:3%;
+
+}
+
+.img-texto-capa{
+    color:white;
+}
+.txt-img-container{
+    display:flex;
+    flex-wrap: wrap; 
+    margin-top: 10%;
+}
+
+.txt-img-container-capa{
+    display:flex;
+    flex-wrap: wrap; 
+    margin-top: 3%;
+}
+
+
 .img-container{
     display:flex;
-    margin-top:2%;
-    margin-bottom:1%;
+    margin-left:4%;
+    flex-direction: row; /* Dispor os elementos lado a lado */
+    flex-wrap: wrap; 
+    overflow: hidden;
+    position: relative;
+}
+
+.img-texto-capa{
+    color:white;
+    margin-top:1.6%;
+    margin-right: 2%;
+}
+
+.img-capa{
+    border: solid black;
+     height:150px;
+     width: 100%;
+     top: 0;
+     left: 0;
 }
 
 .image-wrapper {
     display: inline-block;
-    margin-right: 20px; /* Espaço entre cada par de label e imagem (opcional) */
+    margin-right: 6%; /* Espaço entre cada par de label e imagem (opcional) */
 }
 
-.form-group {
-    margin-top:2%;
-    display: flex;
-    flex-direction: row;
-    margin-left:10%;
-    gap:10%;
+.form-img{
+    width: 300px;
+    height: 150px;
+    
 }
 
+.form-texto-img{
+    color:white;
+}
+
+.btn-img{
+    color:white;
+    background-color:#8BA2FF;
+    cursor:pointer;
+    padding: 20px 10px;
+    border-radius: 15px;
+
+}
+
+.btn-img:hover{
+    background-color:#6a88ff;
+}
 .form-genero {
-    margin-bottom: 3%;
+
+    flex: 1; /* Para que cada campo tenha a mesma largura */
+    margin-right: 10px; /* Espaçamento entre os campos */
+
+}
+
+.form-genero-container{
+    display: flex;
+    flex-direction: row; /* Dispor os elementos lado a lado */
+    flex-wrap: wrap; 
+    margin-left:5%;
 }
 
 .form-cor {
     display: flex;
     align-items: center;
     width:98.5%;
+    flex-wrap: wrap; 
 }
 
 .formcor-tamanho{
     height:50px;
     margin-left:2%;
     margin-top:2%;
+    
 }
 
 .form-texto-cor{
-    width:16%;
+    width:18%;
     color:white;
-    word-break:break-all;
-    text-align:inherit
+    margin-right:2%;
+    margin-top:3%;
 }
 
 
@@ -220,8 +293,22 @@ form button:hover {
     width:300px;
     background-color: #ffffff;
     border: 3px solid #000000;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
 
+@media (max-width: 991px) {
+
+    .img-container {
+        text-align: center; /* Centraliza elementos inline, como botões */
+    }
+
+    .image-wrapper {
+        margin: 0 auto; /* Centraliza os divs que envolvem campos de imagem */
+        text-align: left; /* Reverte o alinhamento do texto interno para a esquerda */
+        display: inline-block; /* Para manter os elementos inline */
+    }
+
+
+}
