@@ -30,6 +30,7 @@ border-radius:10px;
 ::-webkit-scrollbar-thumb:hover {
 background: #6a88ff; 
 }
+
 /*CSS BARRA DE NAVEGAÇÃO*/
 .navBar {
     background-color: #000000;
@@ -51,7 +52,6 @@ background: #6a88ff;
 .link-hover:hover{
     color: #8BA2FF;
 }
-
 
 .btn-login {
     background-color: #8BA2FF;
@@ -82,7 +82,20 @@ background: #6a88ff;
 .textos {
     margin-top: 13%;
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .titulo {
+        width: 50vw;
+    }
+}
 /* Seção 1 */
+
+/*Seção 2*/
+.titulo-objetivo {
+    color: #8BA2FF;
+    font-weight: 700;
+}
+
 .textosObjetivo {
     margin-top: 60px;
 }
@@ -90,8 +103,7 @@ background: #6a88ff;
 .img2 {
     margin-top: -70px;
 }
-
-/*CSS Barra de Navegação*/
+/*Seção 2*/
 
 /*Animação do título */
 .titulo span{
@@ -198,6 +210,11 @@ background: #eee;
 
 /*Animação dos cards */
  
+.titulo-contas {
+    color: #8BA2FF;
+    font-weight: 700;
+}
+
  .secaoCards {
     min-height: 100vh;
     display: flex;
@@ -240,7 +257,6 @@ section .cards {
 
 section .cards .text-card{
     background: #7c5bbb;
-    margin: 20px;
     padding: 20px;
 }
 
@@ -301,5 +317,3 @@ section .cards .text-card h3{
 }
 
 /*Animação da primeira imagem */
-
-
