@@ -1,5 +1,5 @@
 body {
-    background-color: #2A2731;
+    background-color: #2e0523;
     font-family: Poppins;
     
   }
@@ -71,6 +71,15 @@ body {
     padding: 20px;
   }
   
+  .titulo {
+    color: #71c9df;
+    font-weight: bold;
+  }
+
+  .barra-canto {
+    background-color: #633263;
+  }
+  
   .cover-image {
     max-width: 100%;
     height: auto;
@@ -138,7 +147,6 @@ body {
     clear: both;
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
   }
   
   .comment-box textarea {
