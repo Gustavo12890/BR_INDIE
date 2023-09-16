@@ -132,6 +132,11 @@ background: #6a88ff;
 .titulo-objetivo {
     color: #8BA2FF;
     font-weight: 700;
+    width: 100%;
+}
+
+.texto-objetivo {
+    text-align: justify;
 }
 
 .textosObjetivo {
@@ -140,6 +145,12 @@ background: #6a88ff;
 
 .img2 {
     margin-top: -70px;
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .titulo-objetivo {
+        width: 10vw;
+    }
 }
 /*Seção 2*/
 
@@ -258,6 +269,12 @@ background: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
+ }
+
+ @media (min-width: 768px) and (max-width: 1084px) {
+    .cards {
+        flex-direction: column;
+    }
  }
 
  .secaoCards:nth-child(1) {
