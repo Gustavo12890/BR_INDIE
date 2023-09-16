@@ -1,27 +1,28 @@
-
 /* CSS BARRA DE SCROLL */
+
 /* tamanho da estrutura */
 ::-webkit-scrollbar {
     width: 10px;
-}   
-    /* cor da estrutura */
-    ::-webkit-scrollbar-track {
-    background: #2A2731; 
-    
-}   
-    /* barra */
-    ::-webkit-scrollbar-thumb {
-    background: none; 
-    border-radius:10px;
-}
-    /* hover da barra*/
-    ::-webkit-scrollbar-thumb:hover {
-    background: #6a88ff; 
 }
 
-/* navbar css*/
+/* cor da estrutura */
+::-webkit-scrollbar-track {
+    background: #2A2731;
 
-/* navbar css*/
+}
+
+/* barra */
+::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 10px;
+}
+
+/* hover da barra*/
+::-webkit-scrollbar-thumb:hover {
+    background: #6a88ff;
+}
+
+/* CSS BARRA DE SCROLL */
 
 .navBar {
     background-color: #000000;
@@ -36,11 +37,11 @@
     margin-left: 30px;
 }
 
-.link-hover{
+.link-hover {
     color: #ffffff;
 }
 
-.link-hover:hover{
+.link-hover:hover {
     color: #8BA2FF;
 }
 
@@ -58,9 +59,11 @@
 }
 
 .navbar-foto {
-    width: 60px; /* Tamanho da foto de perfil */
+    width: 60px;
+    /* Tamanho da foto de perfil */
     height: 60px;
-    border-radius: 50%; /* Para torná-la redonda */
+    border-radius: 50%;
+    /* Para torná-la redonda */
     margin-right: 30px;
 }
 
@@ -73,32 +76,33 @@
 }
 
 .capa-foto {
-    width: 851px; /* Largura aproximada de uma foto de capa típica do Facebook */
-    height: 315px; /* Altura aproximada de uma foto de capa típica do Facebook */
+    width: 851px;
+    /* Largura aproximada de uma foto de capa típica do Facebook */
+    height: 315px;
+    /* Altura aproximada de uma foto de capa típica do Facebook */
     width: 100%;
     object-fit: cover;
 }
 
 .perfil-nome {
     margin-right: 25px;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .data-nasc {
     font-size: 16px;
-    color:#FFFFFF;
-}
-.secao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: #FFFFFF;
 }
 
+
 .perfil-foto {
-    width: 150px; /* Tamanho da foto de perfil */
+    width: 150px;
+    /* Tamanho da foto de perfil */
     height: 150px;
-    border-radius: 50%; /* Para torná-la redonda */
-    margin-top: -75px; /* Ajuste para centralizar verticalmente */
+    border-radius: 50%;
+    /* Para torná-la redonda */
+    margin-top: -75px;
+    /* Ajuste para centralizar verticalmente */
     z-index: 12;
 }
 
@@ -113,10 +117,11 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 400px; /* Ajuste de largura máxima para os elementos de estatísticas */
+    max-width: 400px;
+    /* Ajuste de largura máxima para os elementos de estatísticas */
     margin-top: 20px;
     margin-bottom: 210px;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .perfil-stats-left {
@@ -126,7 +131,8 @@
 }
 
 .button-seguir {
-    margin-left: auto; /* Move o botão de seguir para a direita */
+    margin-left: auto;
+    /* Move o botão de seguir para a direita */
     background-color: #8BA2FF;
     color: #ffffff;
     font-weight: 200;
@@ -138,7 +144,8 @@
 .perfil-bio {
     margin-top: 10px;
     font-size: 16px;
-    color: #ffffff; /* Cor do texto da biografia */
+    color: #ffffff;
+    /* Cor do texto da biografia */
     /* Outros estilos conforme necessário */
 }
 
