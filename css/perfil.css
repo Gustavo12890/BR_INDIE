@@ -1,3 +1,8 @@
+body {
+    background-color: #2A2731;
+    font-family: Poppins;
+}
+
 /* CSS BARRA DE SCROLL */
 
 /* tamanho da estrutura */
@@ -58,15 +63,6 @@
     background-color: #6a88ff;
 }
 
-.navbar-foto {
-    width: 60px;
-    /* Tamanho da foto de perfil */
-    height: 60px;
-    border-radius: 50%;
-    /* Para torná-la redonda */
-    margin-right: 30px;
-}
-
 /* navbar css*/
 
 .perfil-capa {
@@ -104,6 +100,13 @@
     margin-top: -75px;
     /* Ajuste para centralizar verticalmente */
     z-index: 12;
+}
+
+.perfil-nav-foto {
+    width: 60px; /* Tamanho da foto de perfil */
+    height: 60px;
+    border-radius: 50%; /* Para torná-la redonda */
+    margin-right: 30px;
 }
 
 .perfil-info {
