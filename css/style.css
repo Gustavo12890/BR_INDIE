@@ -8,6 +8,7 @@ body {
     background-color: #2A2731;
     font-family: Poppins;
 }
+
 /* CSS BARRA DE SCROLL */
 /* tamanho da estrutura */
 ::-webkit-scrollbar {
@@ -53,7 +54,7 @@ background: #6a88ff;
     color: #8BA2FF;
 }
 
-.btn-login {
+.botao-login {
     background-color: #8BA2FF;
     color: #ffffff;
     font-weight: 500;
@@ -61,10 +62,23 @@ background: #6a88ff;
     text-decoration: none;
 }
 
-.btn-login:hover {
+.botao-login:hover {
     background-color: #6a88ff;
 }
 
+.botao-cadastro {
+    background-color: #8BA2FF;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+    width: 37%;
+    margin-left: 135px;
+}
+
+.botao-cadastro:hover {
+    background-color: #6a88ff;
+}
 /*CSS BARRA DE NAVEGAÇÃO*/
 
 /*Seção 1*/
@@ -83,9 +97,33 @@ background: #6a88ff;
     margin-top: 13%;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .titulo {
         width: 50vw;
+    }
+
+    .botao-cadastro {
+        width: 18vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .botao-cadastro {
+        width: 20vw;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .titulo {
+        width: 42vw;
+    }
+
+    .frase {
+        width: 48vw;
+    }
+
+    .botao-cadastro {
+        width: 25vw;
     }
 }
 /* Seção 1 */
