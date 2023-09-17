@@ -3,6 +3,7 @@ body {
     font-family: Poppins;
     
   }
+
   /* CSS BARRA DE SCROLL */
   /* tamanho da estrutura */
   ::-webkit-scrollbar {
@@ -65,6 +66,7 @@ body {
     border-radius: 50%; /* Para torná-la redonda */
     margin-right: 30px;
   }
+  
   .container {
     max-width: 800px;
     margin: 0 auto;
@@ -78,6 +80,34 @@ body {
 
   .barra-canto {
     background-color: #633263;
+  }
+
+  .texto-celeste {
+    text-align: justify;
+    max-width: 53vw;
+  }
+
+  @media (max-width: 576px) {
+    .barra-canto {
+      display: none;
+    }
+
+    .col-8 {
+      width: 100vw;
+    }
+
+    .col-7 {
+      width: 100vw;
+    }
+
+    .texto-celeste {
+      max-width: 81vw;
+    }
+
+    .texto-celeste2 {
+      width: 74vw;
+      text-align: justify;
+    }
   }
   
   .cover-image {
