@@ -1,0 +1,94 @@
+body {
+    background-color: #2A2731;
+    font-family: Poppins;
+}
+
+/* CSS BARRA DE SCROLL */
+/* tamanho da estrutura */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* cor da estrutura */
+::-webkit-scrollbar-track {
+background: none; 
+
+}
+
+/* barra */
+::-webkit-scrollbar-thumb {
+background: none; 
+border-radius:10px;
+}
+
+/* hover da barra*/
+::-webkit-scrollbar-thumb:hover {
+background: #6a88ff; 
+}
+
+/*CSS BARRA DE NAVEGAÇÃO*/
+.navBar {
+    background-color: #000000;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding: 12px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.link-hover{
+    color: #ffffff;
+}
+
+.link-hover:hover{
+    color: #8BA2FF;
+}
+
+.botao-login {
+    background-color: #8BA2FF;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
+.botao-login:hover {
+    background-color: #6a88ff;
+}
+
+.textos {
+    margin-left: 2.2rem;
+}
+
+.apelido {
+    margin-left: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 443px){
+    .textos {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (min-width: 444px) and (max-width: 767px){
+    .textos {
+        margin-left: 1rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .textos {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 347px){
+    .apelido {
+        margin-right: 2rem;
+    }
+}
