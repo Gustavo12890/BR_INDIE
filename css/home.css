@@ -4,6 +4,7 @@ body {
 }
 
 /* CSS BARRA DE SCROLL */
+
 /* tamanho da estrutura */
 ::-webkit-scrollbar {
     width: 10px;
@@ -25,6 +26,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #6a88ff; 
 }
+
+/*CSS BARRA DE NAVEGAÇÃO*/
 
 .navBar {
     background-color: #000000;
@@ -65,6 +68,8 @@ body {
     border-radius: 50%; /* Para torná-la redonda */
     margin-right: 30px;
 }
+
+/*CSS BARRA DE NAVEGAÇÃO*/
 
 .titulo {
     color: #8BA2FF;

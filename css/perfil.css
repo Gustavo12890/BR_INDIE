@@ -103,9 +103,11 @@ body {
 }
 
 .perfil-nav-foto {
-    width: 60px; /* Tamanho da foto de perfil */
+    width: 60px;
+    /* Tamanho da foto de perfil */
     height: 60px;
-    border-radius: 50%; /* Para torná-la redonda */
+    border-radius: 50%;
+    /* Para torná-la redonda */
     margin-right: 30px;
 }
 

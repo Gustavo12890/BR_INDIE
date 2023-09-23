@@ -1,153 +1,167 @@
 body {
-    background-color: #633263;
-    font-family: Poppins;
-    
-  }
+  background-color: #633263;
+  font-family: Poppins;
 
-  /* CSS BARRA DE SCROLL */
-  /* tamanho da estrutura */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-    
-  /* cor da estrutura */
-  ::-webkit-scrollbar-track {
-    background: none; 
-    
-  }
-    
-  /* barra */
-  ::-webkit-scrollbar-thumb {
-    background: none; 
-    border-radius:10px;
-  }
-    
-  /* hover da barra*/
-  ::-webkit-scrollbar-thumb:hover {
-    background: #6a88ff; 
-  }
-  
-  .navBar {
-    background-color: #000000;
-    margin-top: -8px;
-    margin-bottom: -8px;
-    padding: 12px;
-  }
-  
-  .logo {
-    color: #FFFFFF;
-    font-weight: bold;
-    margin-left: 30px;
-  }
-  
-  .link-hover{
-    color: #ffffff;
-  }
-  
-  .link-hover:hover{
-    color: #8BA2FF;
-  }
-  
-  .btn-login {
-    background-color: #8BA2FF;
-    color: #ffffff;
-    font-weight: 500;
-    border: none;
-    text-decoration: none;
-  }
-  
-  .btn-login:hover {
-    background-color: #6a88ff;
-  }
-  
-  .perfil-foto {
-    width: 60px; /* Tamanho da foto de perfil */
-    height: 60px;
-    border-radius: 50%; /* Para torná-la redonda */
-    margin-right: 30px;
-  }
-  
-  .titulo {
-    color: #71c9df;
-    font-weight: bold;
-  }
+}
 
-  .texto-celeste {
-    text-align: justify;
-    max-width: 53vw;
-  }
-  
-  .cover-image {
-    max-width: 100%;
-    height: auto;
-  }
-  h1 {
-    font-size: 24px;
-    margin-top: 10px;
-  }
-  
-  p {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .detalhes {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .images {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .images img {
-    margin-bottom: 10px;
-  }
-  .interaction-buttons {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .like-button {
-    background-color: #4CAF50; /* Verde */
-    color: white;
-  }
-  
-  .dislike-button {
-    background-color: #f44336; /* Vermelho */
-    color: white;
-  }
-  
-  .favorite-button {
-    background-color: #FFD700; /* Amarelo-ouro */
-    color: black;
-  }
-  
-  .comment-box {
-    clear: both;
-    margin-top: 20px;
-    padding: 20px;
-  }
-  
-  .comment-box textarea {
-    width: 100%;
-    height: 100px;
-    resize: none;
-  }
+/* CSS BARRA DE SCROLL */
+
+/* tamanho da estrutura */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* cor da estrutura */
+::-webkit-scrollbar-track {
+  background: none;
+
+}
+
+/* barra */
+::-webkit-scrollbar-thumb {
+  background: none;
+  border-radius: 10px;
+}
+
+/* hover da barra*/
+::-webkit-scrollbar-thumb:hover {
+  background: #6a88ff;
+}
+
+/* CSS BARRA DE SCROLL */
+
+/*CSS BARRA DE NAVEGAÇÃO*/
+
+.navBar {
+  background-color: #000000;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  padding: 12px;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.link-hover {
+  color: #ffffff;
+}
+
+.link-hover:hover {
+  color: #8BA2FF;
+}
+
+.btn-login {
+  background-color: #8BA2FF;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  background-color: #6a88ff;
+}
+
+/*CSS BARRA DE NAVEGAÇÃO*/
+
+.perfil-foto {
+  width: 60px;
+  /* Tamanho da foto de perfil */
+  height: 60px;
+  border-radius: 50%;
+  /* Para torná-la redonda */
+  margin-right: 30px;
+}
+
+.titulo {
+  color: #71c9df;
+  font-weight: bold;
+}
+
+.texto-celeste {
+  text-align: justify;
+  max-width: 53vw;
+}
+
+.cover-image {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.detalhes {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.images {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.images img {
+  margin-bottom: 10px;
+}
+
+.interaction-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.like-button {
+  background-color: #4CAF50;
+  /* Verde */
+  color: white;
+}
+
+.dislike-button {
+  background-color: #f44336;
+  /* Vermelho */
+  color: white;
+}
+
+.favorite-button {
+  background-color: #FFD700;
+  /* Amarelo-ouro */
+  color: black;
+}
+
+.comment-box {
+  clear: both;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.comment-box textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}

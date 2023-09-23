@@ -4,29 +4,33 @@ body {
 }
 
 /* CSS BARRA DE SCROLL */
+
 /* tamanho da estrutura */
 ::-webkit-scrollbar {
-width: 10px;
+    width: 10px;
 }
 
 /* cor da estrutura */
 ::-webkit-scrollbar-track {
-background: none; 
+    background: none;
 
 }
 
 /* barra */
 ::-webkit-scrollbar-thumb {
-background: none; 
-border-radius:10px;
+    background: none;
+    border-radius: 10px;
 }
 
 /* hover da barra*/
 ::-webkit-scrollbar-thumb:hover {
-background: #6a88ff; 
+    background: #6a88ff;
 }
 
+/* CSS BARRA DE SCROLL */
+
 /*CSS BARRA DE NAVEGAÇÃO*/
+
 .navBar {
     background-color: #000000;
     margin-top: -8px;
@@ -40,11 +44,11 @@ background: #6a88ff;
     margin-left: 30px;
 }
 
-.link-hover{
+.link-hover {
     color: #ffffff;
 }
 
-.link-hover:hover{
+.link-hover:hover {
     color: #8BA2FF;
 }
 
@@ -60,6 +64,8 @@ background: #6a88ff;
     background-color: #6a88ff;
 }
 
+/*CSS BARRA DE NAVEGAÇÃO*/
+
 .textos {
     margin-left: 2.2rem;
 }
@@ -68,13 +74,13 @@ background: #6a88ff;
     margin-left: 1rem;
 }
 
-@media (min-width: 320px) and (max-width: 443px){
+@media (min-width: 320px) and (max-width: 443px) {
     .textos {
         margin-left: 0.5rem;
     }
 }
 
-@media (min-width: 444px) and (max-width: 767px){
+@media (min-width: 444px) and (max-width: 767px) {
     .textos {
         margin-left: 1rem;
     }
@@ -87,7 +93,7 @@ background: #6a88ff;
     }
 }
 
-@media (min-width: 320px) and (max-width: 347px){
+@media (min-width: 320px) and (max-width: 347px) {
     .apelido {
         margin-right: 2rem;
     }

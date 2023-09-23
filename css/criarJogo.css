@@ -6,27 +6,32 @@ body {
 }
 
 /* CSS BARRA DE SCROLL */
+
 /* tamanho da estrutura */
 ::-webkit-scrollbar {
     width: 10px;
 }
-    
+
 /* cor da estrutura */
 ::-webkit-scrollbar-track {
-    background: none; 
-    
+    background: none;
+
 }
-    
+
 /* barra */
 ::-webkit-scrollbar-thumb {
-    background: none; 
-    border-radius:10px;
+    background: none;
+    border-radius: 10px;
 }
-    
+
 /* hover da barra*/
 ::-webkit-scrollbar-thumb:hover {
-    background: #6a88ff; 
+    background: #6a88ff;
 }
+
+/* CSS BARRA DE SCROLL */
+
+/*CSS BARRA DE NAVEGAÇÃO*/
 
 .navBar {
     background-color: #000000;
@@ -41,11 +46,11 @@ body {
     margin-left: 30px;
 }
 
-.link-hover{
+.link-hover {
     color: #ffffff;
 }
 
-.link-hover:hover{
+.link-hover:hover {
     color: #8BA2FF;
 }
 
@@ -62,20 +67,25 @@ body {
 }
 
 .perfil-foto {
-    width: 60px; /* Tamanho da foto de perfil */
+    width: 60px;
+    /* Tamanho da foto de perfil */
     height: 60px;
-    border-radius: 50%; /* Para torná-la redonda */
+    border-radius: 50%;
+    /* Para torná-la redonda */
     margin-right: 30px;
 }
 
+/*CSS BARRA DE NAVEGAÇÃO*/
+
 .container {
     max-width: 1200px;
-    margin-top:2%;
+    margin-top: 2%;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(42, 39, 49, 0.3); /* 0.3 é a opacidade */
+    background: rgba(42, 39, 49, 0.3);
+    /* 0.3 é a opacidade */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius:20px;
+    border-radius: 20px;
 }
 
 form label {
@@ -83,8 +93,10 @@ form label {
 }
 
 form input[type="file"] {
-    margin-bottom: 10px; /* Adicionando margem na parte inferior para criar espaço entre os campos */
+    margin-bottom: 10px;
+    /* Adicionando margem na parte inferior para criar espaço entre os campos */
 }
+
 form input[type="text"],
 form textarea,
 form select,
@@ -114,7 +126,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .img-cadastro {
@@ -128,29 +140,29 @@ form button:hover {
     z-index: -1;
 }
 
-.form-texto{
+.form-texto {
     color: white;
-    
+
 }
 
-#titulo{
+#titulo {
     background-color: #ffffff;
     border: 3px solid #000000;
     border-radius: 20px;
-    width:100%;
+    width: 100%;
     display: block;
-    
+
 }
 
-.form-titulo{
+.form-titulo {
     display: block;
     margin-bottom: 10px;
-    color:white;
+    color: white;
     border-radius: 20px;
 }
 
-.caixa-input{
-    
+.caixa-input {
+
     background-color: #ffffff;
     border: 3px solid #000000;
     border-radius: 20px;
@@ -158,10 +170,10 @@ form button:hover {
 
 
 
-.form-btn{
-    margin-top:2%;
-    display:block;
-    margin-left:25%;
+.form-btn {
+    margin-top: 2%;
+    display: block;
+    margin-left: 25%;
     width: 50%;
     padding: 10px;
     background-color: #8BA2FF;
@@ -171,126 +183,133 @@ form button:hover {
     cursor: pointer;
 }
 
-.form-btn:hover{
-    background-color:#6a88ff;
+.form-btn:hover {
+    background-color: #6a88ff;
 }
 
 input[type="file"] {
     display: none;
 }
 
-.img-texto{
-    color:white;
-    margin-top:6%;
-    margin-right:3%;
+.img-texto {
+    color: white;
+    margin-top: 6%;
+    margin-right: 3%;
 
 }
 
-.img-texto-capa{
-    color:white;
+.img-texto-capa {
+    color: white;
 }
-.txt-img-container{
-    display:flex;
-    flex-wrap: wrap; 
+
+.txt-img-container {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 10%;
 }
 
-.txt-img-container-capa{
-    display:flex;
-    flex-wrap: wrap; 
+.txt-img-container-capa {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 3%;
 }
 
 
-.img-container{
-    display:flex;
-    margin-left:4%;
-    flex-direction: row; /* Dispor os elementos lado a lado */
-    flex-wrap: wrap; 
+.img-container {
+    display: flex;
+    margin-left: 4%;
+    flex-direction: row;
+    /* Dispor os elementos lado a lado */
+    flex-wrap: wrap;
     overflow: hidden;
     position: relative;
 }
 
-.img-texto-capa{
-    color:white;
-    margin-top:1.6%;
+.img-texto-capa {
+    color: white;
+    margin-top: 1.6%;
     margin-right: 2%;
 }
 
-.img-capa{
+.img-capa {
     border: solid black;
-     height:150px;
-     width: 100%;
-     top: 0;
-     left: 0;
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .image-wrapper {
     display: inline-block;
-    margin-right: 6%; /* Espaço entre cada par de label e imagem (opcional) */
+    margin-right: 6%;
+    /* Espaço entre cada par de label e imagem (opcional) */
 }
 
-.form-img{
+.form-img {
     width: 300px;
     height: 150px;
-    
+
 }
 
-.form-texto-img{
-    color:white;
+.form-texto-img {
+    color: white;
 }
 
-.btn-img{
-    color:white;
-    background-color:#8BA2FF;
-    cursor:pointer;
+.btn-img {
+    color: white;
+    background-color: #8BA2FF;
+    cursor: pointer;
     padding: 20px 10px;
     border-radius: 15px;
 
 }
 
-.btn-img:hover{
-    background-color:#6a88ff;
+.btn-img:hover {
+    background-color: #6a88ff;
 }
+
 .form-genero {
 
-    flex: 1; /* Para que cada campo tenha a mesma largura */
-    margin-right: 10px; /* Espaçamento entre os campos */
+    flex: 1;
+    /* Para que cada campo tenha a mesma largura */
+    margin-right: 10px;
+    /* Espaçamento entre os campos */
 
 }
 
-.form-genero-container{
+.form-genero-container {
     display: flex;
-    flex-direction: row; /* Dispor os elementos lado a lado */
-    flex-wrap: wrap; 
-    margin-left:5%;
+    flex-direction: row;
+    /* Dispor os elementos lado a lado */
+    flex-wrap: wrap;
+    margin-left: 5%;
 }
 
 .form-cor {
     display: flex;
     align-items: center;
-    width:98.5%;
-    flex-wrap: wrap; 
+    width: 98.5%;
+    flex-wrap: wrap;
 }
 
-.formcor-tamanho{
-    height:50px;
-    margin-left:2%;
-    margin-top:2%;
-    
+.formcor-tamanho {
+    height: 50px;
+    margin-left: 2%;
+    margin-top: 2%;
+
 }
 
-.form-texto-cor{
-    width:18%;
-    color:white;
-    margin-right:2%;
-    margin-top:3%;
+.form-texto-cor {
+    width: 18%;
+    color: white;
+    margin-right: 2%;
+    margin-top: 3%;
 }
 
 
 
-.input-genero{
-    width:300px;
+.input-genero {
+    width: 300px;
     background-color: #ffffff;
     border: 3px solid #000000;
     border-radius: 20px;
@@ -301,13 +320,17 @@ input[type="file"] {
 @media (max-width: 991px) {
 
     .img-container {
-        text-align: center; /* Centraliza elementos inline, como botões */
+        text-align: center;
+        /* Centraliza elementos inline, como botões */
     }
 
     .image-wrapper {
-        margin: 0 auto; /* Centraliza os divs que envolvem campos de imagem */
-        text-align: left; /* Reverte o alinhamento do texto interno para a esquerda */
-        display: inline-block; /* Para manter os elementos inline */
+        margin: 0 auto;
+        /* Centraliza os divs que envolvem campos de imagem */
+        text-align: left;
+        /* Reverte o alinhamento do texto interno para a esquerda */
+        display: inline-block;
+        /* Para manter os elementos inline */
     }
 
 
