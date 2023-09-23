@@ -12,8 +12,7 @@ body {
 
 /* cor da estrutura */
 ::-webkit-scrollbar-track {
-    background: #2A2731;
-
+    background: #212529;
 }
 
 /* barra */
@@ -29,7 +28,7 @@ body {
 
 /* CSS BARRA DE SCROLL */
 
-.navBar {
+#navBar {
     background-color: #000000;
     margin-top: -8px;
     margin-bottom: -8px;

@@ -11,7 +11,7 @@ body {
     
 /* cor da estrutura */
 ::-webkit-scrollbar-track {
-    background: none; 
+    background: #212529;
     
 }
     

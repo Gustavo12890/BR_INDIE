@@ -12,8 +12,7 @@ body {
 
 /* cor da estrutura */
 ::-webkit-scrollbar-track {
-    background: none;
-
+    background: #212529;
 }
 
 /* barra */
@@ -31,7 +30,7 @@ body {
 
 /*CSS BARRA DE NAVEGAÇÃO*/
 
-.navBar {
+#navBar {
     background-color: #000000;
     margin-top: -8px;
     margin-bottom: -8px;
@@ -66,8 +65,17 @@ body {
 
 /*CSS BARRA DE NAVEGAÇÃO*/
 
+.titulo {
+    color: #ffffff;
+}
+
+.titulo:hover {
+    color: #8BA2FF;
+}
+
 .textos {
-    margin-left: 2.2rem;
+    margin-left: 2.2rem;;
+    color: #FF7230
 }
 
 .nome {
