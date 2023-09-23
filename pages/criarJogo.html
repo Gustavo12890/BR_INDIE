@@ -153,74 +153,71 @@
             </form>
         </div>
     </div>
-
     <script src="../js/criarJogo.js"></script>
     <script>
-    function previewCapa() {
-        var capa = document.getElementById('capa-image').files[0];
-        var preview = document.getElementById('input-capa');
-        var reader = new FileReader();
+        function previewCapa() {
+            var capa = document.getElementById('capa-image').files[0];
+            var preview = document.getElementById('input-capa');
+            var reader = new FileReader();
 
-        reader.onloadend = function () {
-            preview.src = reader.result;
+            reader.onloadend = function () {
+                preview.src = reader.result;
+            }
+
+            if (capa) {
+                reader.readAsDataURL(capa);
+            } else {
+                preview.src = "";
+            }
+         }
+
+        function previewImagem1() {
+            var imagem1 = document.getElementById('image-1').files[0];
+            var preview1 = document.getElementById('input-img1');
+            var reader1 = new FileReader();
+
+            reader1.onloadend = function () {
+                preview1.src = reader1.result;
+            }
+
+            if (imagem1) {
+                reader1.readAsDataURL(imagem1);
+            } else {
+                preview1.src = "";
+            }
         }
 
-        if (capa) {
-            reader.readAsDataURL(capa);
-        } else {
-            preview.src = "";
-        }
-    }
+        function previewImagem2() {
+            var imagem2 = document.getElementById('image-2').files[0];
+            var preview2 = document.getElementById('input-img2');
+            var reader2 = new FileReader();
 
-    function previewImagem1() {
-        var imagem1 = document.getElementById('image-1').files[0];
-        var preview1 = document.getElementById('input-img1');
-        var reader1 = new FileReader();
+            reader2.onloadend = function () {
+                preview2.src = reader2.result;
+            }
 
-        reader1.onloadend = function () {
-            preview1.src = reader1.result;
-        }
-
-        if (imagem1) {
-            reader1.readAsDataURL(imagem1);
-        } else {
-            preview1.src = "";
-        }
-    }
-
-    function previewImagem2() {
-        var imagem2 = document.getElementById('image-2').files[0];
-        var preview2 = document.getElementById('input-img2');
-        var reader2 = new FileReader();
-
-        reader2.onloadend = function () {
-            preview2.src = reader2.result;
+            if (imagem2) {
+                reader2.readAsDataURL(imagem2);
+            } else {
+                preview2.src = "";
+            }
         }
 
-        if (imagem2) {
-            reader2.readAsDataURL(imagem2);
-        } else {
-            preview2.src = "";
+        function previewImagem3() {
+            var imagem3 = document.getElementById('image-3').files[0];
+            var preview3 = document.getElementById('input-img3');
+            var reader3 = new FileReader();
+
+            reader3.onloadend = function () {
+                preview3.src = reader3.result;
+            }
+
+            if (imagem3) {
+                reader3.readAsDataURL(imagem3);
+            } else {
+                preview3.src = "";
+            }
         }
-    }
-
-    function previewImagem3() {
-        var imagem3 = document.getElementById('image-3').files[0];
-        var preview3 = document.getElementById('input-img3');
-        var reader3 = new FileReader();
-
-        reader3.onloadend = function () {
-            preview3.src = reader3.result;
-        }
-
-        if (imagem3) {
-            reader3.readAsDataURL(imagem3);
-        } else {
-            preview3.src = "";
-        }
-    }
-
     </script>
-
 </body>
 </html>
