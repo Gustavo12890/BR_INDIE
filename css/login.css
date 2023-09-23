@@ -112,3 +112,14 @@ body {
 #linkLogin:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 754px) {
+    body {
+        background: linear-gradient(180deg, rgba(96,52,127,1) 0%, rgba(191,73,146,1) 35%, rgba(110,42,86,1) 100%);
+        backdrop-filter: brightness(0.7) blur(5px);
+    }
+
+    .background-img {
+        display: none;
+    }
+}

@@ -123,11 +123,7 @@ body {
 @media (max-width: 754px) {
     .form-container {
         flex-direction: column;
-        /* Empilhar os formulários verticalmente */
-        gap: 0;
-        /* Tira o espaço entre os formulários */
-        margin-top: 5%;
-        margin-bottom: 5%;
+        padding-top: 3rem;
     }
 
     .form-cadastro,
@@ -149,5 +145,14 @@ body {
     .form-cadastro {
         border-bottom: 1px transparent;
         border-radius: 20px 20px 0px 0px;
+    }
+
+    .background-img {
+        display: none;
+    }
+
+    body {
+        background: linear-gradient(180deg, rgba(96,52,127,1) 0%, rgba(191,73,146,1) 35%, rgba(110,42,86,1) 100%);
+        backdrop-filter: brightness(0.7) blur(100px);
     }
 }
