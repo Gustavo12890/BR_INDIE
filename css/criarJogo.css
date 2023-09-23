@@ -298,7 +298,7 @@ input[type="file"] {
 
 
 
-@media (max-width: 991px) {
+@media (max-width: 1183px) {
 
     .img-container {
         text-align: center; /* Centraliza elementos inline, como botões */
