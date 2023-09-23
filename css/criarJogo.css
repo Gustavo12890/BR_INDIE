@@ -192,7 +192,7 @@ input[type="file"] {
 .txt-img-container{
     display:flex;
     flex-wrap: wrap; 
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .txt-img-container-capa{
@@ -202,14 +202,6 @@ input[type="file"] {
 }
 
 
-.img-container{
-    display:flex;
-    margin-left:4%;
-    flex-direction: row; /* Dispor os elementos lado a lado */
-    flex-wrap: wrap; 
-    overflow: hidden;
-    position: relative;
-}
 
 .img-texto-capa{
     color:white;
@@ -219,21 +211,18 @@ input[type="file"] {
 
 .img-capa{
     border: solid black;
-     height:150px;
+     height:auto;
      width: 100%;
      top: 0;
      left: 0;
 }
 
-.image-wrapper {
-    display: inline-block;
-    margin-right: 6%; /* Espaço entre cada par de label e imagem (opcional) */
-}
+
 
 .form-img{
-    width: 300px;
-    height: 150px;
-    
+    height:auto;
+    width: 100%;
+    border: solid black;
 }
 
 .form-texto-img{
@@ -249,6 +238,19 @@ input[type="file"] {
 
 }
 
+.btn-img-adicional{
+    color:white;
+    background-color:#8BA2FF;
+    cursor:pointer;
+    padding: 23px 10px;
+    border-radius: 15px;
+    margin-top:5%;
+    height:70px;
+}
+
+.btn-img-adicional:hover{
+    background-color:#6a88ff;
+}
 .btn-img:hover{
     background-color:#6a88ff;
 }
@@ -298,17 +300,3 @@ input[type="file"] {
 
 
 
-@media (max-width: 1183px) {
-
-    .img-container {
-        text-align: center; /* Centraliza elementos inline, como botões */
-    }
-
-    .image-wrapper {
-        margin: 0 auto; /* Centraliza os divs que envolvem campos de imagem */
-        text-align: left; /* Reverte o alinhamento do texto interno para a esquerda */
-        display: inline-block; /* Para manter os elementos inline */
-    }
-
-
-}
