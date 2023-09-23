@@ -70,9 +70,14 @@ body {
     margin-left: 2.2rem;
 }
 
+.nome {
+    color: #8BA2FF;
+}
+
 .apelido {
     margin-left: 1rem;
 }
+
 
 @media (min-width: 320px) and (max-width: 443px) {
     .textos {
