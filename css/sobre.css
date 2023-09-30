@@ -21,14 +21,14 @@ body {
     border-radius: 10px;
 }
 
-/* hover da barra*/
+/* hover da barra */
 ::-webkit-scrollbar-thumb:hover {
     background: #6a88ff;
 }
 
 /* CSS BARRA DE SCROLL */
 
-/*CSS BARRA DE NAVEGAÇÃO*/
+/* CSS BARRA DE NAVEGAÇÃO */
 
 #navBar {
     background-color: #000000;
@@ -63,7 +63,7 @@ body {
     background-color: #6a88ff;
 }
 
-/*CSS BARRA DE NAVEGAÇÃO*/
+/* CSS BARRA DE NAVEGAÇÃO */
 
 .titulo {
     color: #ffffff;

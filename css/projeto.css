@@ -22,14 +22,14 @@ body {
   border-radius: 10px;
 }
 
-/* hover da barra*/
+/* hover da barra */
 ::-webkit-scrollbar-thumb:hover {
   background: #6a88ff;
 }
 
 /* CSS BARRA DE SCROLL */
 
-/*CSS BARRA DE NAVEGAÇÃO*/
+/* CSS BARRA DE NAVEGAÇÃO */
 
 #navBar {
   background-color: #000000;
@@ -64,14 +64,12 @@ body {
   background-color: #6a88ff;
 }
 
-/*CSS BARRA DE NAVEGAÇÃO*/
+/* CSS BARRA DE NAVEGAÇÃO */
 
 .perfil-foto {
-  width: 60px;
-  /* Tamanho da foto de perfil */
+  width: 60px; /* Tamanho da foto de perfil */
   height: 60px;
-  border-radius: 50%;
-  /* Para torná-la redonda */
+  border-radius: 50%; /* Para torná-la redonda */
   margin-right: 30px;
 }
 
@@ -88,16 +86,6 @@ body {
 .cover-image {
   max-width: 100%;
   height: auto;
-}
-
-h1 {
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-p {
-  font-size: 16px;
-  margin-top: 5px;
 }
 
 .content {
@@ -136,20 +124,17 @@ button {
 }
 
 .like-button {
-  background-color: #4CAF50;
-  /* Verde */
+  background-color: #4CAF50; 
   color: white;
 }
 
 .dislike-button {
-  background-color: #f44336;
-  /* Vermelho */
+  background-color: #f44336; 
   color: white;
 }
 
 .favorite-button {
-  background-color: #FFD700;
-  /* Amarelo-ouro */
+  background-color: #FFD700; 
   color: black;
 }
 

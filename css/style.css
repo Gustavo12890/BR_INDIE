@@ -19,7 +19,6 @@ body {
 /* cor da estrutura */
 ::-webkit-scrollbar-track {
     background: #212529;
-
 }
 
 /* barra */
@@ -28,14 +27,14 @@ body {
     border-radius: 10px;
 }
 
-/* hover da barra*/
+/* hover da barra */
 ::-webkit-scrollbar-thumb:hover {
     background: #6a88ff;
 }
 
 /* CSS BARRA DE SCROLL */
 
-/*CSS BARRA DE NAVEGAÇÃO*/
+/* CSS BARRA DE NAVEGAÇÃO */
 
 #navBar {
     background-color: #000000;
@@ -84,9 +83,9 @@ body {
     background-color: #6a88ff;
 }
 
-/*CSS BARRA DE NAVEGAÇÃO*/
+/* CSS BARRA DE NAVEGAÇÃO */
 
-/*Seção 1*/
+/* SEÇÃO 1 */
 
 .titulo {
     color: #8BA2FF;
@@ -133,9 +132,9 @@ body {
     }
 }
 
-/* Seção 1 */
+/* SEÇÃO 1 */
 
-/*Seção 2*/
+/* SEÇÃO 2 */
 
 .titulo-objetivo {
     color: #8BA2FF;
@@ -147,7 +146,7 @@ body {
     text-align: justify;
 }
 
-.textosObjetivo {
+.row-objetivo {
     margin-top: 60px;
 }
 
@@ -161,9 +160,9 @@ body {
     }
 }
 
-/*Seção 2*/
+/*SEÇÃO 2*/
 
-/*Animação do título */
+/* ANIMAÇÃO DO TÍTULO */
 .titulo span {
     position: relative;
     overflow: hidden;
@@ -274,10 +273,10 @@ body {
     background: #eee;
 }
 
-/*Animação do título */
+/* ANIMAÇÃO DO TÍTULO */
 
 
-/*Animação dos cards */
+/* ANIMAÇÃO DOS CARDS */
 
 .titulo-contas {
     color: #8BA2FF;
@@ -365,7 +364,7 @@ section .cards .text-card h3 {
     opacity: 1;
 }
 
-/*Animação dos cards */
+/* ANIMAÇÃO DOS CARDS */
 
 .text-card {
     border-radius: 40px;
@@ -375,7 +374,7 @@ section .cards .text-card h3 {
 }
 
 
-/*Animação da primeira imagem */
+/* ANIMAÇÃO DA PRIMEIRA IMAGEM*/
 
 .img1 {
     -webkit-animation: mover 1s infinite alternate;
@@ -407,4 +406,4 @@ section .cards .text-card h3 {
     }
 }
 
-/*Animação da primeira imagem */
+/* ANIMAÇÃO DA PRIMEIRA IMAGEM*/

@@ -13,7 +13,6 @@ body {
 /* cor da estrutura */
 ::-webkit-scrollbar-track {
     background: #212529;
-    
 }
     
 /* barra */
@@ -22,12 +21,14 @@ body {
     border-radius:10px;
 }
     
-/* hover da barra*/
+/* hover da barra */
 ::-webkit-scrollbar-thumb:hover {
     background: #6a88ff; 
 }
 
-/*CSS BARRA DE NAVEGAÇÃO*/
+/* CSS BARRA DE SCROLL */
+
+/* CSS BARRA DE NAVEGAÇÃO */
 
 #navBar {
     background-color: #000000;
@@ -69,16 +70,12 @@ body {
     margin-right: 30px;
 }
 
-/*CSS BARRA DE NAVEGAÇÃO*/
+/* CSS BARRA DE NAVEGAÇÃO*/
 
 .titulo {
     color: #8BA2FF;
     font-weight: 700;
     margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.marginBarra {
     margin-bottom: 60px;
 }
 
@@ -112,7 +109,7 @@ body {
     top: -4px;
 }
 
-.marginCards {
+.mb-cards {
     margin-bottom: 30px;
 }
 
