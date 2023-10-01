@@ -193,7 +193,7 @@ input[type="file"] {
 
 .img-texto {
     color: white;
-    margin-top: 6%;
+    margin-top: 7.5%;
     margin-right: 3%;
 
 }
@@ -206,7 +206,7 @@ input[type="file"] {
     flex-wrap: wrap; 
     text-align: center;
     margin-top: 3%;
-    margin-left:35%;
+    margin-left:40%;
 }
 
 .txt-img-container-capa {
