@@ -224,7 +224,7 @@ input[type="file"] {
 }
 
 .img-capa {
-    border: solid black;
+    border: solid rgb(255, 255, 255);
      height:auto;
      width: 100%;
      top: 0;
@@ -240,7 +240,7 @@ input[type="file"] {
 .form-img{
     height:300px;
     width: 45%;
-    border: solid black;
+    border: solid rgb(255, 255, 255);
 }
 
 .form-texto-img {
