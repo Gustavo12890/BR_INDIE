@@ -66,21 +66,21 @@
         <div class="text-card">
           <h3 class="titulos-cards">Comum</h3>
           <img class="mx-auto d-block mb-4 mt-4" src="../img/img_landing/usuario.png" alt="" width="120px" height="120px">
-          <p>A conta comum permite que o usuário faça comentários nos projetos, além de poder curtir e favoritar as publicações.</p>
+          <p>Com uma conta comum, você pode fazer comentários, curtir e favoritar projetos.</p>
         </div>
       </div>
       <div class="col">
         <div class="text-card">
           <h3 class="titulos-cards">Desenvolvedor</h3>
           <img class="mx-auto d-block mb-4 mt-3" src="../img/img_landing/desenvolvedor.png" alt="" width="130px" height="130px">
-          <p>A conta de desenvolvedor permite que o usuário realize as mesmas ações, com a adição da possibilidade de criar seu próprio projeto.</p>
+          <p>A conta de desenvolvedor permite que você, além das ações de uma conta comum, possa criar seu próprio projeto.</p>
         </div>
       </div>
       <div class="col">
         <div class="text-card">
           <h3 class="titulos-cards">Assinante</h3>
           <img class="mx-auto d-block mb-4 mt-4" src="../img/img_landing/assinante.png" alt="" width="120px" height="120px">
-          <p>Os assinantes terão uma seção especial para destacar seus projetos, além de acesso a demos e outros benefícios exclusivos.</p>
+          <p>Ao assinar o patreon do site, seus projetos terão uma seção especial na página principal, além de outros benefícios como acesso a demos e maior personalização. Visite nosso patreon para mais informações.</p>
         </div>
       </div>
     </div>
@@ -153,25 +153,23 @@
     <a class="text-white" href="index.html">BR Indie</a>
   </div>
 </footer>
-<script type="text/javascript">
-  window.addEventListener('scroll', reveal);
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal')
+      for(var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
 
-  function reveal() {
-  var reveals = document.querySelectorAll('.reveal')
-
-  for(var i = 0; i < reveals.length; i++) {
-      var windowheight = window.innerHeight;
-      var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 150;
-
-      if (revealtop < windowheight - revealpoint) {
-          reveals[i].classList.add('active');
+          if (revealtop < windowheight - revealpoint) {
+              reveals[i].classList.add('active');
+          }
+          else {
+              reveals[i].classList.remove('active');
+          }
       }
-      else {
-          reveals[i].classList.remove('active');
-      }
-  }
-  } 
-</script>
-</body>
+    } 
+  </script>
+  </body>
 </html>
