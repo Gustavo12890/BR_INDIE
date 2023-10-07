@@ -333,6 +333,7 @@ section .cards {
 section .cards .text-card {
     background: #7c5bbb;
     padding: 20px;
+    height: 25rem;
 }
 
 section .cards .text-card h3 {
