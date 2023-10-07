@@ -103,6 +103,10 @@ body {
     border: none;
 }
 
+.card-titulo {
+    text-align: center;
+}
+
 .card:hover {
     transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px #000000;
@@ -115,7 +119,7 @@ body {
 
 @media  (min-width: 1200px) and (max-width: 1400px) {
     .card {
-        width: 15rem;
+        width: 21rem;
         height: auto;
     }
 }
