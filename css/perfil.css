@@ -142,12 +142,25 @@ body {
     color: #ffffff; /* Cor do texto da biografia */
     /* Outros estilos conforme necessário */
     text-align: left;
-    max-width: 21rem;
+    max-width: 70vw;
 }
 
 /* ESTILOS PARA OS ELEMENTOS DE ESTATÍSTICAS DO PERFIL */
 
+/*FOOTER*/
 
+.titulo-footer {
+    color: #8BA2FF;
+}
 
+.link-footer {
+    color: white;
+}
+
+.link-footer:hover {
+    color: #8BA2FF;
+}
+
+/*FOOTER*/
 
 /* Estilos adicionais podem ser adicionados conforme necessário */

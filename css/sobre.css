@@ -118,3 +118,19 @@ body {
         margin-right: 2rem;
     }
 }
+
+/*FOOTER*/
+
+.titulo-footer {
+    color: #8BA2FF;
+}
+
+.link-footer {
+    color: white;
+}
+
+.link-footer:hover {
+    color: #8BA2FF;
+}
+
+/*FOOTER*/

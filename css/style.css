@@ -290,6 +290,19 @@ body {
     align-items: center;
 }
 
+.text-card {
+    border-radius: 40px;
+    text-align: justify;
+    border: 3px solid black;
+}
+
+.text-card:hover {
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 0px 20px #8BA2FF;
+    transform: scale(1.1);
+    top: -4px;
+}
+
 @media (min-width: 768px) and (max-width: 1084px) {
     .cards {
         flex-direction: column;
@@ -367,14 +380,6 @@ section .cards .text-card h3 {
 
 /* ANIMAÇÃO DOS CARDS */
 
-.text-card {
-    border-radius: 40px;
-    text-align: justify;
-    border: 3px solid black;
-    box-shadow: 12px 12px 20px #000000;
-}
-
-
 /* ANIMAÇÃO DA PRIMEIRA IMAGEM*/
 
 .img1 {
@@ -408,3 +413,19 @@ section .cards .text-card h3 {
 }
 
 /* ANIMAÇÃO DA PRIMEIRA IMAGEM*/
+
+/*FOOTER*/
+
+.titulo-footer {
+    color: #8BA2FF;
+}
+
+.link-footer {
+    color: white;
+}
+
+.link-footer:hover {
+    color: #8BA2FF;
+}
+
+/*FOOTER*/

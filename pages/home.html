@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/home.js"></script>
   <title>BR INDIE</title>
 </head>
 <body>
@@ -42,12 +43,12 @@
     </nav>
   </header>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
         <h2 class="titulo fs-1 text-break text-center"><span>DESCUBRA, JOGUE, APAIXONE-SE PELO INESPERADO!</span>
         </h2>
-        <div class="d-flex flex-row mt-4 w-75 mx-auto" style="margin-bottom: 60px;">
+        <div class="d-flex flex-row mt-4 w-75 mx-auto" style="margin-bottom: 6rem;">
           <input type="search" class="form-control barra" placeholder="Pesquisar por jogos" aria-label="Pesquisar por jogos"
             aria-describedby="button-addon2">
           <button class="btn btn-primary btn-login ms-2 rounded-5" type="button" id="button-addon2">Pesquisar</button>
@@ -58,9 +59,7 @@
     <div class="row justify-content-center gap-3 mt-3 mb-cards">
       <div class="col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto">
         <div class="card">
-          <img class="card-img-top"
-            src="../img/img_home/momodora.avif"
-            alt="Card image cap">
+          <img class="card-img-top" id="gif" onmouseover="trocar()" onmouseout="trocar()" src="../img/img_home/momodora.avif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-titulo">Momodora</h5>
             <div class="d-flex justify-content-center mb-2">
@@ -161,54 +160,37 @@
       </p>
     </section>
     <section>
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Páginas</h5>
+          <h5 class="text-uppercase mb-3 titulo-footer">Páginas</h5>
           <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">início</a>
+            <li class="mb-2">
+              <a href="#!" class="link-footer text-decoration-none">início</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Sobre nós</a>
+              <a href="#!" class="link-footer text-decoration-none">Sobre nós</a>
             </li>
           </ul>
         </div>
         <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Termos de Uso</h5>
+          <h5 class="text-uppercase mb-3 titulo-footer">Contato</h5>
           <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
+            <li class="mb-2">
+              <a href="#!" class="link-footer text-decoration-none">br-inde@gmail.com</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="link-footer text-decoration-none">(13)99999-9999</a>
             </li>
           </ul>
         </div>
         <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Contato</h5>
+          <h5 class="text-uppercase mb-3 titulo-footer">Redes Sociais</h5>
           <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">br-inde@gmail.com</a>
+            <li class="mb-2">
+              <a href="#!" class="link-footer text-decoration-none">LinkedIn</a>
             </li>
             <li>
-              <a href="#!" class="text-white">(13)99999-9999</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Redes Sociais</h5>
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">LinkedIn</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">GitHub</a>
+              <a href="#!" class="link-footer text-decoration-none">GitHub</a>
             </li>
           </ul>
         </div>
@@ -220,6 +202,7 @@
     <a class="text-white" href="index.html">BR Indie</a>
   </div>
 </footer>
+
 <script>
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));

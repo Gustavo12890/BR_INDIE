@@ -75,14 +75,15 @@ body {
 .titulo {
     color: #8BA2FF;
     font-weight: 700;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
 }
 
 .barra {
     opacity: 0.5;
     background-color: #2A2731;
-    border-radius: 20px;
+    padding: 11px;
+    border-radius: 30px;
 }
 
 .barra:focus {
@@ -99,7 +100,7 @@ body {
 .card {
     background-color: #2A2731;
     color: white;
-    width: 18rem;
+    width: 26vw;
     border: none;
 }
 
@@ -108,7 +109,7 @@ body {
 }
 
 .card:hover {
-    transition: all 0.2s ease-out;
+    transition: all 0.4s ease-out;
     box-shadow: 0px 4px 8px #000000;
     top: -4px;
 }
@@ -117,9 +118,28 @@ body {
     margin-bottom: 30px;
 }
 
+.titulo-footer {
+    color: #8BA2FF;
+}
+
+.link-footer {
+    color: white;
+}
+
+.link-footer:hover {
+    color: #8BA2FF;
+}
+
 @media  (min-width: 1200px) and (max-width: 1400px) {
     .card {
-        width: 21rem;
+        width: 27vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .card {
+        width: 92vw;
         height: auto;
     }
 }
