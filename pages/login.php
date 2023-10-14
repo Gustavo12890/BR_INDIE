@@ -40,7 +40,7 @@
           <button id="btnLogin" type="submit">Entrar</button>
         </form>
         <p style="color: white">Não tem uma conta?
-          <a id="linkLogin" href="../pages/criarConta.html">Crie uma agora mesmo</a>
+          <a id="linkLogin" href="../pages/criarConta.php">Crie uma agora mesmo</a>
         </p>
       </div>
     </div>

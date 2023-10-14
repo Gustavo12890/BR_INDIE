@@ -14,7 +14,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid">
-        <a class="navbar-brand logo link-hover" href="index.html"><img src="../img/img_landing/logo.png" alt=""
+        <a class="navbar-brand logo link-hover" href="index.php"><img src="../img/img_landing/logo.png" alt=""
             style="width: 50px; height: auto;"> INDIE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,13 @@
               <a class="nav-link link-hover" aria-current="page" href="#">Encontrar Jogos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-hover" href="enviarProjeto.html">Enviar Projetos</a>
+              <a class="nav-link link-hover" href="enviarProjeto.php">Enviar Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-hover" href="sobre.html">Sobre</a>
+              <a class="nav-link link-hover" href="sobre.php">Sobre</a>
             </li>
           </ul>
-          <a class="text-decoration-none" href="perfil.html">
+          <a class="text-decoration-none" href="perfil.php">
             <div class="icone-perfil d-flex align-items-center justify-content-end">
               <p class="me-3 text-white fs-6 mt-3">Jolyne Kujo</p>
               <img class="perfil-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
@@ -72,7 +72,7 @@
       </div>
       <div class="col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto">
         <div class="card">
-          <a href="../pages/projeto.html"><img class="card-img-top" src="../img/img_home/celeste.png" alt="Card image cap"></a>
+          <a href="../pages/projeto.php"><img class="card-img-top" src="../img/img_home/celeste.png" alt="Card image cap"></a>
           <div class="card-body">
             <h5 class="card-titulo">Celeste</h5>
             <div class="d-flex justify-content-center mb-2">

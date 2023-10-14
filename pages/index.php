@@ -20,13 +20,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5" >
           <li class="nav-item">
-            <a class="nav-link link-hover" aria-current="page" href="home.html">Encontrar Jogos</a>
+            <a class="nav-link link-hover" aria-current="page" href="home.php">Encontrar Jogos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-hover" href="sobre.html">Sobre</a>
+            <a class="nav-link link-hover" href="sobre.php">Sobre</a>
           </li>
         </ul>
-        <form class="d-flex justify-content-center" action="login.html">
+        <form class="d-flex justify-content-center" action="login.php">
           <button class="btn btn-primary botao-login rounded-4 me-4" type="submit" style="width: 80px;">Entrar</button>
         </form>
       </div>
@@ -38,7 +38,7 @@
       <div class="col-12 col-sm-6 col-md-6 col-lg-6 textos">
         <h2 class="titulo fs-1 text-break"><span>CRIE, CONHEÇA, DIVIRTA-SE<p>E COMPARTILHE</p></span></h2>
         <p class="frase fs-3"><span>Um mundo de possibilidades infinitas.</span></p>
-        <a href="criarConta.html"><button class="botao-cadastro p-2 rounded-4 mt-2 fs-5" type="submit">Cadastre-se</button></a>
+        <a href="criarConta.php"><button class="botao-cadastro p-2 rounded-4 mt-2 fs-5" type="submit">Cadastre-se</button></a>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6">
         <div class="ms-5">
