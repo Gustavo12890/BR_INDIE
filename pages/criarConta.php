@@ -12,7 +12,7 @@
     <header class="header-login">
         <a class="navbar-brand logo fs-5 ms-4" href="index.php"><img src="../img/img_landing/logo.png" alt="" style="width: 60px; height: auto;"> INDIE</a>
     </header>
-    <div class="d-flex position-relative justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="d-flex position-relative justify-content-center align-items-center" >
         <div id="carouselExampleSlidesOnly" class="background-img" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -55,7 +55,7 @@
                     <input class="radio-cadastro" type="radio" id="contaDesenvolvedor" name="tipoConta" value="desenvolvedor" required>
 
                     <label class="label-cadastro" for="contaDesenvolvedor">Desenvolvedor</label><br><br>
-                    <p class="label-cadastro">Já possui uma conta? <a class="link-login" href="../pages/login.html">Entre</a></p>
+                    <p class="label-cadastro">Já possui uma conta? <a class="link-login" href="../pages/login.php">Entre</a></p>
                     <button class="btn-cadastro">Cadastrar</button>
                     
                     <p class="label-cadastro mt-3">Ao se cadastrar, você aceita os 
