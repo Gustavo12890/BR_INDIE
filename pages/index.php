@@ -42,7 +42,7 @@
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6">
         <div class="ms-5">
-        <img class="img-fluid img1" src="../img/img_landing/celeste.png" alt="" width="600px" height="auto">
+        <img class="img-fluid img1" src="../img/img_landing/celeste2.png" alt="" width="600px" height="auto">
       </div>
       </div>
     </div>
