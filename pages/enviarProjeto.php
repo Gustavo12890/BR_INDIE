@@ -141,6 +141,16 @@
                         <img  class="form-img" id="input-img3"  class="input-img">
                     </div>
 
+                    <div class="img-adicional">
+                        <div class="txt-img-container">
+                        <p class="img-texto"><strong>Gif (opcional):</strong></p>
+                        <label class="btn-img-adicional" for="gif">Enviar arquivo</label>
+                        </div>
+                        <input  class="form-texto-img" type="file" id="gif" onchange="previewgif()" accept="image/*"><br>
+                        <img  class="form-img" id="input-gif"  class="input-img">
+                    </div>
+
+
                 <div class="form-cor">
                     <label class="form-texto-cor" for="background-color">Cor de Background:</label>
                     <input class="formcor-tamanho" type="color" id="background-color" value="#ffffff">
@@ -212,6 +222,22 @@
                 reader3.readAsDataURL(imagem3);
             } else {
                 preview3.src = "";
+            }
+        }
+
+        function previewgif() {
+            var gif = document.getElementById('gif').files[0];
+            var previewgif = document.getElementById('input-gif');
+            var readergif = new FileReader();
+
+            readergif.onloadend = function () {
+                previewgif.src = readergif.result;
+            }
+
+            if (gif) {
+                readergif.readAsDataURL(gif);
+            } else {
+                previewgif.src = "";
             }
         }
     </script>
