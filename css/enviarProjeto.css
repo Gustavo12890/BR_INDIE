@@ -192,6 +192,20 @@ input[type="file"] {
 
 }
 
+.img-texto-preview{
+    color: white;
+    margin-top: 7.5%;
+    margin-right: 3%;
+}
+
+.txt-img-preview-container{
+    display:flex;
+    flex-wrap: wrap; 
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 32%;
+}
+
 .img-texto-capa {
     color: white;
 }

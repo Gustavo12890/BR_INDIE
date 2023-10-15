@@ -142,8 +142,8 @@
                     </div>
 
                     <div class="img-adicional">
-                        <div class="txt-img-container">
-                        <p class="img-texto"><strong>Preview do jogo (opcional):</strong></p>
+                        <div class="txt-img-preview-container">
+                        <p class="img-texto-preview"><strong>Preview do jogo (opcional):</strong></p>
                         <label class="btn-img-adicional" for="gif">Enviar arquivo</label>
                         </div>
                         <input  class="form-texto-img" type="file" id="gif" onchange="previewgif()" accept="image/*"><br>
