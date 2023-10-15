@@ -12,7 +12,7 @@
     <header class="header-login">
         <a class="navbar-brand logo fs-5 ms-4" href="index.php"><img src="../img/img_landing/logo.png" alt="" style="width: 60px; height: auto;"> INDIE</a>
     </header>
-    <div class="d-flex position-relative justify-content-center align-items-center" >
+    <div class="background d-flex position-relative justify-content-center align-items-center" >
         <div id="carouselExampleSlidesOnly" class="background-img" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -32,7 +32,9 @@
 
         <div class="form-container mt-4">
             <div class="form-cadastro">
-                <form>
+            <form>
+            <div class="row">
+                <div class="col-md-6 px-4 form-esquerdo">
                     <label class="label-cadastro">Nome de usuário:</label>
                     <input class="input-cadastro" type="text" id="nomeUser" required><br><br>
 
@@ -44,25 +46,30 @@
 
                     <label class="label-cadastro">Confirmação de Senha:</label>
                     <input class="input-cadastro" type="password" id="confirmSenha" required><br><br>
+                </div>
 
-                    <label class="label-cadastro" for="nascimento">Data de Nascimento:</label>
+                <div class="col-md-6 px-4">
+                    <label class="label-cadastro nascimento" for="nascimento">Data de Nascimento:</label>
                     <input class="input-cadastro" type="date" id="nascimento" required><br><br>
 
                     <label class="label-cadastro">Qual o tipo de conta?</label><br>
                     <input class="radio-cadastro" type="radio" id="contaComum" name="tipoConta" value="comum" required>
-
                     <label class="label-cadastro" for="contaComum">Comum</label><br>
-                    <input class="radio-cadastro" type="radio" id="contaDesenvolvedor" name="tipoConta" value="desenvolvedor" required>
-
-                    <label class="label-cadastro" for="contaDesenvolvedor">Desenvolvedor</label><br><br>
-                    <p class="label-cadastro">Já possui uma conta? <a class="link-login" href="../pages/login.php">Entre</a></p>
-                    <button class="btn-cadastro">Cadastrar</button>
                     
-                    <p class="label-cadastro mt-3">Ao se cadastrar, você aceita os 
-                        <a class="link-login" href="#">Termos de Uso</a> e a 
-                        <a class="link-login" href="#">Política de Privacidade</a>
-                    </p>
-                </form>
+                    <input class="radio-cadastro" type="radio" id="contaDesenvolvedor" name="tipoConta" value="desenvolvedor" required>
+                    <label class="label-cadastro" for="contaDesenvolvedor">Desenvolvedor</label><br><br>
+
+                    <p class="label-cadastro">Já possui uma conta? <a class="link-login" href="../pages/login.php">Entre</a></p>
+                    <button class="btn btn-cadastro btn-lg float-right">Cadastrar</button>
+
+                </div>
+            </div>
+            <p class="label-cadastro termos mt-3">Ao se cadastrar, você aceita os 
+                <a class="link-login" href="#">Termos de Uso</a> e a 
+                <a class="link-login" href="#">Política de Privacidade</a>
+            </p>
+        </form>
+
             </div>
         </div>
     </div>

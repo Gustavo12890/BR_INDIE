@@ -2,8 +2,17 @@ body {
     background: linear-gradient(180deg, rgba(96,52,127,1) 0%, rgba(191,73,146,1) 35%, rgba(110,42,86,1) 100%);
     backdrop-filter: brightness(0.7) blur(5px);
     font-family: Poppins;
+
 }
 
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
 
 /* CSS BARRA DE SCROLL */
@@ -57,7 +66,6 @@ body {
 
 .form-container {
     justify-content: center;
-    margin-bottom:3%;
 }
 
 .form-cadastro{
@@ -84,6 +92,7 @@ body {
     display: block;
     width: 100%;
     padding: 10px;
+    margin-top:10%;
     background-color: #8BA2FF;
     color: #fff;
     border: none;
@@ -99,6 +108,19 @@ body {
     color: white;
     font-weight: bold;
 
+}
+
+.form-esquerdo{
+    margin-bottom:-4%;
+}
+
+.nascimento{
+    margin-top:5%;
+}
+
+.termos{
+    margin-left:1%;
+    margin-bottom:-1%;
 }
 
 .link-login{
