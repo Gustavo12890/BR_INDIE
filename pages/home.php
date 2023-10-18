@@ -199,7 +199,7 @@
   </div>
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     ©2023 BR Indie Enterprises
-    <a class="text-white" href="index.html">BR Indie</a>
+    <a class="text-white" href="index.php">BR Indie</a>
   </div>
 </footer>
 

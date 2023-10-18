@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="header-login">
-    <a class="navbar-brand logo fs-5 ms-4" href="index.html"><img src="../img/img_landing/logo.png" style="width: 60px; height: auto;"> INDIE</a>
+    <a class="navbar-brand logo fs-5 ms-4" href="index.php"><img src="../img/img_landing/logo.png" style="width: 60px; height: auto;"> INDIE</a>
   </header>
   <div class="container-fluid d-flex position-relative justify-content-center align-items-center" style="min-height: 100vh;">
     <div id="carouselExampleSlidesOnly" class="background-img" data-ride="carousel">
@@ -32,12 +32,12 @@
     <div class="container-fluid d-flex justify-content-center align-items-center">
       <div class="card-login">
         <h1 id="tituloLogin">Login</h1>
-        <form id="formLogin" action="home.html">
+        <form id="formLogin" action="../php/logar.php" method="POST">
           <label class="label-login" for="emailOrUsername">Email ou Usuário:</label>
-          <input class="input-login" type="text" id="emailUsuario" required>
+          <input class="input-login" type="text" id="emailUsuario" name="email" required>
           <label class="label-login" for="password">Senha:</label>
-          <input class="input-login" type="password" id="senha" required>
-          <button id="btnLogin" type="submit">Entrar</button>
+          <input class="input-login" type="password" name="senha" required>
+          <button id="btnLogin" type="submit" value="Entrar">Entrar</button>
         </form>
         <p style="color: white">Não tem uma conta?
           <a id="linkLogin" href="../pages/criarConta.php">Crie uma agora mesmo</a>

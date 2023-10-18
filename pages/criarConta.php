@@ -32,17 +32,17 @@
 
         <div class="form-container mt-4">
             <div class="form-cadastro">
-            <form>
+            <form action="../php/cadastro.php" method="POST">
             <div class="row">
                 <div class="col-md-6 px-4 form-esquerdo">
                     <label class="label-cadastro">Nome de usuário:</label>
-                    <input class="input-cadastro" type="text" id="nomeUser" required><br><br>
+                    <input class="input-cadastro" type="text" name="nome" id="nome" required><br><br>
 
                     <label class="label-cadastro">Email:</label>
-                    <input class="input-cadastro" type="email" id="email" required><br><br>
+                    <input class="input-cadastro" type="email" name="email" id="email" required><br><br>
 
                     <label class="label-cadastro">Senha:</label>
-                    <input class="input-cadastro" type="password" id="senha" required><br><br>
+                    <input class="input-cadastro" type="password" name="senha" id="senha" required><br><br>
 
                     <label class="label-cadastro">Confirmação de Senha:</label>
                     <input class="input-cadastro" type="password" id="confirmSenha" required><br><br>
