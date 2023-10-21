@@ -65,18 +65,38 @@ body {
 
 /* CSS BARRA DE NAVEGAÇÃO */
 
-
-.perfil-capa {
-    position: relative;
-    width: 100%;
-    z-index: 0;
+.capa-foto {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.capa-foto {
-    width: 851px; /* Largura aproximada de uma foto de capa típica do Facebook */
-    height: 315px; /* Altura aproximada de uma foto de capa típica do Facebook */
-    width: 100%;
-    object-fit: cover;
+.foto-perfil {
+    border-radius: 50%;
+    border: 6px solid black;
+    margin-top: -5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.nome-perfil {
+    color: #ffffff;
+}
+
+.bseguir-perfil {
+    background-color: #000000;
+    color: #ffffff;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 14px;
+    border: none;
+    margin-right: 2rem;
+}
+
+.qt-seguidores {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .perfil-nome {
@@ -91,11 +111,7 @@ body {
 
 
 .perfil-foto {
-    width: 150px; /* Tamanho da foto de perfil */
-    height: 150px;
     border-radius: 50%; /* Para torná-la redonda */
-    margin-top: -75px; /* Ajuste para centralizar verticalmente */
-    z-index: 12;
 }
 
 .perfil-nav-foto {
@@ -113,19 +129,13 @@ body {
 /* ESTILOS PARA OS ELEMENTOS DE ESTATÍSTICAS DO PERFIL */
 
 .perfil-stats {
-    justify-content: space-between;
-    width: 100%;
-    max-width: 400px; /* Ajuste de largura máxima para os elementos de estatísticas */
-    margin-bottom: 210px;
     color: #FFFFFF;
-    margin-left: 4rem;
+    width: 100%;
+    margin-right: 10rem;
 }
 
 .perfil-stats-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 3rem;
+    gap: 20px;
 }
 
 .button-seguir {
@@ -134,6 +144,7 @@ body {
     font-weight: 200;
     border: none;
     text-decoration: none;
+    width: 19.5rem;
 }
 
 .perfil-bio {

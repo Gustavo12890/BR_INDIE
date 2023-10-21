@@ -10,6 +10,7 @@
   <title>Perfil do Usuário</title>
 </head>
 <body>
+
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid">
@@ -41,79 +42,90 @@
       </div>
     </nav>
   </header>
-  <section class="d-flex flex-column align-items-center" style="background-color: #2A2731">
-    <div class="perfil-capa">
-      <img class="capa-foto"
-        src="https://i.pinimg.com/736x/13/99/b3/1399b380c61a2b146c8f1b919f99030e--ocean-art-jojos-bizarre-adventure.jpg"
-        alt="Foto de Capa">
-    </div>
-    <img class="perfil-foto"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU"
-      alt="Foto de Perfil">
-    <div class="perfil-info">
-      <h1 class="perfil-nome">Jolyne Kujo</h1>
-      <p class="data-nasc">01 de janeiro de 2020</p>
-      <p class="perfil-bio mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vero necessitatibus vel debitis porro delectus ex harum. Ea, officia vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vero necessitatibus vel debitis porro delectus ex harum. Ea, officia vel.</p>
-    </div>
-    <div class="perfil-stats d-flex flex-column">
-      <div class="perfil-stats-left">
-        <p>Seguidores: 1000</p>
-        <p>Projetos Criados: 50</p>
-      </div>
-      <button class="button-seguir btn btn-primary rounded-4" type="submit" style="width: 21rem;">Seguir</button>
-    </div>
-  </section>
 
-  <footer class="bg-dark text-center text-white">
-    <div class="container p-4">
-      <section class="mb-4">
-        <p>
-          Nós somos BR Indie, uma plataforma gratuita, e independente, onde os jogadores e desenvolvedores de jogos podem se expressar e mostrar a sua criatividade. Temos como objetivo fomentar essa grande comunidade de criadores independentes.
-        </p>
-      </section>
-      <section>
-        <div class="row d-flex justify-content-center">
-          <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-3 titulo-footer">Páginas</h5>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-2">
-                <a href="#!" class="link-footer text-decoration-none">início</a>
-              </li>
-              <li>
-                <a href="#!" class="link-footer text-decoration-none">Sobre nós</a>
-              </li>
-            </ul>
+    <img class="capa-foto" src="../img/img_perfil/teste2.jpg" alt="">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="d-flex">
+              <img class="foto-perfil ms-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="">
+              <div>
+                  <h2 class="nome-perfil ms-3 mt-4">Jolyne kujo</h2>
+                  <p class="text-white ms-3 fs-6">01 de setembro de 2023</p>
+                  <p class="text-white ms-3">Imagine alguma descrição muito boa aqui.</p>
+              </div>
+              <div style="margin-right: 2rem" class="ms-auto">
+                  <div class="mt-4 d-flex justify-content-end">
+                    <button class="bseguir-perfil">+ Seguir</button>
+                  </div>
+                  <div class="mt-3 d-flex gap-5">
+                    <div>
+                        <h5 style="color: #8BA2FF">Seguidores</h5>
+                        <p class="qt-seguidores">10.000</p>
+                    </div>
+                    <div>
+                        <h5  style="color: #8BA2FF">Projetos criados</h5>
+                        <p class="qt-seguidores">+100</p>
+                    </div>
+                </div>
+              </div>
           </div>
-          <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-3 titulo-footer">Contato</h5>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-2">
-                <a href="#!" class="link-footer text-decoration-none">br-inde@gmail.com</a>
-              </li>
-              <li>
-                <a href="#!" class="link-footer text-decoration-none">(13)99999-9999</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-3 titulo-footer">Redes Sociais</h5>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-2">
-                <a href="#!" class="link-footer text-decoration-none">LinkedIn</a>
-              </li>
-              <li>
-                <a href="#!" class="link-footer text-decoration-none">GitHub</a>
-              </li>
-            </ul>
-          </div>
+          
         </div>
-      </section>
+      </div>
     </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      ©2023 BR Indie Enterprises
-      <a class="text-white" href="index.php">BR Indie</a>
-    </div>
-  </footer>
-
+ 
+ <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+          <section class="mb-4">
+            <p>
+              Nós somos BR Indie, uma plataforma gratuita, e independente, onde os jogadores e desenvolvedores de jogos podem se expressar e mostrar a sua criatividade. Temos como objetivo fomentar essa grande comunidade de criadores independentes.
+            </p>
+          </section>
+          <section>
+            <div class="row d-flex justify-content-center">
+              <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-3 titulo-footer">Páginas</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <a href="#!" class="link-footer text-decoration-none">início</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="link-footer text-decoration-none">Sobre nós</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-3 titulo-footer">Contato</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <a href="#!" class="link-footer text-decoration-none">br-inde@gmail.com</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="link-footer text-decoration-none">(13)99999-9999</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-3 titulo-footer">Redes Sociais</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <a href="#!" class="link-footer text-decoration-none">LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="link-footer text-decoration-none">GitHub</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          ©2023 BR Indie Enterprises
+          <a class="text-white" href="index.html">BR Indie</a>
+        </div>
+      </footer>
 </body>
 </html>
