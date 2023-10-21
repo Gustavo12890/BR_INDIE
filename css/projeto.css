@@ -83,6 +83,11 @@ body {
   max-width: 53vw;
 }
 
+.texto-projeto {
+  text-align: justify;
+  color: #ffffff;
+}
+
 .cover-image {
   max-width: 100%;
   height: auto;
@@ -165,3 +170,19 @@ button {
 }
 
 /*FOOTER*/
+
+@media (min-width: 992px) and (max-width: 1920px) {
+  .container {
+    width: 70%;
+  }
+
+  .imagens-projeto {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 70%;
+  }
+}
