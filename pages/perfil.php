@@ -1,3 +1,16 @@
+<?php 
+$time = 2 * 60 * 60; // Definido 2 horas.
+session_set_cookie_params($time);
+session_start();
+if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
+    require ("../php/conexão.php");
+    $tipo_acesso = $_SESSION["usuario"][1];
+    $nome = $_SESSION["usuario"][0];
+} else {
+    header ('location: index.php');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
