@@ -1,15 +1,3 @@
-<?php 
-$time = 2 * 60 * 60; // Definido 2 horas.
-session_set_cookie_params($time);
-session_start();
-if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("../php/conexão.php");
-    $tipo_acesso = $_SESSION["usuario"][1];
-    $nome = $_SESSION["usuario"][0];
-} else {
-    header ('location: index.php');
-  }
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -46,7 +34,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
           </ul>
           <a class="text-decoration-none" href="perfil.php">
             <div class="icone-perfil d-flex align-items-center justify-content-end">
-              <p class="me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
+              <p class="me-3 text-white fs-6 mt-3">Jolyne Kujo</p>
               <img class="perfil-nav-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
             </div>
           </a>
@@ -59,12 +47,12 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 ">
 
-          <div class="d-flex">
+          <div class="d-flex flex-column flex-lg-row">
               <img class="foto-perfil ms-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="">
-              <div>
-                  <h2 class="nome-perfil ms-3 mt-4"><?php echo $nome; ?></h2>
+              <div class="box-perfil">
+                  <h2 class="nome-perfil ms-3 mt-4">Jolyne kujo</h2>
                   <p class="text-white ms-3 fs-6">01 de setembro de 2023</p>
                   <p class="text-white ms-3">Imagine alguma descrição muito boa aqui.</p>
               </div>
@@ -72,21 +60,47 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                   <div class="mt-4 d-flex justify-content-end">
                     <button class="bseguir-perfil">+ Seguir</button>
                   </div>
-                  <div class="mt-3 d-flex gap-5">
-                    <div>
-                        <h5 style="color: #8BA2FF">Seguidores</h5>
-                        <p class="qt-seguidores">10.000</p>
-                    </div>
-                    <div>
-                        <h5  style="color: #8BA2FF">Projetos criados</h5>
-                        <p class="qt-seguidores">+100</p>
-                    </div>
-                </div>
+                  <div class="mt-4 d-flex gap-5">
+                      <div>
+                          <h5 style="color: #8BA2FF">Seguidores</h5>
+                          <p class="qt-seguidores">1000</p>
+                      </div>
+                      <div>
+                          <h5 style="color: #8BA2FF">Projetos criados</h5>
+                          <p class="qt-seguidores">01</p>
+                      </div>
+                  </div>
               </div>
-          </div>
+           </div>
           
         </div>
       </div>
+      
+      <div class="row mt-5">
+          <div class="col-md-4">
+            <h3 style="color: #8BA2FF" class="mt-5 ms-5">Projetos</h3>
+            <p class="text-white ms-5">Alguns dos meus jogos criados.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="teste">
+                <img class="projeto-perfil" src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+                <div class="teste"></div>
+          </div>
+      </div>
+      
+      <div class="row mt-4">
+          <div class="col-md-4"></div> <!--Gambiarra para manter os cards a direita da tela-->
+          <div class="col-md-4">
+              <div class="teste"></div>
+          </div>
+          <div class="col-md-4">
+              <div class="teste"></div>
+          </div>
+      </div>
+      
     </div>
  
  <footer class="bg-dark text-center text-white">
