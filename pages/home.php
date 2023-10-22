@@ -1,3 +1,15 @@
+<?php 
+$time = 2 * 60 * 60; // Definido 2 horas.
+session_set_cookie_params($time);
+session_start();
+if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
+    require ("../php/conexão.php");
+    $tipo_acesso = $_SESSION["usuario"][1];
+    $nome = $_SESSION["usuario"][0];
+} else {
+    header ('location: index.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,7 +46,7 @@
           </ul>
           <a class="text-decoration-none" href="perfil.php">
             <div class="icone-perfil d-flex align-items-center justify-content-end">
-              <p class="me-3 text-white fs-6 mt-3">Jolyne Kujo</p>
+              <p class="me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
               <img class="perfil-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
             </div>
           </a>
@@ -46,7 +58,7 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="titulo fs-1 text-break text-center"><span>DESCUBRA, JOGUE, APAIXONE-SE PELO INESPERADO!</span>
+        <h2 class="titulo fs-1 text-break text-center"><?php echo "Bem vindo(a), ". $_SESSION["usuario"][0]?></span>
         </h2>
         <div class="d-flex flex-row mt-4 w-75 mx-auto" style="margin-bottom: 6rem;">
           <input type="search" class="form-control barra" placeholder="Pesquisar por jogos" aria-label="Pesquisar por jogos"

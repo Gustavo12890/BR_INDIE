@@ -9,7 +9,7 @@ if ($query->rowCount()){
     $user = $query->fetchAll(PDO::FETCH_ASSOC)[0]; 
 
     session_start();
-    $_SESSION["usuario"] = array($user["nome"], $user["tipo_acesso"]);
+    $_SESSION["usuario"] = array($user["nm_usuario"], $user["tipo_acesso"]);
 
     if ($user["tipo_acesso"] == 1) {
     header('Location: ../pages/desenvolvedor.php');
@@ -22,7 +22,7 @@ if ($query->rowCount()){
     }
 
 } else {
-    header('Locaton: ../login.php');
+    header('Location: ../login.php');
     die();
 }
 
