@@ -104,15 +104,10 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             <div class="slider mySwiper" >
                 <div class="image-items swiper-wrapper">
                     <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png"alt=""></div>
-                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                </div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel2.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel3.jpg" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel4.png" alt=""></div>
+               </div>
                 <div class="swiper-button-next arrowButton right"></div>
                 <div class="swiper-button-prev arrowButton left"></div>
             </div>
@@ -181,11 +176,17 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
           loop: true,
           fade: true,
           grabCursor: true,
-          loopFillGroupWithBlank: true,
+          loopFillGroupWithBlank: true,   
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+
+          autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+          },
+          
           breakpoints: {
             500: {
               slidesPerView: 1,
