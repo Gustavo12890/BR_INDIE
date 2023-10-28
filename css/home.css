@@ -102,6 +102,7 @@ body {
     color: white;
     width: 26vw;
     border: none;
+    border-radius: 20px;
 }
 
 .card-titulo {
@@ -114,8 +115,16 @@ body {
     top: -4px;
 }
 
+.card-img-top {
+    border-radius: 20px;
+}
+
 .mb-cards {
     margin-bottom: 30px;
+}
+
+.genero-home {
+    width: 8rem;
 }
 
 .titulo-footer {
