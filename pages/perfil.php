@@ -21,6 +21,11 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <link rel="stylesheet" href="../css/perfil.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <title>Perfil do Usuário</title>
+    <!-- Link Swiper's CSS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
 </head>
 <body>
 
@@ -93,27 +98,26 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
           <div class="col-md-4">
             <h3 style="color: #8BA2FF" class="mt-5 ms-5">Projetos</h3>
             <p class="text-white ms-5">Alguns dos meus jogos criados.</p>
-          </div>
-          <div class="col-md-4">
-            <div class="teste">
-                <img class="projeto-perfil" src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252" alt="">
+      </div>
+      <div class="swiper-tamanho">
+          <div class="swiper-dos-crias">
+            <div class="slider mySwiper" >
+                <div class="image-items swiper-wrapper">
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png"alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
+                    <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next arrowButton right"></div>
+                <div class="swiper-button-prev arrowButton left"></div>
             </div>
-          </div>
-          <div class="col-md-4">
-                <div class="teste"></div>
-          </div>
-      </div>
-      
-      <div class="row mt-4">
-          <div class="col-md-4"></div> <!--Gambiarra para manter os cards a direita da tela-->
-          <div class="col-md-4">
-              <div class="teste"></div>
-          </div>
-          <div class="col-md-4">
-              <div class="teste"></div>
-          </div>
-      </div>
-      
+        </div> 
+      </div>   
     </div>
  
  <footer class="bg-dark text-center text-white">
@@ -166,5 +170,37 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
           <a class="text-white" href="index.html">BR Indie</a>
         </div>
       </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerGroup: 1,
+          loop: true,
+          fade: true,
+          grabCursor: true,
+          loopFillGroupWithBlank: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            868: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1250: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          },
+        });
+    </script>
 </body>
 </html>
