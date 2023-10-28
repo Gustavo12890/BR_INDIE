@@ -22,10 +22,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <title>Perfil do Usuário</title>
     <!-- Link Swiper's CSS -->
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
 

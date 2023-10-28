@@ -128,19 +128,38 @@ button {
   cursor: pointer;
 }
 
-.like-button {
-  background-color: #4CAF50; 
-  color: white;
+.like-projeto {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1.1rem;
+  color: #000000;
+  cursor: pointer;
 }
 
-.dislike-button {
-  background-color: #f44336; 
-  color: white;
+.like-projeto:hover path {
+  fill: #6a88ff;
 }
 
-.favorite-button {
-  background-color: #FFD700; 
-  color: black;
+.label {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.label svg {
+  margin-right: 4px;
+}
+
+.label path {
+  fill: #8a8d9b;
+}
+
+.number {
+  color: #8a8d9b;
 }
 
 .comment-box {
