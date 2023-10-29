@@ -101,19 +101,19 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
       <div class="slider mySwiper">
         <div class="image-items swiper-wrapper">
           <div class="swiper-slide">
-            <img src="../img/img_login_cadastro/carrosel1.png" alt="">
+            <img class="swiper-img" src="../img/img_login_cadastro/carrosel1.png" alt="">
             <p>Dandy Ace</p>
           </div>
           <div class="swiper-slide">
-            <img src="../img/img_login_cadastro/carrosel2.jpg" alt="">
+            <img class="swiper-img" src="../img/img_login_cadastro/carrosel2.jpg" alt="">
             <p>Dandara Trials of Fear Edition</p>
           </div>
           <div class="swiper-slide">
-            <img src="../img/img_login_cadastro/carrosel3.jpg" alt="">
+            <img class="swiper-img" src="../img/img_login_cadastro/carrosel3.jpg" alt="">
             <p>Horizon Chase Turbo</p>
           </div>
           <div class="swiper-slide">
-            <img src="../img/img_login_cadastro/carrosel4.png" alt="">
+            <img class="swiper-img" src="../img/img_login_cadastro/carrosel4.png" alt="">
             <p>Unsighted</p>
           </div>
         </div>

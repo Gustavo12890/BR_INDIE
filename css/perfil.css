@@ -263,6 +263,9 @@ body {
   text-align: center;
 }
 
+.swiper-img{
+    border-radius:20px;
+}
 /* Estilo para a imagem */
 .swiper-slide img {
   max-width: 100%;
