@@ -49,7 +49,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
           </ul>
           <a class="text-decoration-none" href="perfil.php">
             <div class="icone-perfil d-flex align-items-center justify-content-end">
-              <p class="me-3 text-white fs-6 mt-3">Jolyne Kujo</p>
+              <p class="me-3 text-white fs-6 mt-3"><?php echo $nome ?></p>
               <img class="perfil-nav-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
             </div>
           </a>
@@ -67,7 +67,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
           <div class="d-flex flex-column flex-lg-row">
               <img class="foto-perfil ms-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="">
               <div class="box-perfil">
-                  <h2 class="nome-perfil ms-3 mt-4">Jolyne kujo</h2>
+                  <h2 class="nome-perfil ms-3 mt-4"><?php echo $nome ?></h2>
                   <p class="text-white ms-3 fs-6">01 de setembro de 2023</p>
                   <p class="text-white ms-3">Imagine alguma descrição muito boa aqui.</p>
               </div>
