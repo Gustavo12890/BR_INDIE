@@ -35,6 +35,13 @@ body {
     height: 100%;
 }
 
+.container-swiper{
+    margin-bottom:10%;
+}
+
+.projeto-txt{
+    margin-bottom: 4%;
+}
 .slider{
     margin: 0 40px;
     height: 100%;
@@ -76,6 +83,8 @@ body {
   .arrowButton.left{
     left: 0 !important;
   }
+
+  
   
   .arrowButton.right{
     right: 0 !important;
