@@ -91,26 +91,39 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
         </div>
       </div>
 
-        <div class="container-swiper">
-              <div class="col-md-4 projeto-txt">
-                <h3 style="color: #8BA2FF" class="mt-5 ms-5">Projetos</h3>
-                <p class="text-white ms-5">Alguns dos meus jogos criados.</p>
-              </div>
-          <div class="swiper-tamanho">
-                <div class="swiper-dos-crias">
-                  <div class="slider mySwiper" >
-                      <div class="image-items swiper-wrapper">
-                          <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel1.png" alt=""></div>
-                          <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel2.jpg" alt=""></div>
-                          <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel3.jpg" alt=""></div>
-                          <div class="image swiper-slide"><img src="../img/img_login_cadastro/carrosel4.png" alt=""></div>
-                    </div>
-                      <div class="swiper-button-next arrowButton right"></div>
-                      <div class="swiper-button-prev arrowButton left"></div>
-                  </div>
-              </div> 
-          </div>   
+      <div class="container-swiper">
+  <div class="col-md-4 projeto-txt">
+    <h3 style="color: #8BA2FF" class="mt-5 ms-5">Projetos</h3>
+    <p class="text-white ms-5">Alguns dos meus jogos criados.</p>
+  </div>
+  <div class="swiper-tamanho">
+    <div class="swiper-dos-crias">
+      <div class="slider mySwiper">
+        <div class="image-items swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/img_login_cadastro/carrosel1.png" alt="">
+            <p>Dandy Ace</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/img_login_cadastro/carrosel2.jpg" alt="">
+            <p>Dandara Trials of Fear Edition</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/img_login_cadastro/carrosel3.jpg" alt="">
+            <p>Horizon Chase Turbo</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/img_login_cadastro/carrosel4.png" alt="">
+            <p>Unsighted</p>
+          </div>
         </div>
+        <div class="swiper-button-next arrowButton right"></div>
+        <div class="swiper-button-prev arrowButton left"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
  <footer class="bg-dark text-center text-white">
         <div class="container p-4">
           <section class="mb-4">

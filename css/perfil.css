@@ -40,7 +40,7 @@ body {
 }
 
 .projeto-txt{
-    margin-bottom: 4%;
+    margin-bottom: 5%;
 }
 .slider{
     margin: 0 40px;
@@ -71,23 +71,23 @@ body {
   
   .arrowButton{
     position: absolute !important;
-    top: 50% !important;
-    color: black !important;
+    top: 40% !important;
+    color: rgb(253, 253, 253) !important;
     width: 50px !important;
     height: 50px !important;
     border-radius: 50% !important;
-    background-color: white !important;
+    background-color: #8BA2FF !important;
     padding: 10px !important;
   }
   
   .arrowButton.left{
-    left: 0 !important;
+    left: 2 !important;
   }
 
   
   
   .arrowButton.right{
-    right: 0 !important;
+    right: 2 !important;
   }
   
   .arrowButton::after{
@@ -248,6 +248,33 @@ body {
     text-decoration: none;
     width: 19.5rem;
 }
+
+/* Estilo para o contêiner do Swiper */
+.swiper-container {
+  width: 100%;
+  height: 300px; /* Defina a altura desejada */
+}
+
+/* Estilo para cada slide */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo para a imagem */
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Estilo para o nome da imagem */
+.swiper-slide p {
+    color:white;
+  margin-top: 10px; /* Ajuste o valor de margem superior conforme necessário */
+}
+
 
 .perfil-bio {
     margin-top: 10px;
