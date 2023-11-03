@@ -26,6 +26,19 @@ body {
     background: #6a88ff;
 }
 
+.dropdown-menu{
+    background-color:#000000;
+
+    
+}
+.dropdown-txt{
+    color:#ffffff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 /* CSS BARRA DE SCROLL */
 
 /* CSS BARRA DE NAVEGAÇÃO */
@@ -216,11 +229,21 @@ body {
     border-radius: 50%; /* Para torná-la redonda */
 }
 
+.icone-perfil{
+
+    width:150px;
+}
 .perfil-nav-foto {
     width: 60px; /* Tamanho da foto de perfil */
     height: 60px;
     border-radius: 50%; /* Para torná-la redonda */
-    margin-right: 30px;
+    margin-left:55%;
+
+}
+
+.nav-nome{
+    position:relative;
+    right:-75px;
 }
 
 .perfil-info {

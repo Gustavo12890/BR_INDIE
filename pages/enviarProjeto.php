@@ -1,3 +1,16 @@
+<?php 
+$time = 2 * 60 * 60; // Definido 2 horas.
+session_set_cookie_params($time);
+session_start();
+if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
+    require ("../php/conexão.php");
+    $tipo_acesso = $_SESSION["usuario"][1];
+    $nome = $_SESSION["usuario"][0];
+} else {
+    header ('location: index.php');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,12 +44,20 @@
               <a class="nav-link link-hover" href="sobre.php">Sobre</a>
             </li>
           </ul>
-          <a class="text-decoration-none" href="perfil.php">
-            <div class="icone-perfil d-flex align-items-center justify-content-center">
-              <p class="me-3 text-white fs-6 mt-3">Jolyne Kujo</p>
-              <img class="perfil-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
+          <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
+          <div class="dropdown show" id="myDropdown">
+            <div class="d-flex justify-content-end">
+              <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="icone-perfil d-flex align-items-center">
+                  <img class="perfil-nav-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
+                </div>
+              </span>
             </div>
-          </a>
+            <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-txt dropdown-item" href="perfil.php">Perfil</a>
+              <a class="dropdown-txt dropdown-item" href="login.php">Sair</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -241,5 +262,8 @@
             }
         }
     </script>
+    <script src="../js/perfil.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

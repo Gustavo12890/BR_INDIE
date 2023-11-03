@@ -44,12 +44,20 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
               <a class="nav-link link-hover" href="sobre.php">Sobre</a>
             </li>
           </ul>
-          <a class="text-decoration-none" href="perfil.php">
-            <div class="icone-perfil d-flex align-items-center justify-content-end">
-              <p class="me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
-              <img class="perfil-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
+          <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
+          <div class="dropdown show" id="myDropdown">
+            <div class="d-flex justify-content-end">
+              <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="icone-perfil d-flex align-items-center">
+                  <img class="perfil-nav-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
+                </div>
+              </span>
             </div>
-          </a>
+            <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-txt dropdown-item" href="perfil.php">Perfil</a>
+              <a class="dropdown-txt dropdown-item" href="login.php">Sair</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -214,7 +222,9 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <a class="text-white" href="index.php">BR Indie</a>
   </div>
 </footer>
-
+  <script src="../js/perfil.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
