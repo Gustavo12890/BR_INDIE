@@ -86,7 +86,7 @@ require("../php/conexao.php");
           <div class='card-body'>
             <h5 class='card-titulo'>$titulo_limitado</h5>
             <div class='d-flex justify-content-center mb-2'>
-              <a href='#' class='btn btn-success genero-home'>$projeto[nm_genero1]</a>
+              <a href='#' class='btn genero-home'>$projeto[nm_genero1]</a>
             </div>
             <p class='card-text'>$texto_limitado</p>
           </div>

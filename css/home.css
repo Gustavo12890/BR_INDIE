@@ -150,6 +150,12 @@ body {
 
 .genero-home {
     width: 8rem;
+    background-color: #8BA2FF;
+    border: none;
+}
+
+.genero-home:hover {
+    background-color: #8BA2FF;
 }
 
 .titulo-footer {
