@@ -163,7 +163,7 @@ form button:hover {
 
 .form-texto {
     color: white;
-
+    margin-bottom:1%;
 }
 
 #titulo {
@@ -186,10 +186,14 @@ form button:hover {
     border-radius: 20px;
 }
 
+
+.form-btn-container{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+}
 .form-btn {
     margin-top: 2%;
-    display: block;
-    margin-left: 39%;
     width: 20%;
     padding: 10px;
     background-color: #8BA2FF;
@@ -302,7 +306,7 @@ input[type="file"] {
 }
 
 .form-genero {
-
+    margin-top:2%;
     flex: 1;
     /* Para que cada campo tenha a mesma largura */
     margin-right: 10px;
@@ -318,33 +322,47 @@ input[type="file"] {
 }
 
 .form-cor {
-    display: flex;
-    align-items: center;
-    width: 98.5%;
+    flex-direction:column;
+    width:400px ;
     flex-wrap: wrap;
+    text-align: center;
 }
 
+
+.form-cor-esquerdo {
+    flex-direction:column;
+    width:400px ;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
 .formcor-tamanho {
-    height: 50px;
-    margin-left: 2%;
+    height: 150px;
+
     margin-top: 2%;
 
 }
 
 .form-texto-cor {
-    width: 18%;
+    margin-left:2%;
     color: white;
-    margin-right: 2%;
     margin-top: 3%;
 }
 
+.form-cor-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:10%;
+    margin-top:3%;
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    justify-content: center; /* Centraliza horizontalmente os elementos filhos */
 
+}
 
 .input-genero {
     width: 300px;
     background-color: #ffffff;
     border-radius: 20px;
 }
-
-
 
