@@ -1,3 +1,4 @@
+//FUNÇÃO DOS BOTÕES LIKE, DESLIKE E FAVORITAR
 function countClicks(type) {
   // Obtém o elemento do contador com base no tipo de botão
   var contador = document.getElementById("contador-" + type);
@@ -10,7 +11,8 @@ function countClicks(type) {
   // Atualiza o texto do contador com o novo valor
   contador.textContent = contadorAtual;
   }
-
+  
+//FUNÇÃO DO MODAL
 function openModal() {
     document.getElementById("myModal").style.display = "block";
   }

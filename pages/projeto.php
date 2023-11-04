@@ -91,9 +91,9 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </div>
     <div class="imagens-projeto col-lg-4 col-12 col-md-12">
       <!--A classe "myImg" está sendo usada para identificar as imagens que abrirão no modal.-->
-      <img class="myImg mb-4 img-fluid" src="<?php echo $projeto['img_1']?>" alt="Imagem 1">
-      <img class="myImg mb-4 img-fluid" src="<?php echo $projeto['img_2']?>"alt="Imagem 2">
-      <img class="myImg img-fluid" src="<?php echo $projeto['img_3']?>" alt="Imagem 3">
+      <img class="hover-shadow cursor mb-4 img-fluid" src="<?php echo $projeto['img_1']?>" style="width:100%" onclick="openModal();currentSlide(1)" alt="Imagem 1">
+      <img class="hover-shadow cursor mb-4 img-fluid" src="<?php echo $projeto['img_2']?>" style="width:100%" onclick="openModal();currentSlide(2)" alt="Imagem 2">
+      <img class="hover-shadow cursor img-fluid" src="<?php echo $projeto['img_3']?>" style="width:100%" onclick="openModal();currentSlide(3)" alt="Imagem 3">
     </div>
       
       <div id="myModal" class="modal">
