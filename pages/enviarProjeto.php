@@ -172,20 +172,22 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         <input  class="form-texto-img" type="file" name="arquivo[4]" id="gif" onchange="previewgif()" accept="image/*"><br>
                         <img  class="form-img" id="input-gif"  class="input-img">
                     </div>
-
-                <div class="form-cor-container">
-                    <div class="form-cor-esquerdo">
-                        <label class="form-texto-cor">Cor de Background:</label>
-                        <input class="formcor-tamanho" id="cor" type="color" name="cor" value="#ffffff">
-                        <input id="hex_input" type="text" name="hex_input" readonly>
+                <div id="color-pickers">
+                    <div class="form-cor-container">
+                        <div class="form-cor-esquerdo">
+                            <label class="form-texto-cor">Cor de Background:</label>
+                            <input class="formcor-tamanho color-selector" id="cor" type="color" name="cor" value="#ffffff">
+                            <input class="hex-input" type="text" name="hex_input" readonly>
+                        </div>
+                        <div class="form-cor">
+                            <label class="form-texto-cor" for="background-color">Cor das bordas:</label>
+                            <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
+                            <input class="hex-input" type="text" name="hex_input2" readonly>
+                        </div>
                     </div>
-                    <div class="form-cor">
-                        <label class="form-texto-cor" for="background-color">Cor de background:</label>
-                        <input class="formcor-tamanho" type="color" id="background-color" value="#ffffff">
+                    <div class="form-btn-container">
+                        <button class="form-btn" name="submit" type="submit">Enviar</button>
                     </div>
-                </div>
-                <div class="form-btn-container">
-                    <button class="form-btn" name="submit" type="submit">Enviar</button>
                 </div>
             </form>
         </div>

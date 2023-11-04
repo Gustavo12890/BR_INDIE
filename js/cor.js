@@ -1,35 +1,42 @@
-var hexColorInput = document.getElementById('hex_input');
-var colorSelector = document.getElementById('cor');
-
+var colorPickers = document.getElementById('color-pickers');
+var hexInputs = colorPickers.querySelectorAll('.hex-input');
+var colorSelectors = colorPickers.querySelectorAll('.color-selector');
 
 var updateHex = function () {
-    hexColorInput.value = colorSelector.value;
+    hexInputs.forEach(function (hexInput, index) {
+        hexInput.value = colorSelectors[index].value;
+    });
 };
 
 updateHex();
 
-colorSelector.addEventListener('input', updateHex);
+colorSelectors.forEach(function (colorSelector) {
+    colorSelector.addEventListener('input', updateHex);
+});
 
 function updateSelector() {
-    var val = hexColorInput.value;
-    // Adicione o '#' se ausente
-    if (val.charAt(0) !== '#') val = '#' + val;
+    hexInputs.forEach(function (hexInput, index) {
+        var val = hexInput.value;
 
-    // Expanda uma cor deste tamanho: fff
-    if (val.length === 4) {
-        var red = val.charAt(1);
-        red += red;
-        var green = val.charAt(2);
-        green += green;
-        var blue = val.charAt(3);
-        blue += blue;
+        if (val.charAt(0) !== '#') val = '#' + val;
 
-        val = '#' + red + green + blue;
-    }
+        if (val.length === 4) {
+            var red = val.charAt(1);
+            red += red;
+            var green = val.charAt(2);
+            green += green;
+            var blue = val.charAt(3);
+            blue += blue;
 
-    colorSelector.value = val;
+            val = '#' + red + green + blue;
+        }
+
+        colorSelectors[index].value = val;
+    });
 }
 
-['cut', 'keyup', 'paste'].forEach(function(evt) {
-    hexColorInput.addEventListener(evt, updateSelector);
+hexInputs.forEach(function (hexInput) {
+    ['cut', 'keyup', 'paste'].forEach(function (evt) {
+        hexInput.addEventListener(evt, updateSelector);
+    });
 });
