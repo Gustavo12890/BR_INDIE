@@ -81,7 +81,7 @@ require("../php/conexao.php");
 
               echo "<div class='col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto'>
             <div class='card'>
-              <a href='../pages/projeto.php?id_projeto=$projeto[cd_projeto]'><img class='card-img-top' id='gif2' onmouseover='trocar2()' onmouseout='trocar2()' src='$projeto[img_capa]' alt='Card image cap'></a>
+              <a href='../pages/projeto.php?id_projeto=$projeto[cd_projeto]'><img class='card-img-top' src='$projeto[img_capa]' alt='Card image cap'></a>
               <div class='card-body'>
                 <h5 class='card-titulo'>$projeto[nm_projeto]</h5>
                 <div class='d-flex justify-content-center mb-2'>
