@@ -176,12 +176,12 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                             <div class="form-cor-esquerdo">
                                 <label class="form-texto-cor">Cor de Background:</label>
                                 <input class="formcor-tamanho color-selector" id="cor" type="color" name="cor" value="#ffffff">
-                                <input class="hex-input" type="text" name="hex_input" readonly>
+                                <input class="hex-input" type="text" name="hex_input">
                             </div>
                             <div class="form-cor">
                                 <label class="form-texto-cor" for="background-color">Cor das bordas:</label>
                                 <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
-                                <input class="hex-input" type="text" name="hex_input2" readonly>
+                                <input class="hex-input" type="text" name="hex_input2">
                             </div>
                         </div>
                         <div class="form-btn-container">
