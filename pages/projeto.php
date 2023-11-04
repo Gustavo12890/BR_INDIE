@@ -54,7 +54,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             </div>
             <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
               <a class="dropdown-txt dropdown-item" href="perfil.php">Perfil</a>
-              <a class="dropdown-txt dropdown-item" href="login.php">Sair</a>
+              <a class="dropdown-txt dropdown-item" href="../php/logout.php">Sair</a>
             </div>
           </div>
         </div>
