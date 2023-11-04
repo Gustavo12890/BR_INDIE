@@ -1,5 +1,5 @@
 <?php 
-require ("conexão.php");
+require ("conexao.php");
 
 if(isset($_POST["email"]) && ($_POST["senha"]) && $conexao != null) {
    $query =  $conexao->prepare("SELECT * FROM tb_usuarios WHERE email_usuario = ? AND senha_usuario = ?");

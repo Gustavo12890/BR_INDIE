@@ -3,7 +3,7 @@ $time = 2 * 60 * 60; // Definido 2 horas.
 session_set_cookie_params($time);
 session_start();
 if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("../php/conexão.php");
+    require ("../php/conexao.php");
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
 } else {
@@ -74,7 +74,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                 <textarea class="caixa-input" name="descricao" id="descricao" rows="5" maxlength="5000" required></textarea>
                 <label class="form-texto" for="descricao">História:</label>
                 <textarea class="caixa-input" name="historia" id="historia" rows="15" maxlength="8000" required></textarea>
-                <!--Primeiro genero-->
+                    <!--Primeiro genero-->
                     <div class="form-genero-container">
                         <div class="form-genero">
                             <label class="form-texto" for="genero-1">Gênero 1:</label>
@@ -100,7 +100,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                                 <option value="Visual Novel">Visual Novel</option>
                                 <option value="Cartas">Cartas</option>
                             </select>
-                            <!--Primeiro genero-->
+                    <!--Primeiro genero-->
                         </div>
                         <!--Segundo genero-->
                         <div class="form-genero">
@@ -163,32 +163,31 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         <input  class="form-texto-img" type="file" name="arquivo[3]" id="image-3" onchange="previewImagem3()" accept="image/*"><br>
                         <img  class="form-img" id="input-img3"  class="input-img">
                     </div>
-
-                    <div class="img-adicional">
+                    <!-- <div class="img-adicional">
                         <div class="txt-img-preview-container">
                         <p class="img-texto-preview"><strong>Preview do jogo (opcional):</strong></p>
                         <label class="btn-img-adicional" for="gif">Enviar arquivo</label>
                         </div>
                         <input  class="form-texto-img" type="file" name="arquivo[4]" id="gif" onchange="previewgif()" accept="image/*"><br>
                         <img  class="form-img" id="input-gif"  class="input-img">
-                    </div>
-                <div id="color-pickers">
-                    <div class="form-cor-container">
-                        <div class="form-cor-esquerdo">
-                            <label class="form-texto-cor">Cor de Background:</label>
-                            <input class="formcor-tamanho color-selector" id="cor" type="color" name="cor" value="#ffffff">
-                            <input class="hex-input" type="text" name="hex_input" readonly>
+                    </div> -->
+                    <div id="color-pickers">
+                        <div class="form-cor-container">
+                            <div class="form-cor-esquerdo">
+                                <label class="form-texto-cor">Cor de Background:</label>
+                                <input class="formcor-tamanho color-selector" id="cor" type="color" name="cor" value="#ffffff">
+                                <input class="hex-input" type="text" name="hex_input" readonly>
+                            </div>
+                            <div class="form-cor">
+                                <label class="form-texto-cor" for="background-color">Cor das bordas:</label>
+                                <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
+                                <input class="hex-input" type="text" name="hex_input2" readonly>
+                            </div>
                         </div>
-                        <div class="form-cor">
-                            <label class="form-texto-cor" for="background-color">Cor das bordas:</label>
-                            <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
-                            <input class="hex-input" type="text" name="hex_input2" readonly>
+                        <div class="form-btn-container">
+                            <button class="form-btn" name="submit" type="submit">Enviar</button>
                         </div>
                     </div>
-                    <div class="form-btn-container">
-                        <button class="form-btn" name="submit" type="submit">Enviar</button>
-                    </div>
-                </div>
             </form>
         </div>
     </div>

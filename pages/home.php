@@ -1,5 +1,5 @@
 <?php 
-require("../php/conexão.php");
+require("../php/conexao.php");
 
 ?>
 <!DOCTYPE html>

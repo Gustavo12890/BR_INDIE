@@ -3,12 +3,23 @@ $time = 2 * 60 * 60; // Definido 2 horas.
 session_set_cookie_params($time);
 session_start();
 if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("../php/conexão.php");
+    require ("../php/conexao.php");
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
 } else {
     header ('location: index.php');
   }
+  include("../php/conexao.php");
+
+  $mysqli = new mysqli ($server, $usuario, $senha, $banco);
+
+  if(mysqli_connect_errno()) trigger_error(mysqli_connect_error());
+
+  $id_projeto = $_GET['id_projeto'];
+
+  $sql = "SELECT cd_projeto, nm_projeto, img_capa, img_1, img_2, img_3, ds_projeto, nm_genero1, nm_cor, nm_corL FROM tb_projeto WHERE cd_projeto = '$id_projeto'";
+  $query = $mysqli->query($sql);
+  $projeto = $query->fetch_array()
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +34,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <script src="../js/projeto.js"></script>
   <title>Projetos</title>
 </head>
-<body>
+<body style="background-color: <?php echo $projeto['nm_corL']?>;">
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid w-100">
@@ -61,22 +72,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
       </div>
     </nav>
   </header>
-
-  <?php
-        include("../php/conexão.php");
-
-        $mysqli = new mysqli ($server, $usuario, $senha, $banco);
- 
-        if(mysqli_connect_errno()) trigger_error(mysqli_connect_error());
-
-        $id_projeto = $_GET['id_projeto'];
-     
-        $sql = "SELECT cd_projeto, nm_projeto, img_capa, img_1, img_2, img_3, ds_projeto, nm_genero1, nm_cor FROM tb_projeto WHERE cd_projeto = '$id_projeto'";
-        $query = $mysqli->query($sql);
-        $projeto = $query->fetch_array()
-  ?>
-
-<div class="container" style="background-color: <?php $projeto['nm_cor']?>;">
+<div class="container" style="background-color: <?php echo $projeto['nm_cor']?>;">
   <div class="row">
     <div class="col-md-12 col-12 p-0 text-white">
       <img class="w-100" src="<?php echo $projeto['img_capa']?>" alt="Capa">

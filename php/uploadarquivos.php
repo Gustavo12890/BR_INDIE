@@ -1,5 +1,5 @@
 <?php
-include("../php/conexão.php");
+include("../php/conexao.php");
 if (isset($_POST['submit'])) {
     $arquivo = $_FILES["arquivo"];
     $pasta = "../arquivos/";
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 
         // A inserção será feita uma vez só então retirei a query de dentro do foreach
 
-        if(move_uploaded_file($arquivo["tmp_name"][$f], $path)) {
+        if (move_uploaded_file($arquivo["tmp_name"][$f], $path)) {
 
             // Inseri a imagem no array... E isso sera feito sempre até acabar...
             array_push($imagens, $path);
@@ -30,14 +30,14 @@ if (isset($_POST['submit'])) {
     $img1 = $imagens[1];
     $img2 = $imagens[2];
     $img3 = $imagens[3];
-    $img4 = $imagens[4];
     $titulo = $_POST['titulo'];
     $descricao = $_POST['descricao'];
     $genero1 = $_POST['genero-1'];
     $genero2 = $_POST['genero-2'];
     $hexCode = $_POST['hex_input'];
+    $hexCode2 = $_POST['hex_input2'];
     $historia = $_POST['historia'];
 
-    $conexao->query("INSERT INTO `tb_projeto` (`cd_projeto`, `cd_perfil`, `nm_projeto`, `ds_projeto`, `nm_genero1`, `nm_genero2`, `img_capa`, `img_1`, `img_2`, `img_3`, `img_4`, `data_temp`, `nm_cor`, `dt_projeto`, `qt_curtida`, `ds_historia`, `qt_ruim`) VALUES (NULL, '', '$titulo', '$descricao', '$genero1', '$genero2', '$imgcapa', '$img1', '$img2', '$img3', '$img4',  '', '$hexCode', '', '', '$historia', '');");
+    $conexao->query("INSERT INTO `tb_projeto` (`cd_projeto`, `cd_perfil`, `nm_projeto`, `ds_projeto`, `nm_genero1`, `nm_genero2`, `img_capa`, `img_1`, `img_2`, `img_3`, `data_temp`, `nm_cor`, `nm_corL`, `dt_projeto`, `qt_curtida`, `ds_historia`, `qt_ruim`) VALUES (NULL, '', '$titulo', '$descricao', '$genero1', '$genero2', '$imgcapa', '$img1', '$img2', '$img3', '', '$hexCode', '$hexCode2', '', '', '$historia', '');");
 }
-    header('Location: ../pages/home.php');
+header('Location: ../pages/home.php');
