@@ -17,7 +17,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
   $id_projeto = $_GET['id_projeto'];
 
-  $sql = "SELECT cd_projeto, nm_projeto, img_capa, img_1, img_2, img_3, ds_projeto, nm_genero1, nm_cor, nm_corL FROM tb_projeto WHERE cd_projeto = '$id_projeto'";
+  $sql = "SELECT cd_projeto, nm_projeto, img_capa, img_1, img_2, img_3, ds_projeto, ds_historia, nm_genero1, nm_cor, nm_corL FROM tb_projeto WHERE cd_projeto = '$id_projeto'";
   $query = $mysqli->query($sql);
   $projeto = $query->fetch_array()
 ?>
