@@ -67,16 +67,16 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <div class="background-container">
     <img class="img-cadastro" src="../img/img_criar_jogo/celestewp.png" alt="fundo">
         <div class="container mt-4">
-            <form id="jogo-form">
+            <form id="jogo-form" action="../php/uploadarquivos.php"  enctype="multipart/form-data" method="post">
                 <label class="form-titulo" for="titulo">Título:</label>
-                <input class="caixa-titulo"  type="text" id="titulo" required>
+                <input class="caixa-titulo"  type="text"  name="titulo" id="titulo" required>
                 <label class="form-texto" for="descricao">Descrição:</label>
-                <textarea class="caixa-input"  id="descricao" rows="5" maxlength="5000" required></textarea>
+                <textarea class="caixa-input" name="descricao" id="descricao" rows="5" maxlength="5000" required></textarea>
                 <!--Primeiro genero-->
                     <div class="form-genero-container">
                         <div class="form-genero">
                             <label class="form-texto" for="genero-1">Gênero 1:</label>
-                            <select class="input-genero"  id="genero-1" required>
+                            <select class="input-genero"  name="genero-1" id="genero-1" required>
                                 <option value="" disabled selected>Selecione um gênero</option>
                                 <option value="Ação">Ação</option>
                                 <option value="Aventura">Aventura</option>
@@ -103,7 +103,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         <!--Segundo genero-->
                         <div class="form-genero">
                             <label class="form-texto" for="genero-2">Gênero 2 (opcional):</label>
-                            <select class="input-genero"  id="genero-2">
+                            <select class="input-genero"  name="genero-2" id="genero-2">
                                 <option value="" selected>Nenhum</option>
                                 <option value="Ação">Ação</option>
                                 <option value="Aventura">Aventura</option>
@@ -132,7 +132,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                     <p class="img-texto-capa"><strong>Imagem da capa:</strong></p>
                     <label class="btn-img" for="capa-image" >Enviar arquivo</label>
                 </div>      
-                <input class="form-texto" type="file" id="capa-image" onchange="previewCapa()"  accept="image/*"><br>
+                <input class="form-texto" type="file" name="arquivo[0]" id="capa-image" onchange="previewCapa()"  accept="image/*"><br>
                 <img class="img-capa" id="input-capa"  class="w-100">
 
                     <div class="img-adicional">
@@ -140,7 +140,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         <p class="img-texto"><strong>Imagem 1:</strong></p>
                         <label class="btn-img-adicional" for="image-1">Enviar arquivo</label>
                     </div>
-                        <input   class="form-texto-img" type="file" id="image-1" onchange="previewImagem1()" accept="image/*"><br>
+                        <input class="form-texto-img" type="file" name="arquivo[1]"  id="image-1" onchange="previewImagem1()" accept="image/*"><br>
                         <img class="form-img" id="input-img1"  class="input-img">
                     </div>
                     
@@ -149,7 +149,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                             <p class="img-texto"><strong>Imagem 2:</strong></p>
                             <label class="btn-img-adicional"for="image-2">Enviar arquivo</label>
                         </div>
-                        <input class="form-texto-img" type="file" id="image-2" onchange="previewImagem2()" accept="image/*"><br>
+                        <input class="form-texto-img" type="file" name="arquivo[2]" id="image-2" onchange="previewImagem2()" accept="image/*"><br>
                         <img  class="form-img" id="input-img2"  class="input-img">
                     </div>
                 
@@ -158,7 +158,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         <p class="img-texto"><strong>Imagem 3:</strong></p>
                         <label class="btn-img-adicional" for="image-3">Enviar arquivo</label>
                         </div>
-                        <input  class="form-texto-img" type="file" id="image-3" onchange="previewImagem3()" accept="image/*"><br>
+                        <input  class="form-texto-img" type="file" name="arquivo[3]" id="image-3" onchange="previewImagem3()" accept="image/*"><br>
                         <img  class="form-img" id="input-img3"  class="input-img">
                     </div>
 
@@ -173,14 +173,15 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
 
                 <div class="form-cor">
-                    <label class="form-texto-cor" for="background-color">Cor de Background:</label>
-                    <input class="formcor-tamanho" type="color" id="background-color" value="#ffffff">
+                    <label class="form-texto-cor">Cor de Background:</label>
+                    <input class="formcor-tamanho" id="cor" type="color" name="cor" value="#ffffff">
+                    <input id="hex_input" type="text" name="hex_input" readonly>
                 </div>
-                <button class="form-btn" type="submit">Enviar</button>
+                <button class="form-btn" name="submit" type="submit">Enviar</button>
             </form>
         </div>
     </div>
-    <script src="../js/criarJogo.js"></script>
+
     <script>
         function previewCapa() {
             var capa = document.getElementById('capa-image').files[0];
@@ -265,5 +266,6 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <script src="../js/perfil.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/cor.js"></script>
 </body>
 </html>

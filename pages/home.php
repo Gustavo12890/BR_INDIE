@@ -77,100 +77,31 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </div>
 
     <div class="row justify-content-center gap-3 mt-3 mb-cards">
-      <div class="col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto">
-        <div class="card">
-          <img class="card-img-top" id="gif" onmouseover="trocar()" onmouseout="trocar()" src="../img/img_home/momodora.avif" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-titulo">Momodora</h5>
-            <div class="d-flex justify-content-center mb-2">
-              <a href="#" class="btn btn-success genero-home">Plataforma</a>
-            </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto">
-        <div class="card">
-          <a href="../pages/projeto.php"><img class="card-img-top" id="gif2" onmouseover="trocar2()" onmouseout="trocar2()" src="../img/img_home/celeste.png" alt="Card image cap"></a>
-          <div class="card-body">
-            <h5 class="card-titulo">Celeste</h5>
-            <div class="d-flex justify-content-center mb-2">
-              <a href="#" class="btn btn-success genero-home">Plataforma</a>
-            </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto">
-        <div class="card">
-          <img class="card-img-top"
-            src="../img/img_home/rocketBravery.jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-titulo">Pocket Bravery</h5>
-            <div class="d-flex justify-content-center mb-2">
-              <a href="#" class="btn btn-danger genero-home">Luta</a>
-            </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-      </div>
+      <?php
 
+          $mysqli = new mysqli ($server, $usuario, $senha, $banco);
+
+          if(mysqli_connect_errno()) trigger_error(mysqli_connect_error());
+
+          $sql = 'SELECT cd_projeto, nm_projeto, img_capa, ds_projeto, nm_genero1 FROM tb_projeto';
+          $query = $mysqli->query($sql);
+          while ($projeto = $query->fetch_array()){
+
+              echo "<div class='col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto'>
+            <div class='card'>
+              <a href='../pages/projeto.php?id_projeto=$projeto[cd_projeto]'><img class='card-img-top' id='gif2' onmouseover='trocar2()' onmouseout='trocar2()' src='$projeto[img_capa]' alt='Card image cap'></a>
+              <div class='card-body'>
+                <h5 class='card-titulo'>$projeto[nm_projeto]</h5>
+                <div class='d-flex justify-content-center mb-2'>
+                  <a href='#' class='btn btn-success genero-home'>$projeto[nm_genero1]</a>
+                </div>
+                <p class='card-text'>$projeto[ds_projeto].</p>
+              </div>
+            </div>
+          </div>";
+          }
+        ?>
     </div>
-
-    <div class="row justify-content-center gap-3 mt-3 mb-cards">
-      <div class="col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto">
-        <div class="card">
-          <img class="card-img-top"
-            src="../img/img_home/UNSIGHTED.avif"
-            alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-titulo">Unsighted</h5>
-            <div class="d-flex justify-content-center mb-2">
-              <a href="#" class="btn btn-info genero-home">Aventura</a>
-            </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto">
-        <div class="card">
-          <img class="card-img-top"
-            src="../img/img_home/dandyAce.avif"
-            alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-titulo">Dandy Ace</h5>
-            <div class="d-flex justify-content-center mb-2">
-              <a href="#" class="btn btn-primary genero-home">Ação</a>
-            </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto">
-        <div class="card">
-          <img class="card-img-top"
-            src="../img/img_home/chromaSquad.avif"
-            alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-titulo">Chroma Squad</h5>
-            <div class="d-flex justify-content-center mb-2">
-              <a href="#" class="btn btn-warning genero-home">RPG</a>
-            </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
 <footer class="bg-dark text-center text-white">
   <div class="container p-4">
