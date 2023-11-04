@@ -73,7 +73,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                 <label class="form-texto" for="descricao">Descrição:</label>
                 <textarea class="caixa-input" name="descricao" id="descricao" rows="5" maxlength="5000" required></textarea>
                 <label class="form-texto" for="descricao">História:</label>
-                <textarea class="caixa-input"  id="historia" rows="15" maxlength="8000" required></textarea>
+                <textarea class="caixa-input" name="historia" id="historia" rows="15" maxlength="8000" required></textarea>
                 <!--Primeiro genero-->
                     <div class="form-genero-container">
                         <div class="form-genero">
@@ -169,7 +169,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         <p class="img-texto-preview"><strong>Preview do jogo (opcional):</strong></p>
                         <label class="btn-img-adicional" for="gif">Enviar arquivo</label>
                         </div>
-                        <input  class="form-texto-img" type="file" id="gif" onchange="previewgif()" accept="image/*"><br>
+                        <input  class="form-texto-img" type="file" name="arquivo[4]" id="gif" onchange="previewgif()" accept="image/*"><br>
                         <img  class="form-img" id="input-gif"  class="input-img">
                     </div>
 
