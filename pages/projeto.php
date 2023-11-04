@@ -122,7 +122,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             <p id="caption"></p>
           </div>
       
-          <div>
+          <div style="background-color: black;" class="d-flex justify-content-center">
             <div class="column">
               <img class="demo cursor" src="<?php echo $projeto['img_1']?>" style="width:100%" onclick="currentSlide(1)" alt="Imagem 1">
             </div>
