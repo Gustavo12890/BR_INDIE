@@ -1,6 +1,14 @@
 <?php 
-require("../php/conexão.php");
-
+$time = 2 * 60 * 60; // Definido 2 horas.
+session_set_cookie_params($time);
+session_start();
+if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
+    require ("../php/conexão.php");
+    $tipo_acesso = $_SESSION["usuario"][1];
+    $nome = $_SESSION["usuario"][0];
+} else {
+    header ('location: index.php');
+  }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -36,7 +44,7 @@ require("../php/conexão.php");
               <a class="nav-link link-hover" href="sobre.php">Sobre</a>
             </li>
           </ul>
-          <p class=" nav-nome me-3 text-white fs-6 mt-3">Perfil</p>
+          <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
           <div class="dropdown show" id="myDropdown">
             <div class="d-flex justify-content-end">
               <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,7 +66,7 @@ require("../php/conexão.php");
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="titulo fs-1 text-break text-center">Encontre jogos divertidos aqui!</span>
+        <h2 class="titulo fs-1 text-break text-center"><?php echo "Bem vindo(a), ". $_SESSION["usuario"][0]?></span>
         </h2>
         <div class="d-flex flex-row mt-4 w-75 mx-auto" style="margin-bottom: 6rem;">
           <input type="search" class="form-control barra" placeholder="Pesquisar por jogos" aria-label="Pesquisar por jogos"
