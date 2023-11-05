@@ -77,30 +77,32 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </div>
 
     <div class="row justify-content-center gap-3 mt-3 mb-cards">
-      <?php
+    <?php
+      $mysqli = new mysqli ($server, $usuario, $senha, $banco);
 
-          $mysqli = new mysqli ($server, $usuario, $senha, $banco);
+      if(mysqli_connect_errno()) trigger_error(mysqli_connect_error());
 
-          if(mysqli_connect_errno()) trigger_error(mysqli_connect_error());
+      $sql = 'SELECT cd_projeto, nm_projeto, img_capa, ds_projeto, nm_genero1 FROM tb_projeto';
+      $query = $mysqli->query($sql);
+      while ($projeto = $query->fetch_array()){
+          $titulo_limitado = substr($projeto['nm_projeto'], 0, 50); // Limita o título a 50 caracteres
+          $texto_limitado = substr($projeto['ds_projeto'], 0, 100); // Limita o texto a 100 caracteres
 
-          $sql = 'SELECT cd_projeto, nm_projeto, img_capa, ds_projeto, nm_genero1 FROM tb_projeto';
-          $query = $mysqli->query($sql);
-          while ($projeto = $query->fetch_array()){
-
-              echo "<div class='col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto'>
-            <div class='card'>
-              <a href='../pages/projeto.php?id_projeto=$projeto[cd_projeto]'><img class='card-img-top' id='gif2' onmouseover='trocar2()' onmouseout='trocar2()' src='$projeto[img_capa]' alt='Card image cap'></a>
-              <div class='card-body'>
-                <h5 class='card-titulo'>$projeto[nm_projeto]</h5>
-                <div class='d-flex justify-content-center mb-2'>
-                  <a href='#' class='btn btn-success genero-home'>$projeto[nm_genero1]</a>
-                </div>
-                <p class='card-text'>$projeto[ds_projeto].</p>
-              </div>
+          echo "<div class='col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto'>
+        <div class='card'>
+          <a href='../pages/projeto.php?id_projeto=$projeto[cd_projeto]'><img class='card-img-top' src='$projeto[img_capa]' alt='Card image cap'></a>
+          <div class='card-body'>
+            <h5 class='card-titulo'>$titulo_limitado...</h5>
+            <div class='d-flex justify-content-center mb-2'>
+              <a href='#' class='btn btn-success genero-home'>$projeto[nm_genero1]</a>
             </div>
-          </div>";
-          }
-        ?>
+            <p class='card-text'>$texto_limitado...</p>
+          </div>
+        </div>
+      </div>";
+      }
+  ?>
+
     </div>
 
 <footer class="bg-dark text-center text-white">
