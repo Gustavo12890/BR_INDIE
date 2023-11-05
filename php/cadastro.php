@@ -18,6 +18,7 @@ $conexao = new PDO("mysql:host=$server;dbname=$banco", $usuario, $senha);
   // use exec() because no results are returned
   $conexao->exec($sql);
   echo "Cadastro feito com sucesso!";
+  header('Location: ../pages/login.php');
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }
