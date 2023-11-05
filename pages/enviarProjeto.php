@@ -70,9 +70,9 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             <form id="jogo-form" action="../php/uploadarquivos.php"  enctype="multipart/form-data" method="post">
                 <label class="form-titulo" for="titulo">Título:</label>
                 <input class="caixa-titulo"  type="text"  name="titulo" id="titulo" required>
-                <label class="form-texto" for="descricao">Descrição:</label>
-                <textarea class="caixa-input" name="descricao" id="descricao" rows="5" maxlength="5000" required></textarea>
                 <label class="form-texto" for="descricao">História:</label>
+                <textarea class="caixa-input" name="descricao" id="descricao" rows="5" maxlength="5000" required></textarea>
+                <label class="form-texto" for="descricao">Descrição:</label>
                 <textarea class="caixa-input" name="historia" id="historia" rows="15" maxlength="8000" required></textarea>
                     <!--Primeiro genero-->
                     <div class="form-genero-container">
