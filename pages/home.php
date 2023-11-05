@@ -30,9 +30,6 @@ require("../php/conexao.php");
               <a class="nav-link link-hover" aria-current="page" href="#">Encontrar Jogos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-hover" href="enviarProjeto.php">Enviar Projetos</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link link-hover" href="sobre.php">Sobre</a>
             </li>
           </ul>
