@@ -12,12 +12,12 @@ if ($query->rowCount()){
     $_SESSION["usuario"] = array($user["nm_usuario"], $user["tipo_acesso"]);
 
     if ($user["tipo_acesso"] == 1) {
-    header('Location: ../pages/desenvolvedor.php');
+    header('Location: ../pages/homeDev.php');
     die();
 } 
 
     elseif ($user=["tipo_acesso"] != 1) {
-        header('Location: ../pages/usuario.php');
+        header('Location: ../pages/homeUsuario.php');
         die();
     }
 
