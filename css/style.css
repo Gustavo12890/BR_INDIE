@@ -4,7 +4,7 @@
     border: 1px solid red;
  } */
 
-body {
+ body {
     background-color: #2A2731;
     font-family: Poppins;
 }
@@ -129,6 +129,12 @@ body {
 
     .botao-cadastro {
         width: 25vw;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+    .botao-cadastro {
+        width: 49%;
     }
 }
 
