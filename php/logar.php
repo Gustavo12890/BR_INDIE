@@ -17,7 +17,7 @@ if ($query->rowCount()){
 } 
 
     elseif ($user=["tipo_acesso"] != 1) {
-        header('Location: ../pages/usuarios/homeUsuario.php');
+        header('Location: ../pages/usuario/homeUsuario.php');
         die();
     }
 
