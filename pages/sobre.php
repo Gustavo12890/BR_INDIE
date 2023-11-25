@@ -62,9 +62,10 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
       </div>
     </nav>
   </header>
+  <!-- Tamanho da imagem deve ser 1974x1579 redimensione aqui: https://www.iloveimg.com/pt/redimensionar-imagem#resize-options,pixels !-->
     <section class="mb-5">
         <div class="container d-flex align-self-center flex-column gap-5 mt-5">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center"> 
                 <div clas="col-12">
                     <h1 class="titulo d-flex justify-content-center mt-2">Desenvolvedores</h1>
                 </div>
@@ -84,7 +85,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-8 col-md-4">
-                    <img class="w-100 rounded-4" src="../img/img_sobre/vitor.jpg">
+                    <img class="w-100 rounded-4" src="../img/img_sobre/vitor.png">
                 </div>
                 <div class="col d-flex flex-column align-self-center ms-5">
                     <div class="col d-flex flex-row">
@@ -105,7 +106,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                       <p class="text-white apelido fs-4">"Mexicano"</p>
                   </div>
                   <p class="textos fs-6">Estudante de Desenvolvimento de Sistemas</p>
-                  <p class="text-white textos fs-6">Alguma descrição muito boa sobre algo que vão colocar depois pra preencher espaço na tela</p>
+                  <p class="text-white textos fs-6">Tenho 22 anos e sou amante de jogos RPG de ação e jogos de luta. Sou formado como técnico em edificações e, embora goste de arquitetura, acabei despertando muito interesse na programação. Sou responsável pela documentação do projeto, elaborando o caderno e os diários de bordo. Além disso, também contribuo no desenvolvimento do front-end do projeto.</p>
               </div>
             </div>
             <div class="row d-flex justify-content-center">
@@ -129,7 +130,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         <p class="nome textos fs-4">Lincoln Vinícius</p>
                     </div>
                     <p class="textos fs-6">Estudante de Desenvolvimento de Sistemas</p>
-                    <p class="text-white textos fs-6">Alguma descrição muito boa sobre algo que vão colocar depois pra preencher espaço na tela</p>
+                    <p class="text-white textos fs-6">Tenho 23 anos. Faço parte do grupo de TCC BR Indie, e estou contribuindo com o back-end do projeto, mas também ajudo nas outras partes do nosso projeto.</p>
                 </div>
             </div>
         </div>
