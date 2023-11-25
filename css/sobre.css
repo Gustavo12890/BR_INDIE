@@ -97,10 +97,11 @@ body {
 /* CSS BARRA DE NAVEGAÇÃO */
 
 .titulo {
-    color: #ffffff;
+    color: #8BA2FF;
 }
 
-.titulo:hover {
+.titulo-plataforma{
+    text-align: center;
     color: #8BA2FF;
 }
 

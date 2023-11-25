@@ -65,6 +65,13 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <!-- Tamanho da imagem deve ser 1974x1579 redimensione aqui: https://www.iloveimg.com/pt/redimensionar-imagem#resize-options,pixels !-->
     <section class="mb-5">
         <div class="container d-flex align-self-center flex-column gap-5 mt-5">
+        <h1 class="titulo-plataforma d-flex justify-content-center mt-2">BR Indie: uma plataforma para promover os jogos independentes nacionais</h1>
+        <p class="text-white apelido fs-5">O BR Indie é a nossa resposta à necessidade de um espaço dedicado e gratuito para os talentosos desenvolvedores brasileiros apresentarem suas criações ao mundo. Inspirados pelo sucesso do itch.io, nossa plataforma se compromete a ser uma vitrine online, proporcionando visibilidade e oportunidades para os criativos que moldam o futuro dos jogos independentes no Brasil.</p>
+
+        <p class="text-white apelido fs-5">Para os jogadores, oferecemos uma jornada emocionante rumo ao desconhecido, onde a descoberta de jogos inovadores é garantida. Para os desenvolvedores, o BR Indie é mais do que uma plataforma; é um parceiro dedicado, oferecendo suporte para impulsionar seus projetos ao estrelato.</p>
+
+        <p class="text-white apelido fs-5">Junte-se a nós nessa aventura onde a comunidade de jogos independentes brasileiros se encontra, e descubra um universo de criatividade, originalidade e paixão. Seja bem-vindo ao BR Indie, onde os jogos nacionais encontram seu merecido destaque.</p>
+
             <div class="row d-flex justify-content-center"> 
                 <div clas="col-12">
                     <h1 class="titulo d-flex justify-content-center mt-2">Desenvolvedores</h1>
