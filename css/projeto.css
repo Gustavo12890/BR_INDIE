@@ -316,6 +316,18 @@ button {
 
 /*FOOTER*/
 
+#botoesProjeto {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+ 
+  top: 90px;
+  right: 0;
+  z-index: 2;
+  margin-right: 25px;
+  text-align: right;
+}
+
 @media (min-width: 992px) and (max-width: 1920px) {
   .container {
     width: 70%;
