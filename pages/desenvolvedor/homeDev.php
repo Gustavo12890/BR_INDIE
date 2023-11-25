@@ -1,14 +1,6 @@
 <?php 
-$time = 2 * 60 * 60; // Definido 2 horas.
-session_set_cookie_params($time);
-session_start();
-if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("../php/conexao.php");
-    $tipo_acesso = $_SESSION["usuario"][1];
-    $nome = $_SESSION["usuario"][0];
-} else {
-    header ('location: index.php');
-  }
+require("../php/conexao.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -35,16 +27,13 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5">
             <li class="nav-item">
-              <a class="nav-link link-hover" aria-current="page" href="#">Encontrar Jogos</a>
+              <a class="nav-link link-hover" aria-current="page" href="homeDev.php">Encontrar Jogos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-hover" href="enviarProjeto.php">Enviar Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-hover" href="sobre.php">Sobre</a>
+              <a class="nav-link link-hover" href="sobreDev.php">Sobre</a>
             </li>
           </ul>
-          <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
+          <p class=" nav-nome me-3 text-white fs-6 mt-3">Perfil</p>
           <div class="dropdown show" id="myDropdown">
             <div class="d-flex justify-content-end">
               <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,7 +43,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
               </span>
             </div>
             <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-txt dropdown-item" href="perfil.php">Perfil</a>
+              <a class="dropdown-txt dropdown-item" href="perfilDev.php">Perfil</a>
               <a class="dropdown-txt dropdown-item" href="login.php">Sair</a>
             </div>
           </div>
@@ -66,7 +55,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="titulo fs-1 text-break text-center"><?php echo "Bem vindo(a), ". $_SESSION["usuario"][0]?></span>
+        <h2 class="titulo fs-1 text-break text-center">Encontre jogos divertidos aqui!</span>
         </h2>
         <div class="d-flex flex-row mt-4 w-75 mx-auto" style="margin-bottom: 6rem;">
           <input type="search" class="form-control barra" placeholder="Pesquisar por jogos" aria-label="Pesquisar por jogos"
@@ -77,31 +66,31 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </div>
 
     <div class="row justify-content-center gap-3 mt-3 mb-cards">
-    <?php
-      $mysqli = new mysqli ($server, $usuario, $senha, $banco);
+<?php
+  $mysqli = new mysqli ($server, $usuario, $senha, $banco);
 
-      if(mysqli_connect_errno()) trigger_error(mysqli_connect_error());
+  if(mysqli_connect_errno()) trigger_error(mysqli_connect_error());
 
-      $sql = 'SELECT cd_projeto, nm_projeto, img_capa, ds_projeto, nm_genero1 FROM tb_projeto';
-      $query = $mysqli->query($sql);
-      while ($projeto = $query->fetch_array()){
-          $titulo_limitado = substr($projeto['nm_projeto'], 0, 50); // Limita o título a 50 caracteres
-          $texto_limitado = substr($projeto['ds_projeto'], 0, 100); // Limita o texto a 100 caracteres
+  $sql = 'SELECT cd_projeto, nm_projeto, img_capa, ds_projeto, nm_genero1 FROM tb_projeto';
+  $query = $mysqli->query($sql);
+  while ($projeto = $query->fetch_array()){
+      $titulo_limitado = substr($projeto['nm_projeto'], 0, 50); // Limita o título a 50 caracteres
+      $texto_limitado = substr($projeto['ds_projeto'], 0, 100); // Limita o texto a 100 caracteres
 
-          echo "<div class='col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto'>
-        <div class='card'>
-          <a href='../pages/projeto.php?id_projeto=$projeto[cd_projeto]'><img class='card-img-top' src='$projeto[img_capa]' alt='Card image cap'></a>
-          <div class='card-body'>
-            <h5 class='card-titulo'>$titulo_limitado</h5>
-            <div class='d-flex justify-content-center mb-2'>
-              <a href='#' class='btn btn-success genero-home'>$projeto[nm_genero1]</a>
-            </div>
-            <p class='card-text'>$texto_limitado</p>
-          </div>
+      echo "<div class='col-auto col-sm-12 col-md-auto col-lg-auto col-xl-auto'>
+    <div class='card'>
+      <a href='../pages/projeto.php?id_projeto=$projeto[cd_projeto]'><img class='card-img-top' src='$projeto[img_capa]' alt='Card image cap'></a>
+      <div class='card-body'>
+        <h5 class='card-titulo'>$titulo_limitado</h5>
+        <div class='d-flex justify-content-center mb-2'>
+          <a href='#' class='btn btn-success genero-home'>$projeto[nm_genero1]</a>
         </div>
-      </div>";
-      }
-  ?>
+        <p class='card-text'>$texto_limitado</p>
+      </div>
+    </div>
+  </div>";
+  }
+?>
 
     </div>
 

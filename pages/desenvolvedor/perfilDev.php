@@ -37,13 +37,13 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5">
             <li class="nav-item">
-              <a class="nav-link link-hover" aria-current="page" href="home.php">Encontrar Jogos</a>
+              <a class="nav-link link-hover" aria-current="page" href="homeDev.php">Encontrar Jogos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link-hover" href="enviarProjeto.php">Enviar Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-hover" href="sobre.php">Sobre</a>
+              <a class="nav-link link-hover" href="sobreDev.php">Sobre</a>
             </li>
           </ul>
           <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
@@ -56,7 +56,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
               </span>
             </div>
             <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-txt dropdown-item" href="perfil.php">Perfil</a>
+              <a class="dropdown-txt dropdown-item" href="perfilDev.php">Perfil</a>
               <a class="dropdown-txt dropdown-item" href="../php/logout.php">Sair</a>
             </div>
           </div>
