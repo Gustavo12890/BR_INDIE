@@ -65,7 +65,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <!--BARRA DE NAVEGAÇÃO-->
     <!--Formulário--> 
     <div class="background-container">
-    <img class="img-cadastro" src="../img/img_criar_jogo/celestewp.png" alt="fundo">
+    <img class="img-cadastro" src="../../img/img_criar_jogo/celestewp.png" alt="fundo">
         <div class="container mt-4">
             <form id="jogo-form" action="../../php/uploadarquivos.php"  enctype="multipart/form-data" method="post">
                 <label class="form-titulo" for="titulo">Título:</label>

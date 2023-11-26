@@ -126,7 +126,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
           <h5 class="text-uppercase mb-3 titulo-footer">Contato</h5>
           <ul class="list-unstyled mb-0">
             <li class="mb-2">
-              <a href="#!" class="link-footer text-decoration-none">br-inde@gmail.com</a>
+              <a href="#!" class="link-footer text-decoration-none">br-indie@gmail.com</a>
             </li>
             <li>
               <a href="#!" class="link-footer text-decoration-none">(13)99999-9999</a>

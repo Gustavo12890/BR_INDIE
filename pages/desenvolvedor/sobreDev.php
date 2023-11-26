@@ -26,7 +26,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid">
-        <a class="navbar-brand logo link-hover" href="index.php"><img src="../img/img_landing/logo.png" alt=""
+        <a class="navbar-brand logo link-hover" href="index.php"><img src="../../img/img_landing/logo.png" alt=""
             style="width: 50px; height: auto;"> INDIE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +79,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-8 col-md-4">
-                    <img class="w-100 rounded-4" src="../img/img_sobre/caio.png">
+                    <img class="w-100 rounded-4" src="../../img/img_sobre/caio.png">
                 </div>
                 <div class="col d-flex flex-column align-self-center ms-5">
                     <div class="col d-flex flex-row">
@@ -92,7 +92,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-8 col-md-4">
-                    <img class="w-100 rounded-4" src="../img/img_sobre/vitor.png">
+                    <img class="w-100 rounded-4" src="../../img/img_sobre/vitor.png">
                 </div>
                 <div class="col d-flex flex-column align-self-center ms-5">
                     <div class="col d-flex flex-row">
@@ -105,7 +105,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             </div>
             <div class="row d-flex justify-content-center">
               <div class="col-8 col-md-4">
-                  <img class="w-100 rounded-4" src="../img/img_sobre/sergio.jpg">
+                  <img class="w-100 rounded-4" src="../../img/img_sobre/sergio.jpg">
               </div>
               <div class="col d-flex flex-column align-self-center ms-5">
                   <div class="col d-flex flex-row">
@@ -118,7 +118,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-8 col-md-4">
-                    <img class="w-100 rounded-4" src="../img/img_sobre/gustavo.png">
+                    <img class="w-100 rounded-4" src="../../img/img_sobre/gustavo.png">
                 </div>
                 <div class="col d-flex flex-column align-self-center ms-5">
                     <div class="col d-flex flex-row">
@@ -130,7 +130,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-8 col-md-4">
-                    <img class="w-100 rounded-4" src="../img/img_sobre/lincoln.png">
+                    <img class="w-100 rounded-4" src="../../img/img_sobre/lincoln.png">
                 </div>
                 <div class="col d-flex flex-column align-self-center ms-5">
                     <div class="col d-flex flex-row">
@@ -167,7 +167,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
               <h5 class="text-uppercase mb-3 titulo-footer">Contato</h5>
               <ul class="list-unstyled mb-0">
                 <li class="mb-2">
-                  <a href="#!" class="link-footer text-decoration-none">br-inde@gmail.com</a>
+                  <a href="#!" class="link-footer text-decoration-none">br-indie@gmail.com</a>
                 </li>
                 <li>
                   <a href="#!" class="link-footer text-decoration-none">(13)99999-9999</a>
