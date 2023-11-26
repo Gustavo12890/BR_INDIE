@@ -67,7 +67,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <div class="background-container">
     <img class="img-cadastro" src="../img/img_criar_jogo/celestewp.png" alt="fundo">
         <div class="container mt-4">
-            <form id="jogo-form" action="../php/uploadarquivos.php"  enctype="multipart/form-data" method="post">
+            <form id="jogo-form" action="../../php/uploadarquivos.php"  enctype="multipart/form-data" method="post">
                 <label class="form-titulo" for="titulo">Título:</label>
                 <input class="caixa-titulo"  type="text"  name="titulo" id="titulo" required>
                 <label class="form-texto" for="descricao">História:</label>
@@ -273,9 +273,9 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             }
         }
     </script>
-    <script src="../js/perfil.js"></script>
+    <script src="../../js/perfil.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../js/cor.js"></script>
+    <script src="../../js/cor.js"></script>
 </body>
 </html>
