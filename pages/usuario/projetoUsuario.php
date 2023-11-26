@@ -3,13 +3,13 @@ $time = 2 * 60 * 60; // Definido 2 horas.
 session_set_cookie_params($time);
 session_start();
 if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("./php/conexao.php");
+  require ("../../php/conexao.php");
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
 } else {
     header ('location: index.php');
   }
-  include("../php/conexao.php");
+  include("../../php/conexao.php");  
 
   $mysqli = new mysqli ($server, $usuario, $senha, $banco);
 
@@ -27,8 +27,8 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="../css/projeto.css">
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/projeto.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <script src="../bootstrap/js/bootstrap.js"></script>
   <script src="../js/projeto.js"></script>
@@ -38,7 +38,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid w-100">
-        <a class="navbar-brand logo link-hover" href="index.php"><img src="../img/img_landing/logo.png" alt="" style="width: 50px; height: auto;"> INDIE</a>
+        <a class="navbar-brand logo link-hover" href="index.php"><img src="../../img/img_landing/logo.png" alt="" style="width: 50px; height: auto;"> INDIE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <img src="../img/img_landing/list.svg">
         </button>

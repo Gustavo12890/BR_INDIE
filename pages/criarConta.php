@@ -53,11 +53,11 @@
                     <input class="input-cadastro" type="date" id="nascimento" required><br><br>
 
                     <label class="label-cadastro">Qual o tipo de conta?</label><br>
-                    <input class="radio-cadastro" type="radio" id="contaComum" name="tipoConta" value="comum" required>
-                    <label class="label-cadastro" for="contaComum">Comum</label><br>
-                    
-                    <input class="radio-cadastro" type="radio" id="contaDesenvolvedor" name="tipoConta" value="desenvolvedor" required>
-                    <label class="label-cadastro" for="contaDesenvolvedor">Desenvolvedor</label><br><br>
+                    <select class="input-genero"  name="tipoconta" required>
+                    <option value="Comum" >Comum</option><br><br>
+                     <option value="Desenvolvedor">Desenvolvedor</option><br><br>
+                     </select>
+
 
                     <p class="label-cadastro">Já possui uma conta? <a class="link-login" href="../pages/login.php">Entre</a></p>
                     <button class="btn btn-cadastro btn-lg float-right">Cadastrar</button>

@@ -3,5 +3,5 @@
     session_destroy();
 
 
-    header('Location: ../pages/index.php');
+    header('Location: ../../pages/index.php');
 ?>

@@ -1,5 +1,13 @@
 <?php 
-require("./php/conexao.php");
+$time = 2 * 60 * 60; // Definido 2 horas.
+session_set_cookie_params($time);
+session_start();
+if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
+  require ("../../php/conexao.php");;
+    $nome = $_SESSION["usuario"][0];
+} else {
+    header ('location: index.php');
+  }
 
 ?>
 <!DOCTYPE html>
@@ -7,8 +15,8 @@ require("./php/conexao.php");
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/home.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../js/home.js"></script>
@@ -18,7 +26,7 @@ require("./php/conexao.php");
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid">
-        <a class="navbar-brand logo link-hover" href="index.php"><img src="../img/img_landing/logo.png" alt=""
+        <a class="navbar-brand logo link-hover" href="../desenvolvedor/homeDev.php"><img src="../../img/img_landing/logo.png" alt=""
             style="width: 50px; height: auto;"> INDIE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

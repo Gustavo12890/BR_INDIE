@@ -3,7 +3,7 @@ $time = 2 * 60 * 60; // Definido 2 horas.
 session_set_cookie_params($time);
 session_start();
 if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("./php/conexao.php");
+  require ("../../php/conexao.php");;
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
 } else {
@@ -16,8 +16,8 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/sobre.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <script src="../bootstrap/js/bootstrap.js"></script>
     <title>Sobre Nós</title>

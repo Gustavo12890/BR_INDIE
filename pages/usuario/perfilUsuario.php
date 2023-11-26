@@ -3,7 +3,7 @@ $time = 2 * 60 * 60; // Definido 2 horas.
 session_set_cookie_params($time);
 session_start();
 if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("./php/conexao.php");
+    require ("../../php/conexao.php");
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
 } else {
@@ -16,9 +16,9 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-  <script src="../bootstrap/js/bootstrap.js"></script>
-  <link rel="stylesheet" href="../css/perfil.css">
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <script src="../../bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="../../css/perfil.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <title>Perfil do Usuário</title>
     <!-- Link Swiper's CSS -->
@@ -28,7 +28,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid">
-        <a class="navbar-brand logo link-hover" href="index.php"><img src="../img/img_landing/logo.png" alt=""
+        <a class="navbar-brand logo link-hover" href="../../pages/index.php"><img src="../../img/img_landing/logo.png" alt=""
             style="width: 50px; height: auto;"> INDIE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </nav>
   </header>
 
-    <img class="capa-foto" src="../img/img_perfil/teste2.jpg" alt="">
+    <img class="capa-foto" src="../../img/img_perfil/teste2.jpg" alt="">
 
     <div class="container-fluid">
       <div class="row">
@@ -105,19 +105,19 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
       <div class="slider mySwiper">
         <div class="image-items swiper-wrapper">
           <div class="swiper-slide">
-            <img class="swiper-img" src="../img/img_login_cadastro/carrosel1.png" alt="">
+            <img class="swiper-img" src="../../img/img_login_cadastro/carrosel1.png" alt="">
             <p>Dandy Ace</p>
           </div>
           <div class="swiper-slide">
-            <img class="swiper-img" src="../img/img_login_cadastro/carrosel2.jpg" alt="">
+            <img class="swiper-img" src="../../img/img_login_cadastro/carrosel2.jpg" alt="">
             <p>Dandara Trials of Fear Edition</p>
           </div>
           <div class="swiper-slide">
-            <img class="swiper-img" src="../img/img_login_cadastro/carrosel3.jpg" alt="">
+            <img class="swiper-img" src="../..//img/img_login_cadastro/carrosel3.jpg" alt="">
             <p>Horizon Chase Turbo</p>
           </div>
           <div class="swiper-slide">
-            <img class="swiper-img" src="../img/img_login_cadastro/carrosel4.png" alt="">
+            <img class="swiper-img" src="../../img/img_login_cadastro/carrosel4.png" alt="">
             <p>Unsighted</p>
           </div>
         </div>
@@ -220,7 +220,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
         
     </script>
-    <script src="../js/perfil.js"></script>
+    <script src="../../js/perfil.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

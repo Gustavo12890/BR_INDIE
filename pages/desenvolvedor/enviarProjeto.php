@@ -3,7 +3,7 @@ $time = 2 * 60 * 60; // Definido 2 horas.
 session_set_cookie_params($time);
 session_start();
 if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("./php/conexao.php");
+    require ("../../php/conexao.php");;
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
 } else {
@@ -16,8 +16,8 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/enviarProjeto.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/enviarProjeto.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <title>Criar Jogo</title>
 </head>
@@ -26,7 +26,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid">
-        <a class="navbar-brand logo link-hover" href="index.php"><img src="../img/img_landing/logo.png" alt=""
+        <a class="navbar-brand logo link-hover" href="index.php"><img src="../../img/img_landing/logo.png" alt=""
             style="width: 50px; height: auto;"> INDIE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5">
             <li class="nav-item">
-              <a class="nav-link link-hover" aria-current="page" href="usuario.php">Encontrar Jogos</a>
+              <a class="nav-link link-hover" aria-current="page" href="../desenvolvedor/homeDev.php">Encontrar Jogos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link-hover" href="enviarProjeto.php">Enviar Projetos</a>
@@ -55,7 +55,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             </div>
             <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
               <a class="dropdown-txt dropdown-item" href="perfilDev.php">Perfil</a>
-              <a class="dropdown-txt dropdown-item" href="../php/logout.php">Sair</a>
+              <a class="dropdown-txt dropdown-item" href="../../php/logout.php">Sair</a>
             </div>
           </div>
         </div>

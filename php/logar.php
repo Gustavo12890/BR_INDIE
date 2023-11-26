@@ -11,17 +11,15 @@ if ($query->rowCount()){
     session_start();
     $_SESSION["usuario"] = array($user["nm_usuario"], $user["tipo_acesso"]);
 
-    if ($user["tipo_acesso"] == 1) {
-    header('Location: ../pages/desenvoldedor/homeDev.php');
+    if ($user['tipo_acesso'] == 'Comum') {
+    header('Location: ../pages/usuario/homeUsuario.php');
     die();
-} 
-
-    elseif ($user=["tipo_acesso"] != 1) {
-        header('Location: ../pages/usuario/homeUsuario.php');
-        die();
+    } 
+    elseif ($user['tipo_acesso'] == 'Desenvolvedor') {
+    header('Location: ../pages/desenvolvedor/homeDev.php');
+    die();
     }
-
-} else {
+   } else {
     header('Location: ../login.php');
     die();
 }
@@ -32,3 +30,4 @@ if ($query->rowCount()){
 }
 
 ?>
+
