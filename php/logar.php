@@ -12,11 +12,11 @@ if ($query->rowCount()){
     $_SESSION["usuario"] = array($user["nm_usuario"], $user["tipo_acesso"]);
 
     if ($user['tipo_acesso'] == 'Comum') {
-    header('Location: ../pages/usuario/homeUsuario.php');
+    header('Location: ../pages/homeUsuario.php');
     die();
     } 
     elseif ($user['tipo_acesso'] == 'Desenvolvedor') {
-    header('Location: ../pages/desenvolvedor/homeDev.php');
+    header('Location: ../pages/homeDev.php');
     die();
     }
    } else {

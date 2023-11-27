@@ -49,13 +49,12 @@ body {
 }
 
 .container-swiper{
-    margin-bottom:5%;
-    box-shadow: 0px 5px 0px 0px #16121285;
-    border-radius: 12px;
-
+    margin-bottom:10%;
 }
 
-
+.projeto-txt{
+    margin-bottom: 5%;
+}
 .slider{
     margin: 0 40px;
     height: 100%;
@@ -327,7 +326,6 @@ body {
 .link-footer:hover {
     color: #8BA2FF;
 }
-
 
 /*FOOTER*/
 

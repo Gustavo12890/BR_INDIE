@@ -1,3 +1,16 @@
+<?php 
+$time = 2 * 60 * 60; // Definido 2 horas.
+session_set_cookie_params($time);
+session_start();
+if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
+    require ("../php/conexao.php");
+    $tipo_acesso = $_SESSION["usuario"][1];
+    $nome = $_SESSION["usuario"][0];
+} else {
+    header ('location: index.php');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,7 +26,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div id="navBar" class="container-fluid">
-        <a class="navbar-brand logo link-hover" href="index.php"><img src="../img/img_landing/logo.png" alt=""
+        <a class="navbar-brand logo link-hover" href="homeUsuario.php"><img src="../img/img_landing/logo.png" alt=""
             style="width: 50px; height: auto;"> INDIE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,13 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5">
             <li class="nav-item">
-              <a class="nav-link link-hover" aria-current="page" href="home.php">Encontrar Jogos</a>
+              <a class="nav-link link-hover" aria-current="page" href="homeUsuario.php">Encontrar Jogos</a>
             </li>
-          <li class="nav-item">
-              <a class="nav-link link-hover" href="sobre.php">Sobre</a>
+            <li class="nav-item">
+              <a class="nav-link link-hover" href="sobreUsuario.php">Sobre</a>
             </li>
           </ul>
-          <p class=" nav-nome me-3 text-white fs-6 mt-3">Convidado</p>
+          <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
           <div class="dropdown show" id="myDropdown">
             <div class="d-flex justify-content-end">
               <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,7 +51,7 @@
               </span>
             </div>
             <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-txt dropdown-item" href="perfil.php">Perfil</a>
+              <a class="dropdown-txt dropdown-item" href="perfilUsuario.php">Perfil</a>
               <a class="dropdown-txt dropdown-item" href="../php/logout.php">Sair</a>
             </div>
           </div>
