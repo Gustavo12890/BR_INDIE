@@ -170,10 +170,19 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
       </ul>
       </div>
     </div>
-    <div>
-    <iframe src=<?php echo $projeto['jogo'] ?> height="600" width="980">
+    <?php 
+    if ($id_projeto == $projeto['jogo']) {
+    echo "<div>
+    <iframe src='$projeto[jogo]' height='600' width='980'>
     </iframe>
-    </div>
+    </div>";
+  } else {
+    echo "<div>
+    <iframe src='$projeto[jogo]' height='600' width='980'>
+    </iframe>
+    </div>";
+  }
+    ?>
     <div class="row">
       <div class="col-12">
         <div class="comment-box text-white">

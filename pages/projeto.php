@@ -1,16 +1,5 @@
 <?php 
-$time = 2 * 60 * 60; // Definido 2 horas.
-session_set_cookie_params($time);
-session_start();
-if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("../php/conexao.php");
-    $tipo_acesso = $_SESSION["usuario"][1];
-    $nome = $_SESSION["usuario"][0];
-} else {
-    header ('location: index.php');
-  }
-  include("../php/conexao.php");
-
+ include("../php/conexao.php");
   $mysqli = new mysqli ($server, $usuario, $senha, $banco);
 
   if(mysqli_connect_errno()) trigger_error(mysqli_connect_error());
@@ -54,7 +43,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
               <a class="nav-link link-hover" href="sobre.php">Sobre</a>
             </li>
           </ul>
-          <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
+          <p class=" nav-nome me-3 text-white fs-6 mt-3">Convidado</p>
           <div class="dropdown show" id="myDropdown">
             <div class="d-flex justify-content-end">
               <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -170,10 +159,19 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
       </ul>
       </div>
     </div>
-    <div>
-    <iframe src=<?php echo $projeto['jogo'] ?> height="600" width="980">
+    <?php 
+    if ($id_projeto == $projeto['jogo']) {
+    echo "<div>
+    <iframe src='$projeto[jogo]' height='600' width='980'>
     </iframe>
-    </div>
+    </div>";
+  } else {
+    echo "<div>
+    <iframe src='$projeto[jogo]' height='600' width='980'>
+    </iframe>
+    </div>";
+  }
+    ?>
     <div class="row">
       <div class="col-12">
         <div class="comment-box text-white">
