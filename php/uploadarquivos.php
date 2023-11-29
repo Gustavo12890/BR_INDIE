@@ -41,4 +41,4 @@ if (isset($_POST['submit'])) {
 
     $conexao->query("INSERT INTO `tb_projeto` (`cd_projeto`, `cd_perfil`, `nm_projeto`, `ds_projeto`, `nm_genero1`, `nm_genero2`, `img_capa`, `img_1`, `img_2`, `img_3`, `jogo`, `data_temp`, `nm_cor`, `nm_corL`, `dt_projeto`, `qt_curtida`, `ds_historia`, `qt_ruim`) VALUES (NULL, '', '$titulo', '$descricao', '$genero1', '$genero2', '$imgcapa', '$img1', '$img2', '$img3', '$projeto', '', '$hexCode', '$hexCode2', '', '', '$historia', '');");
 }
-header('Location: ../pages/home.php');
+header('Location: ../pages/homeDev.php');
