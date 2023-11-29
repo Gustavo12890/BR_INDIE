@@ -67,7 +67,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </nav>
   </header>
 
-    <img class="capa-foto" src="<?php echo $capa?>" alt="">
+    <img class="capa-foto" src="<?php echo $capa_usuario?>" alt="">
 
     <div class="container-fluid">
       <div class="row">
