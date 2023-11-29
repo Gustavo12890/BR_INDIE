@@ -32,7 +32,7 @@
 
         <div class="form-container mt-4">
             <div class="form-cadastro">
-            <form action="../php/cadastro.php" method="POST">
+            <form action="../php/cadastro.php" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-6 px-4 form-esquerdo">
                     <label class="label-cadastro">Nome de usuário:</label>
@@ -51,6 +51,12 @@
                 <div class="col-md-6 px-4">
                     <label class="label-cadastro nascimento" for="nascimento">Data de Nascimento:</label>
                     <input class="input-cadastro" type="date" id="nascimento" required><br><br>
+
+                    <label class="label-cadastro nascimento" for="nascimento">Foto de perfil:</label>
+                    <input class="input-cadastro" name="arquivo[0]" type="file" required><br><br>
+                    
+                    <label class="label-cadastro nascimento" for="nascimento">Foto de capa:</label>
+                    <input class="input-cadastro" name="arquivo[1]" type="file" required><br><br>
                     
                     <label class="label-cadastro">Qual o tipo de conta?</label><br>
                     <select class="input-genero"  name="tipoconta" required>
@@ -59,7 +65,7 @@
                      </select>
 
                     <p class="label-cadastro">Já possui uma conta? <a class="link-login" href="../pages/login.php">Entre</a></p>
-                    <button class="btn btn-cadastro btn-lg float-right">Cadastrar</button>
+                    <button class="btn btn-cadastro btn-lg float-right" name="submit">Cadastrar</button>
 
                 </div>
             </div>

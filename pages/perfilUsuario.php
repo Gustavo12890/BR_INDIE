@@ -6,7 +6,9 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     require ("../php/conexao.php");
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
-} else {
+    $foto_usuario = $_SESSION["usuario"][2];
+    $capa_usuario = $_SESSION["usuario"][3];
+   } else {
     header ('location: index.php');
   }
 ?>
@@ -48,12 +50,12 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             <div class="d-flex justify-content-end">
               <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="icone-perfil d-flex align-items-center">
-                  <img class="perfil-nav-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
+                  <img class="perfil-nav-foto" src="<?php echo $foto_usuario?>" alt="Foto de Perfil">
                 </div>
               </span>
             </div>
             <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-txt dropdown-item" href="perfil.php">Perfil</a>
+              <a class="dropdown-txt dropdown-item" href="perfilUsuario.php">Perfil</a>
               <a class="dropdown-txt dropdown-item" href="../php/logout.php">Sair</a>
             </div>
           </div>
@@ -62,14 +64,14 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </nav>
   </header>
 
-    <img class="capa-foto" src="../img/img_perfil/teste2.jpg" alt="">
+    <img class="capa-foto" src="<?php echo $capa_usuario?>">
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 ">
 
           <div class="d-flex flex-column flex-lg-row">
-              <img class="foto-perfil ms-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="">
+              <img class="foto-perfil ms-2" src="<?php echo $foto_usuario?>">
               <div class="box-perfil">
                   <h2 class="nome-perfil ms-3 mt-4"><?php echo $nome ?></h2>
                   <p class="text-white ms-3 fs-6">01 de setembro de 2023</p>

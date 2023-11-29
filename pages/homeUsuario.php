@@ -6,6 +6,8 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     require ("../php/conexao.php");
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
+    $foto_usuario = $_SESSION["usuario"][2];
+    $capa_usuario = $_SESSION["usuario"][3];
 } else {
     header ('location: index.php');
   }
@@ -46,7 +48,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             <div class="d-flex justify-content-end">
               <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="icone-perfil d-flex align-items-center">
-                  <img class="perfil-nav-foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5DBjWALBpiHnluwrjZHhF8oSrmkVdHUcFQ&usqp=CAU" alt="Foto de Perfil">
+                  <img class="perfil-nav-foto" src="<?php echo $foto_usuario?>" alt="Foto de Perfil">
                 </div>
               </span>
             </div>
