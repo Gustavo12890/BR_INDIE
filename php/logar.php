@@ -9,7 +9,7 @@ if ($query->rowCount()){
     $user = $query->fetchAll(PDO::FETCH_ASSOC)[0]; 
 
     session_start();
-    $_SESSION["usuario"] = array($user["nm_usuario"], $user["tipo_acesso"], $user["fotoperfil"], $user["fotocapa"]);
+    $_SESSION["usuario"] = array($user["nm_usuario"], $user["tipo_acesso"], $user["fotoperfil"], $user["fotocapa"], $user["id_usuario"]);
 
     if ($user['tipo_acesso'] == 'Comum') {
     header('Location: ../pages/homeUsuario.php');

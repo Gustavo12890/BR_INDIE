@@ -8,6 +8,8 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     $nome = $_SESSION["usuario"][0];
     $foto_usuario = $_SESSION["usuario"][2];
     $capa_usuario = $_SESSION["usuario"][3];
+    $id_usuario = $_SESSION["usuario"][4];
+
 } else {
     header ('location: index.php');
   }
@@ -96,11 +98,30 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                   </div>
               </div>
            </div>
-          
-        </div>
+          </div>
       </div>
+      <?php 
+  require ('../php/conexao.php');
+  $pdo = new PDO('mysql:host=localhost;dbname=db_brindie', 'root', '');
+  $sql = "SELECT
+  tb_projeto.img_capa,
+  tb_projeto.cd_projeto,
+  tb_projeto.nm_projeto,
+  tb_projeto.ds_projeto,
+  tb_usuarios.nm_usuario
+  FROM tb_projeto
+  JOIN tb_usuarios
+  ON tb_projeto.cd_perfil = tb_usuarios.id_usuario
+  WHERE tb_projeto.cd_perfil IN (:id_usuario)";
+  $stmt = $pdo->prepare($sql);
+  $stmt->bindParam(':id_usuario', $id_usuario);
+  $stmt->execute();
 
-      <div class="container-swiper">
+  // Exibir os resultados da consulta
+  $projetos = $stmt->fetchAll();
+
+?>
+        <div class="container-swiper">
   <div class="col-md-4 projeto-txt">
     <h3 style="color: #8BA2FF" class="mt-5 ms-5">Projetos</h3>
     <p class="text-white ms-5">Alguns dos meus jogos criados.</p>
@@ -109,23 +130,12 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <div class="swiper-dos-crias">
       <div class="slider mySwiper">
         <div class="image-items swiper-wrapper">
+        <?php foreach($projetos as $projeto): ?>
           <div class="swiper-slide">
-            <img class="swiper-img" src="../img/img_login_cadastro/carrosel1.png" alt="">
-            <p>Dandy Ace</p>
+            <img class="swiper-img" src="<?php echo $projeto["img_capa"]; ?>" alt="">
+            <p><?php echo $projeto["nm_projeto"]; ?></p>
           </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="../img/img_login_cadastro/carrosel2.jpg" alt="">
-            <p>Dandara Trials of Fear Edition</p>
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="../img/img_login_cadastro/carrosel3.jpg" alt="">
-            <p>Horizon Chase Turbo</p>
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="../img/img_login_cadastro/carrosel4.png" alt="">
-            <p>Unsighted</p>
-          </div>
-        </div>
+          <?php endforeach; ?>
         <div class="swiper-button-next arrowButton right"></div>
         <div class="swiper-button-prev arrowButton left"></div>
       </div>
