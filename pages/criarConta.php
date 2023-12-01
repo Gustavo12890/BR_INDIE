@@ -30,11 +30,11 @@
             </div>
         </div>
 
-        <div class="form-container mt-4">
+        <div class="form-container mt-5">
             <div class="form-cadastro">
             <form action="../php/cadastro.php" method="POST" enctype="multipart/form-data">
             <div class="row">
-                <div class="col-md-6 px-4 form-esquerdo">
+                <div class="col-md-6 px-4 form-esquerdo mt-4">
                     <label class="label-cadastro">Nome de usuário:</label>
                     <input class="input-cadastro" type="text" name="nome" id="nome" required><br><br>
 
@@ -48,7 +48,7 @@
                     <input class="input-cadastro" type="password" id="confirmSenha" required><br><br>
                 </div>
 
-                <div class="col-md-6 px-4">
+                <div class="col-md-6 px-4 mt-1">
                     <label class="label-cadastro nascimento" for="nascimento">Data de Nascimento:</label>
                     <input class="input-cadastro" type="date" id="nascimento" required><br><br>
 
@@ -69,7 +69,7 @@
 
                 </div>
             </div>
-            <p class="label-cadastro termos mt-3">Ao se cadastrar, você aceita os 
+            <p class="label-cadastro termos mt-3 text-center">Ao se cadastrar, você aceita os 
                 <a class="link-login" href="#">Termos de Uso</a> e a 
                 <a class="link-login" href="#">Política de Privacidade</a>
             </p>

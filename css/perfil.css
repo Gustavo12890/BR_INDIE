@@ -154,16 +154,19 @@ body {
 
 .capa-foto {
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 2000px;
+    height: 400px;
+    object-fit: cover;
+    
 }
 
 .foto-perfil {
     border-radius: 100%;
     border: 6px solid black;
     margin-top: -5rem;
-    max-width: 100%;
-    height: auto;
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
     position: absolute;
 }
 

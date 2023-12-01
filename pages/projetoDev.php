@@ -174,12 +174,12 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </div>
     <?php 
     if ($id_projeto == $projeto['jogo']) {
-    echo "<div>
+    echo "<div class='jogoiframe'>
     <iframe src='$projeto[jogo]' height='600' width='980'>
     </iframe>
     </div>";
   } else {
-    echo "<div>
+    echo "<div class='jogoiframe'>
     <iframe src='$projeto[jogo]' height='600' width='980'>
     </iframe>
     </div>";

@@ -82,7 +82,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                   <p class="text-white ms-3 fs-6">01 de setembro de 2023</p>
                   <p class="text-white ms-3">Imagine alguma descrição muito boa aqui.</p>
               </div>
-              <div style="margin-right: 2rem" class="ms-auto">
+               <div style="margin-right: 2rem" class="ms-auto">
                   <div class="mt-4 d-flex justify-content-end">
                     <button class="bseguir-perfil">+ Seguir</button>
                   </div>
