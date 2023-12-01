@@ -82,7 +82,35 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                   <p class="text-white ms-3 fs-6">01 de setembro de 2023</p>
                   <p class="text-white ms-3">Imagine alguma descrição muito boa aqui.</p>
               </div>
-               <div style="margin-right: 2rem" class="ms-auto">
+              <button type="button" class="bseguir-perfil" data-toggle="modal" data-target="#exampleModal">
+              Alterar fotos
+              </button>   
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Alterar fotos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <form action="../php/alterarFoto.php" method="POST" enctype="multipart/form-data">
+                  <label class="label-cadastro nascimento" >Nova foto de perfil:</label>
+                    <input class="input-cadastro" name="arquivo[0]" type="file" required><br><br>
+                    
+                    <label class="label-cadastro nascimento">Nova foto de capa:</label>
+                    <input class="input-cadastro" name="arquivo[1]" type="file" required><br><br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-dismiss="modal">Alterar</button>
+                    <button type="button" class="btn btn-danger">Fechar</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+              <div style="margin-right: 2rem" class="ms-auto">
                   <div class="mt-4 d-flex justify-content-end">
                     <button class="bseguir-perfil">+ Seguir</button>
                   </div>

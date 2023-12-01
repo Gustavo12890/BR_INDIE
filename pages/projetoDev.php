@@ -8,6 +8,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     $nome = $_SESSION["usuario"][0];
     $foto_usuario = $_SESSION["usuario"][2];
     $capa_usuario = $_SESSION["usuario"][3];
+    $id_usuario = $_SESSION["usuario"][4];
 } else {
     header ('location: index.php');
   }
@@ -184,18 +185,80 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     </iframe>
     </div>";
   }
-    ?>
-    <div class="row">
+?>
+
+<?php
+	
+	  require('../php/conexao.php');
+
+	  if (isset($_POST['post_comment'])) {
+
+      $message = $_POST['message'];
+      $id_projeto = $_POST['id_projeto'];
+      
+
+  
+      $sql = "INSERT INTO tb_comentario (ds_mensagem, cd_projeto, cd_perfil)
+            VALUES ('$message', '$id_projeto', '$id_usuario')";
+  
+    if ($conexao->query($sql) === TRUE){
+		  echo "";
+		}
+  }
+?>
+<div class="conteudo-comentario">
+    <?php
+    $id_projeto = $_GET['id_projeto'];
+
+    $sql = "SELECT
+      tb_comentario.id_comentario,
+      tb_comentario.ds_mensagem,
+      tb_usuarios.nm_usuario,
+      tb_usuarios.fotoperfil
+    FROM
+      tb_comentario
+    INNER JOIN
+      tb_usuarios
+    ON
+      tb_comentario.cd_perfil = tb_usuarios.id_usuario
+    WHERE
+      tb_comentario.cd_projeto = $id_projeto";
+      $result = $conexao->query($sql);
+
+    if ($result->rowCount() > 0) {
+        // output data of each row
+        while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+
+            // Recupera a foto do usuário
+            $foto_usuario = $row['fotoperfil'];
+
+            // Exibe a mensagem do usuário
+            
+           
+            echo "<div conteudo-comentario>
+            <p><img class='foto-usuario' src='$foto_usuario' alt='Foto do usuário'>
+            <div class='nomeuser'>
+            <b>{$row['nm_usuario']}</b>: {$row['ds_mensagem']}</p>
+            </div>
+            </div>
+            </div>";
+           } } ?>
+           
+        <div class="row">
       <div class="col-12">
         <div class="comment-box text-white">
           <h2>Deixe um comentário:</h2>
-          <textarea></textarea>
+          <form action="" method="post" class="form">
+          <input type="hidden" name="id_projeto" value="<?php echo $id_projeto; ?>">
+          <textarea name="message" class="caixacomentario"></textarea>
           <br>
-          <button>Enviar</button>
+          <button type="submit" class="btn btn-light" name="post_comment">Enviar</button>
         </div>
       </div>
     </div>
 </div>
+</div>
+
 
 <footer class="bg-dark text-center text-white">
   <div class="container p-4">

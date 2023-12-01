@@ -350,3 +350,29 @@ button {
   align-items: center;
 
 }
+
+.conteudo-comentario {
+  margin-top: 120px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+  margin: 20px;
+}
+
+.foto-usuario {
+  border-radius: 100%;
+  border: 3px solid black;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  }
+
+.nomeuser {
+margin-left: 80px;
+}
+
+.caixacomentario {
+border-radius: 10px;
+border: 1px solid black;
+}
