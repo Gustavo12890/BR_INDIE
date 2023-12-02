@@ -232,10 +232,11 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             // Recupera a foto do usuário
             $foto_usuario = $row['fotoperfil'];
             $comentario = $row ['ds_mensagem'];
+            $nome_usuario = $row ['nm_usuario'];
             // Exibe a mensagem do usuário
             echo "<div class='conteudo-comentario'>
             <img class='foto-usuario' src='$foto_usuario' alt='Foto do usuário'>
-            <b>$nome</b>: <p class='texto-comentario'>$comentario</p>
+            <b>$nome_usuario</b>: <p class='texto-comentario'>$comentario</p>
             </div>";
            } } ?>
            
