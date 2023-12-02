@@ -1,3 +1,4 @@
+// color pickers
 var colorPickers = document.getElementById('color-pickers');
 var hexInputs = colorPickers.querySelectorAll('.hex-input');
 var colorSelectors = colorPickers.querySelectorAll('.color-selector');
@@ -40,3 +41,5 @@ hexInputs.forEach(function (hexInput) {
         hexInput.addEventListener(evt, updateSelector);
     });
 });
+// color pickers
+

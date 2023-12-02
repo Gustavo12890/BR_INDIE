@@ -1,20 +1,21 @@
-<?php 
+<?php
 $time = 2 * 60 * 60; // Definido 2 horas.
 session_set_cookie_params($time);
 session_start();
-if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
-    require ("../php/conexao.php");
+if (isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
+    require("../php/conexao.php");
     $tipo_acesso = $_SESSION["usuario"][1];
     $nome = $_SESSION["usuario"][0];
     $foto_usuario = $_SESSION["usuario"][2];
     $capa_usuario = $_SESSION["usuario"][3];
 } else {
-    header ('location: index.php');
-  }
+    header('location: index.php');
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,64 +24,149 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <title>Criar Jogo</title>
 </head>
+
 <body>
     <!--BARRA DE NAVEGAÇÃO-->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div id="navBar" class="container-fluid">
-        <a class="navbar-brand logo link-hover" href="homeDev.php"><img src="../img/img_landing/logo.png" alt=""
-            style="width: 50px; height: auto;"> INDIE</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="../img/img_landing/list.svg">
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5">
-            <li class="nav-item">
-              <a class="nav-link link-hover" aria-current="page" href="homeDev.php">Encontrar Jogos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-hover" href="enviarProjeto.php">Enviar Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-hover" href="sobreDev.php">Sobre</a>
-            </li>
-          </ul>
-          <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
-          <div class="dropdown show" id="myDropdown">
-            <div class="d-flex justify-content-end">
-              <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="icone-perfil d-flex align-items-center">
-                  <img class="perfil-nav-foto" src="<?php echo $foto_usuario?>" alt="Foto de Perfil">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div id="navBar" class="container-fluid">
+                <a class="navbar-brand logo link-hover" href="homeDev.php"><img src="../img/img_landing/logo.png" alt="" style="width: 50px; height: auto;"> INDIE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../img/img_landing/list.svg">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link link-hover" aria-current="page" href="homeDev.php">Encontrar Jogos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover" href="enviarProjeto.php">Enviar Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover" href="sobreDev.php">Sobre</a>
+                        </li>
+                    </ul>
+                    <p class=" nav-nome me-3 text-white fs-6 mt-3"><?php echo $nome; ?></p>
+                    <div class="dropdown show" id="myDropdown">
+                        <div class="d-flex justify-content-end">
+                            <span class="dropright text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="icone-perfil d-flex align-items-center">
+                                    <img class="perfil-nav-foto" src="<?php echo $foto_usuario ?>" alt="Foto de Perfil">
+                                </div>
+                            </span>
+                        </div>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-txt dropdown-item" href="perfilDev.php">Perfil</a>
+                            <a class="dropdown-txt dropdown-item" href="../php/logout.php">Sair</a>
+                        </div>
+                    </div>
                 </div>
-              </span>
             </div>
-            <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-txt dropdown-item" href="perfilDev.php">Perfil</a>
-              <a class="dropdown-txt dropdown-item" href="../php/logout.php">Sair</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!--BARRA DE NAVEGAÇÃO-->
-    <!--Formulário--> 
+        </nav>
+    </header>
+    <!--BARRA DE NAVEGAÇÃO-->
+    <!--Formulário-->
     <div class="background-container">
-    <img class="img-cadastro" src="../img/img_criar_jogo/celestewp.png" alt="fundo">
+        <img class="img-cadastro" src="../img/img_criar_jogo/celestewp.png" alt="fundo">
         <div class="container mt-4">
-            <form id="jogo-form" action="../php/uploadarquivos.php"  enctype="multipart/form-data" method="post">
+            <form id="jogo-form" action="../php/uploadarquivos.php" enctype="multipart/form-data" method="post">
                 <label class="form-titulo" for="titulo">Título:</label>
-                <input class="caixa-titulo"  type="text"  name="titulo" id="titulo" required>
+                <input class="caixa-titulo" type="text" name="titulo" id="titulo" required>
                 <label class="form-texto" for="descricao">História:</label>
                 <textarea class="caixa-input" name="descricao" id="descricao" rows="5" maxlength="5000" required></textarea>
                 <label class="form-texto" for="descricao">Descrição:</label>
                 <textarea class="caixa-input" name="historia" id="historia" rows="15" maxlength="8000" required></textarea>
+
+                <div class="form-genero-container">
+                    <div class="form-genero">
+                        <label class="form-texto" for="fonte">Fonte Título</label>
+                        <select class="input-genero" name="fonte_titulo" id="fonte_titulo">
+                            <option value="" disabled selected>Selecione uma fonte</option>
+                            <option value="Arial">Arial</option>
+                            <option value="Arial Black">Arial Black</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Tahoma">Tahoma</option>
+                            <option value="Calibri">Calibri</option>
+                            <option value="Trebuchet MS ">Trebuchet MS </option>
+                            <option value="Impact">Impact</option>
+                            <option value="Gill Sans">Gill Sans</option>
+                            <option value="Lucida Console">Lucida</option>
+                            <option value="Courier">Courier</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Palatino">Palatino</option>
+                            <option value="Book Antiqua">Book Antiqua</option>
+                            <option value="Times">Times</option>
+                            <option value="Comic Sans MS">Comic Sans MS</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Baskerville">Baskerville</option>
+                            <option value="Andalé Mono">Andalé Mono</option>
+                            <option value="Bradley Hand">Bradley Hand</option>
+                            <option value="Brush Script MT">Brush Script MT</option>
+                            <option value="Luminari">Luminari</option>
+                        </select>
+                    </div>
+                    <div class="form-genero">
+                        <label class="form-texto" for="fonte">Fonte Descrição</label>
+                        <select class="input-genero" name="fonte_descricao" id="fonte_descricao">
+                            <option value="" disabled selected>Selecione uma fonte</option>
+                            <option value="Arial">Arial</option>
+                            <option value="Arial Black">Arial Black</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Tahoma">Tahoma</option>
+                            <option value="Calibri">Calibri</option>
+                            <option value="Trebuchet MS ">Trebuchet MS </option>
+                            <option value="Impact">Impact</option>
+                            <option value="Gill Sans">Gill Sans</option>
+                            <option value="Lucida Console">Lucida</option>
+                            <option value="Courier">Courier</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Palatino">Palatino</option>
+                            <option value="Book Antiqua">Book Antiqua</option>
+                            <option value="Times">Times</option>
+                            <option value="Comic Sans MS">Comic Sans MS</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Baskerville">Baskerville</option>
+                            <option value="Andalé Mono">Andalé Mono</option>
+                            <option value="Bradley Hand">Bradley Hand</option>
+                            <option value="Brush Script MT">Brush Script MT</option>
+                            <option value="Luminari">Luminari</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="color-pickers">
+                    <div class="form-cor-container">
+                        <div class="form-cor-esquerdo">
+                            <label class="form-texto-cor">Cor de Background:</label>
+                            <input class="formcor-tamanho color-selector" id="cor" type="color" name="cor" value="#ffffff">
+                            <input class="hex-input" type="text" name="hex_input">
+                        </div>
+                        <div class="form-cor">
+                            <label class="form-texto-cor" for="background-color">Cor das bordas:</label>
+                            <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
+                            <input class="hex-input" type="text" name="hex_input2">
+                        </div>
+                        <div class="form-cor">
+                            <label class="form-texto-cor" for="background-color">Cor do título:</label>
+                            <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
+                            <input class="hex-input" type="text" name="cor-titulo">
+                        </div>
+                        <div class="form-cor">
+                            <label class="form-texto-cor" for="background-color">Cor da Descrição:</label>
+                            <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
+                            <input class="hex-input" type="text" name="cor-descricao">
+                        </div>
+                    </div>
+
                     <!--Primeiro genero-->
                     <div class="form-genero-container">
                         <div class="form-genero">
                             <label class="form-texto" for="genero-1">Gênero 1:</label>
-                            <select class="input-genero"  name="genero-1" id="genero-1" required>
+                            <select class="input-genero" name="genero-1" id="genero-1" required>
                                 <option value="" disabled selected>Selecione um gênero</option>
                                 <option value="Ação">Ação</option>
                                 <option value="Aventura">Aventura</option>
@@ -102,12 +188,12 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                                 <option value="Visual Novel">Visual Novel</option>
                                 <option value="Cartas">Cartas</option>
                             </select>
-                    <!--Primeiro genero-->
+                            <!--Primeiro genero-->
                         </div>
                         <!--Segundo genero-->
                         <div class="form-genero">
                             <label class="form-texto" for="genero-2">Gênero 2 (opcional):</label>
-                            <select class="input-genero"  name="genero-2" id="genero-2">
+                            <select class="input-genero" name="genero-2" id="genero-2">
                                 <option value="" selected>Nenhum</option>
                                 <option value="Ação">Ação</option>
                                 <option value="Aventura">Aventura</option>
@@ -131,48 +217,48 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                             </select>
                             <!--Segundo genero-->
                         </div>
-                    </div> 
-                <div class="txt-img-container-capa">
-                    <p class="img-texto-capa"><strong>Imagem da capa:</strong></p>
-                    <label class="btn-img" for="capa-image" >Enviar arquivo</label>
-                </div>      
-                <input class="form-texto" type="file" name="arquivo[0]" id="capa-image" onchange="previewCapa()"  accept="image/*"><br>
-                <img class="img-capa" id="input-capa"  class="w-100">
+                    </div>
+                    <div class="txt-img-container-capa">
+                        <p class="img-texto-capa"><strong>Imagem da capa:</strong></p>
+                        <label class="btn-img" for="capa-image">Enviar arquivo</label>
+                    </div>
+                    <input class="form-texto" type="file" name="arquivo[0]" id="capa-image" onchange="previewCapa()" accept="image/*"><br>
+                    <img class="img-capa" id="input-capa" class="w-100">
 
                     <div class="img-adicional">
-                    <div class="txt-img-container">
-                        <p class="img-texto"><strong>Imagem 1:</strong></p>
-                        <label class="btn-img-adicional" for="image-1">Enviar arquivo</label>
+                        <div class="txt-img-container">
+                            <p class="img-texto"><strong>Imagem 1:</strong></p>
+                            <label class="btn-img-adicional" for="image-1">Enviar arquivo</label>
+                        </div>
+                        <input class="form-texto-img" type="file" name="arquivo[1]" id="image-1" onchange="previewImagem1()" accept="image/*"><br>
+                        <img class="form-img" id="input-img1" class="input-img">
                     </div>
-                        <input class="form-texto-img" type="file" name="arquivo[1]"  id="image-1" onchange="previewImagem1()" accept="image/*"><br>
-                        <img class="form-img" id="input-img1"  class="input-img">
-                    </div>
-                    
+
                     <div class="img-adicional">
                         <div class="txt-img-container">
                             <p class="img-texto"><strong>Imagem 2:</strong></p>
-                            <label class="btn-img-adicional"for="image-2">Enviar arquivo</label>
+                            <label class="btn-img-adicional" for="image-2">Enviar arquivo</label>
                         </div>
                         <input class="form-texto-img" type="file" name="arquivo[2]" id="image-2" onchange="previewImagem2()" accept="image/*"><br>
-                        <img  class="form-img" id="input-img2"  class="input-img">
-                    </div>
-                
-                    <div class="img-adicional">
-                        <div class="txt-img-container">
-                        <p class="img-texto"><strong>Imagem 3:</strong></p>
-                        <label class="btn-img-adicional" for="image-3">Enviar arquivo</label>
-                        </div>
-                        <input  class="form-texto-img" type="file" name="arquivo[3]" id="image-3" onchange="previewImagem3()" accept="image/*"><br>
-                        <img  class="form-img" id="input-img3"  class="input-img">
+                        <img class="form-img" id="input-img2" class="input-img">
                     </div>
 
-                    <div>
+                    <div class="img-adicional">
+                        <div class="txt-img-container">
+                            <p class="img-texto"><strong>Imagem 3:</strong></p>
+                            <label class="btn-img-adicional" for="image-3">Enviar arquivo</label>
+                        </div>
+                        <input class="form-texto-img" type="file" name="arquivo[3]" id="image-3" onchange="previewImagem3()" accept="image/*"><br>
+                        <img class="form-img" id="input-img3" class="input-img">
+                    </div>
+
+                    <!-- <div>
                         <div class="txt-img-container">
                         <p class="img-texto"><strong>Projeto:</strong></p>
                         </div>
                         <input type="text" name="linkjogo"><br>
                         </div>
-                    <!-- <div class="img-adicional">
+                    <div class="img-adicional">
                         <div class="txt-img-preview-container">
                         <p class="img-texto-preview"><strong>Preview do jogo (opcional):</strong></p>
                         <label class="btn-img-adicional" for="gif">Enviar arquivo</label>
@@ -180,23 +266,10 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         <input  class="form-texto-img" type="file" name="arquivo[4]" id="gif" onchange="previewgif()" accept="image/*"><br>
                         <img  class="form-img" id="input-gif"  class="input-img">
                     </div> -->
-                    <div id="color-pickers">
-                        <div class="form-cor-container">
-                            <div class="form-cor-esquerdo">
-                                <label class="form-texto-cor">Cor de Background:</label>
-                                <input class="formcor-tamanho color-selector" id="cor" type="color" name="cor" value="#ffffff">
-                                <input class="hex-input" type="text" name="hex_input">
-                            </div>
-                            <div class="form-cor">
-                                <label class="form-texto-cor" for="background-color">Cor das bordas:</label>
-                                <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
-                                <input class="hex-input" type="text" name="hex_input2">
-                            </div>
-                        </div>
-                        <div class="form-btn-container">
-                            <button class="form-btn" name="submit" type="submit">Enviar</button>
-                        </div>
+                    <div class="form-btn-container">
+                        <button class="form-btn" name="submit" type="submit">Enviar</button>
                     </div>
+                </div>
             </form>
         </div>
     </div>
@@ -207,7 +280,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             var preview = document.getElementById('input-capa');
             var reader = new FileReader();
 
-            reader.onloadend = function () {
+            reader.onloadend = function() {
                 preview.src = reader.result;
             }
 
@@ -216,14 +289,14 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             } else {
                 preview.src = "";
             }
-         }
+        }
 
         function previewImagem1() {
             var imagem1 = document.getElementById('image-1').files[0];
             var preview1 = document.getElementById('input-img1');
             var reader1 = new FileReader();
 
-            reader1.onloadend = function () {
+            reader1.onloadend = function() {
                 preview1.src = reader1.result;
             }
 
@@ -239,7 +312,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             var preview2 = document.getElementById('input-img2');
             var reader2 = new FileReader();
 
-            reader2.onloadend = function () {
+            reader2.onloadend = function() {
                 preview2.src = reader2.result;
             }
 
@@ -255,7 +328,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             var preview3 = document.getElementById('input-img3');
             var reader3 = new FileReader();
 
-            reader3.onloadend = function () {
+            reader3.onloadend = function() {
                 preview3.src = reader3.result;
             }
 
@@ -271,7 +344,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             var previewgif = document.getElementById('input-gif');
             var readergif = new FileReader();
 
-            readergif.onloadend = function () {
+            readergif.onloadend = function() {
                 previewgif.src = readergif.result;
             }
 
@@ -287,4 +360,5 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/cor.js"></script>
 </body>
+
 </html>

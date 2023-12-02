@@ -33,7 +33,11 @@ if (isset($_POST['submit'])) {
     $img2 = $imagens[2];
     $img3 = $imagens[3];
     $titulo = $_POST['titulo'];
+    $fonteTitulo = $_POST['fonte_titulo'];
+    $corTitulo = $_POST ['cor-titulo'];
     $descricao = $_POST['descricao'];
+    $fonteDescricao = $_POST['fonte_descricao'];
+    $corDescricao = $_POST['cor-descricao'];
     $genero1 = $_POST['genero-1'];
     $genero2 = $_POST['genero-2'];
     $hexCode = $_POST['hex_input'];
@@ -41,6 +45,6 @@ if (isset($_POST['submit'])) {
     $historia = $_POST['historia'];
     $projeto = $_POST['linkjogo'];
 
-    $conexao->query("INSERT INTO `tb_projeto` (`cd_projeto`, `cd_perfil`, `nm_projeto`, `ds_projeto`, `nm_genero1`, `nm_genero2`, `img_capa`, `img_1`, `img_2`, `img_3`, `jogo`, `data_temp`, `nm_cor`, `nm_corL`, `dt_projeto`, `qt_curtida`, `ds_historia`, `qt_ruim`) VALUES (NULL, '$id_usuario', '$titulo', '$descricao', '$genero1', '$genero2', '$imgcapa', '$img1', '$img2', '$img3', '$projeto', '', '$hexCode', '$hexCode2', '', '', '$historia', '');");
+    $conexao->query("INSERT INTO `tb_projeto` (`cd_projeto`, `cd_perfil`, `nm_projeto`, `fonte_titulo`, `cor_titulo`, `ds_projeto`, `fonte_descricao`, `cor_descricao`, `nm_genero1`, `nm_genero2`, `img_capa`, `img_1`, `img_2`, `img_3`, `jogo`, `data_temp`, `nm_cor`, `nm_corL`, `dt_projeto`, `qt_curtida`, `ds_historia`, `qt_ruim`) VALUES (NULL, '$id_usuario', '$titulo', '$fonteTitulo', '$corTitulo', '$descricao', '$fonteDescricao', '$corDescricao', '$genero1', '$genero2', '$imgcapa', '$img1', '$img2', '$img3', '$projeto', '', '$hexCode', '$hexCode2', '', '', '$historia', '');");
 }
 header('Location: ../pages/homeDev.php');

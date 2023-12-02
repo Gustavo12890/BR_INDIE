@@ -20,7 +20,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
   $id_projeto = $_GET['id_projeto'];
 
-  $sql = "SELECT cd_projeto, nm_projeto, img_capa, img_1, img_2, img_3, jogo, ds_projeto, ds_historia, nm_genero1, nm_cor, nm_corL FROM tb_projeto WHERE cd_projeto = '$id_projeto'";
+  $sql = "SELECT cd_projeto, nm_projeto, fonte_titulo, cor_titulo, img_capa, img_1, img_2, img_3, jogo, ds_projeto, ds_historia, fonte_descricao, cor_descricao, nm_genero1, nm_cor, nm_corL FROM tb_projeto WHERE cd_projeto = '$id_projeto'";
   $query = $mysqli->query($sql);
   $projeto = $query->fetch_array()
 ?>
@@ -83,14 +83,14 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   </div>
   <div class="row">
     <div class="col">
-      <h1 class="titulo mt-4 mb-4 fs-1 text-center"><?php echo $projeto['nm_projeto']?></h1>
-      <p class="texto-projeto"><?php echo $projeto['ds_projeto']?></p>
+      <h1 class="titulo mt-4 mb-4 fs-1 text-center" style="color: <?php echo $projeto['cor_titulo']?>; font-family: <?php echo $projeto['fonte_titulo']?>;"><?php echo $projeto['nm_projeto']?></h1>
+      <p class="texto-projeto" style="color: <?php echo $projeto['cor_descricao']?>; font-family: <?php echo $projeto['fonte_descricao']?>;" ><?php echo $projeto['ds_projeto']?></p>
     </div>
   </div>
 
   <div class="row mt-5">
     <div class="col-lg-7 col-12 d-flex justify-content-center">
-      <p class="texto-projeto"><?php echo $projeto['ds_historia']?></p>
+      <p class="texto-projeto" style="color: <?php echo $projeto['cor_descricao']?>; font-family: <?php echo $projeto['fonte_descricao']?>;"><?php echo $projeto['ds_historia']?></p>
     </div>
     <div class="imagens-projeto col-lg-4 col-12 col-md-12">
       <!--A classe "myImg" está sendo usada para identificar as imagens que abrirão no modal.-->
