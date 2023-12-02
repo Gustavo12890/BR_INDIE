@@ -8,6 +8,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     $nome = $_SESSION["usuario"][0];
     $foto_usuario = $_SESSION["usuario"][2];
     $capa_usuario = $_SESSION["usuario"][3];
+    $id_usuario = $_SESSION["usuario"][4];
    } else {
     header ('location: index.php');
   }
@@ -100,7 +101,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
       <div class="container-swiper">
   <div class="col-md-4 projeto-txt">
     <h3 style="color: #8BA2FF" class="mt-5 ms-5">Projetos</h3>
-    <p class="text-white ms-5">Alguns dos meus jogos criados.</p>
+    <p class="text-white ms-5">Alguns dos meus jogos favoritos.</p>
   </div>
   <div class="swiper-tamanho">
     <div class="swiper-dos-crias">
