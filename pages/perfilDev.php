@@ -121,7 +121,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   $projetos = $stmt->fetchAll();
 
 ?>
-        <div class="container-swiper">
+  <div class="container-swiper">
   <div class="col-md-4 projeto-txt">
     <h3 style="color: #8BA2FF" class="mt-5 ms-5">Projetos</h3>
     <p class="text-white ms-5">Alguns dos meus jogos criados.</p>
@@ -136,6 +136,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             <p><?php echo $projeto["nm_projeto"]; ?></p>
           </div>
           <?php endforeach; ?>
+        </div>
         <div class="swiper-button-next arrowButton right"></div>
         <div class="swiper-button-prev arrowButton left"></div>
       </div>
