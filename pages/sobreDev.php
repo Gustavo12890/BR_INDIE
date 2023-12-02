@@ -125,9 +125,10 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                 <div class="col d-flex flex-column align-self-center ms-5">
                     <div class="col d-flex flex-row">
                         <p class="nome textos fs-4">Gustavo Oliveira</p>
+                        <p class="text-white apelido fs-4">"Gus Fring"</p>
                     </div>
                     <p class="textos fs-6">Estudante de Desenvolvimento de Sistemas</p>
-                    <p class="text-white textos fs-6">Alguma descrição muito boa sobre algo que vão colocar depois pra preencher espaço na tela</p>
+                    <p class="text-white textos fs-6">Tenho 21 anos, e na equipe BR INDIE sou o responsável pela criação e estilização do Front end.</p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
@@ -137,6 +138,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                 <div class="col d-flex flex-column align-self-center ms-5">
                     <div class="col d-flex flex-row">
                         <p class="nome textos fs-4">Lincoln Vinícius</p>
+                        <p class="text-white apelido fs-4">"Flexbox Júnior"</p>
                     </div>
                     <p class="textos fs-6">Estudante de Desenvolvimento de Sistemas</p>
                     <p class="text-white textos fs-6">Tenho 23 anos. Faço parte do grupo de TCC BR Indie, e estou contribuindo com o back-end do projeto, mas também ajudo nas outras partes do nosso projeto.</p>
