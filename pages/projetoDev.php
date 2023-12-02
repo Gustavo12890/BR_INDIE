@@ -206,7 +206,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 		}
   }
 ?>
-<div class="conteudo-comentario">
+
     <?php
     $id_projeto = $_GET['id_projeto'];
 
@@ -231,34 +231,27 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
             // Recupera a foto do usuário
             $foto_usuario = $row['fotoperfil'];
-
+            $comentario = $row ['ds_mensagem'];
             // Exibe a mensagem do usuário
-            
-           
-            echo "<div conteudo-comentario>
-            <p><img class='foto-usuario' src='$foto_usuario' alt='Foto do usuário'>
-            <div class='nomeuser'>
-            <b>{$row['nm_usuario']}</b>: {$row['ds_mensagem']}</p>
-            </div>
-            </div>
+            echo "<div class='conteudo-comentario'>
+            <img class='foto-usuario' src='$foto_usuario' alt='Foto do usuário'>
+            <b>$nome</b>: <p class='texto-comentario'>$comentario</p>
             </div>";
            } } ?>
            
         <div class="row">
-      <div class="col-12">
-        <div class="comment-box text-white">
-          <h2>Deixe um comentário:</h2>
-          <form action="" method="post" class="form">
-          <input type="hidden" name="id_projeto" value="<?php echo $id_projeto; ?>">
-          <textarea name="message" class="caixacomentario"></textarea>
-          <br>
-          <button type="submit" class="btn btn-light" name="post_comment">Enviar</button>
+            <div class="col-12">
+                <div class="comment-box text-white">
+                <h2>Deixe um comentário:</h2>
+                <form action="" method="post" class="form">
+                    <input type="hidden" name="id_projeto" value="<?php echo $id_projeto; ?>">
+                    <textarea name="message" class="caixacomentario"></textarea>
+                <br>
+                <button type="submit" class="btn btn-light" name="post_comment">Enviar</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 </div>
-</div>
-
 
 <footer class="bg-dark text-center text-white">
   <div class="container p-4">

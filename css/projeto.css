@@ -354,10 +354,15 @@ button {
 .conteudo-comentario {
   margin-top: 120px;
   border-radius: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px;
   background-color: white;
   margin: 20px;
+}
+
+.texto-comentario {
+  margin-left: 5.3rem;
+  margin-top: -1rem;
 }
 
 .foto-usuario {
@@ -374,5 +379,5 @@ margin-left: 80px;
 
 .caixacomentario {
 border-radius: 10px;
-border: 1px solid black;
+/* border: 1px solid black; */
 }
