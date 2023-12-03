@@ -81,11 +81,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <div class="row">
     <div class="col">
       <h1 class="titulo mt-4 mb-4 fs-1 text-center" style="color: <?php echo $projeto['cor_titulo']?>; font-family: <?php echo $projeto['fonte_titulo']?>;"><?php echo $projeto['nm_projeto']?></h1>
-<<<<<<< Updated upstream
       <p class="texto-projeto" style="color: <?php echo $projeto['cor_descricao']?>; font-family:<?php echo $projeto['fonte_descricao']?>;"><?php echo $projeto['ds_projeto']?></p>
-=======
-      <p class="texto-projeto" style="color: <?php echo $projeto['cor_descricao']?>;  font-family: <?php echo $projeto['fonte_descricao']?>;"><?php echo $projeto['ds_projeto']?></p>
->>>>>>> Stashed changes
     </div>
   </div>
 
