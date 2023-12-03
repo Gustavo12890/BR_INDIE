@@ -235,9 +235,10 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
             $nome_usuario = $row ['nm_usuario'];
             // Exibe a mensagem do usuário
             echo "<div class='conteudo-comentario'>
-            <img class='foto-usuario' src='$foto_usuario' alt='Foto do usuário'>
-            <b>$nome_usuario</b>: <p class='texto-comentario'>$comentario</p>
-            </div>";
+                      <img class='foto-usuario' src='$foto_usuario' alt='Foto do usuário'>
+                      <b class='nm-usuario'>$nome_usuario</b>:
+                      <p class='texto-comentario'>$comentario</p> 
+                  </div>";
            } } ?>
            
         <div class="row">

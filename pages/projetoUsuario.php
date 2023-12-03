@@ -81,7 +81,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   <div class="row">
     <div class="col">
       <h1 class="titulo mt-4 mb-4 fs-1 text-center" style="color: <?php echo $projeto['cor_titulo']?>; font-family: <?php echo $projeto['fonte_titulo']?>;"><?php echo $projeto['nm_projeto']?></h1>
-      <p class="texto-projeto" style="color: <?php echo $projeto['cor_descricao']?>; font-family: <?php echo $projeto['fonte_descricao']?>;"><?php echo $projeto['ds_projeto']?></p>
+      <p class="texto-projeto" style="color: <?php echo $projeto['cor_descricao']?>; font-family:<?php echo $projeto['fonte_descricao']?>;"><?php echo $projeto['ds_projeto']?></p>
     </div>
   </div>
 
@@ -202,7 +202,7 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
   } 
 }
 ?>
-<div class="conteudo-comentario">
+
   <?php
   $id_projeto = $_GET['id_projeto'];
 
@@ -227,19 +227,17 @@ if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
           // Recupera a foto do usuário
           $foto_usuario = $row['fotoperfil'];
+          $comentario = $row ['ds_mensagem'];
+          $nome_usuario = $row ['nm_usuario'];
 
           // Exibe a mensagem do usuário
-         
-          echo "<div conteudo-comentario>
-          <div>
-          <p><img class='foto-usuario' src='$foto_usuario' alt='Foto do usuário'>
-          </div>
-          <div class='nomeuser'>
-          <b>{$row['nm_usuario']}</b>: {$row['ds_mensagem']}</p>
-          </div>
-          </div>";
+
+                echo "<div class='conteudo-comentario'>
+                          <img class='foto-usuario' src='$foto_usuario' alt='Foto do usuário'>
+                          <b class='nm-usuario'>$nome_usuario</b>:
+                          <p class='texto-comentario'>$comentario</p> 
+                      </div>";
         } } ?>
-</div>
 
 <div class="row">
       <div class="col-12">

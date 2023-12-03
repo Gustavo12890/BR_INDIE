@@ -358,8 +358,12 @@ button {
 }
 
 .texto-comentario {
-  margin-left: 5.3rem;
+  margin-left: 6rem;
   margin-top: -1rem;
+}
+
+.nm-usuario {
+  margin-left: 10px;
 }
 
 .foto-usuario {
