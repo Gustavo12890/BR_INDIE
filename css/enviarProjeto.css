@@ -331,7 +331,7 @@ input[type="file"] {
 
 .form-cor {
     flex-direction:column;
-    width:400px ;
+    width:400px; /*largura*/
     flex-wrap: wrap;
     text-align: center;
 }
@@ -339,7 +339,7 @@ input[type="file"] {
 
 .form-cor-esquerdo {
     flex-direction:column;
-    width:400px ;
+    width:400px;
     flex-wrap: wrap;
     text-align: center;
 }
