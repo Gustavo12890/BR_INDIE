@@ -22,6 +22,7 @@ if (isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/enviarProjeto.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="../bootstrap/js/bootstrap.js"></script>
     <title>Criar Jogo</title>
 </head>
 
@@ -67,7 +68,6 @@ if (isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
     <!--BARRA DE NAVEGAÇÃO-->
     <!--Formulário-->
     <div class="background-container">
-        <img class="img-cadastro" src="../img/img_criar_jogo/celestewp.png" alt="fundo">
         <div class="container mt-4">
             <form id="jogo-form" action="../php/uploadarquivos.php" enctype="multipart/form-data" method="post">
                 <label class="form-titulo" for="titulo">Título:</label>
@@ -140,6 +140,16 @@ if (isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
                 <div id="color-pickers">
                     <div class="form-cor-container">
+                        <div class="form-cor">
+                            <label class="form-texto-cor" for="background-color">Cor do título:</label>
+                            <input class="formcor-texto color-selector" type="color" name="border-color" value="#ffffff">
+                            <input class="hex-input" type="text" name="cor-titulo">
+                        </div>
+                        <div class="form-cor">
+                            <label class="form-texto-cor" for="background-color">Cor da Descrição:</label>
+                            <input class="formcor-texto color-selector" type="color" name="border-color" value="#ffffff">
+                            <input class="hex-input" type="text" name="cor-descricao">
+                        </div>
                         <div class="form-cor-esquerdo">
                             <label class="form-texto-cor">Cor de Background:</label>
                             <input class="formcor-tamanho color-selector" id="cor" type="color" name="cor" value="#ffffff">
@@ -149,16 +159,6 @@ if (isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                             <label class="form-texto-cor" for="background-color">Cor das bordas:</label>
                             <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
                             <input class="hex-input" type="text" name="hex_input2">
-                        </div>
-                        <div class="form-cor">
-                            <label class="form-texto-cor" for="background-color">Cor do título:</label>
-                            <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
-                            <input class="hex-input" type="text" name="cor-titulo">
-                        </div>
-                        <div class="form-cor">
-                            <label class="form-texto-cor" for="background-color">Cor da Descrição:</label>
-                            <input class="formcor-tamanho color-selector" type="color" name="border-color" value="#ffffff">
-                            <input class="hex-input" type="text" name="cor-descricao">
                         </div>
                     </div>
 
