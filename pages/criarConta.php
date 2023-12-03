@@ -58,14 +58,14 @@
                     <label class="label-cadastro nascimento" for="nascimento">Foto de capa:</label>
                     <input class="input-cadastro" name="arquivo[1]" type="file" required><br><br>
                     
-                    <label class="label-cadastro">Qual o tipo de conta?</label><br>
-                    <select class="input-genero"  name="tipoconta" required>
-                    <option value="Comum" >Comum</option><br><br>
-                     <option value="Desenvolvedor">Desenvolvedor</option><br><br>
+                    <label class="label-cadastro ms-1">Qual o tipo de conta?</label>
+                    <select class="input-genero rounded ms-2"  name="tipoconta" required>
+                    <option value="Comum" >Comum</option>
+                     <option value="Desenvolvedor">Desenvolvedor</option>
                      </select>
 
-                    <p class="label-cadastro">Já possui uma conta? <a class="link-login" href="../pages/login.php">Entre</a></p>
                     <button class="btn btn-cadastro btn-lg float-right" name="submit">Cadastrar</button>
+                    <p class="label-cadastro mt-2">Já possui uma conta? <a class="link-login" href="../pages/login.php">Entre</a></p>
 
                 </div>
             </div>

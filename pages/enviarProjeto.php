@@ -79,7 +79,7 @@ if (isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
 
                 <div class="form-genero-container">
                     <div class="form-genero">
-                        <label class="form-texto" for="fonte">Fonte Título</label>
+                        <label class="form-texto" for="fonte">Fonte do título:</label>
                         <select class="input-genero" name="fonte_titulo" id="fonte_titulo">
                             <option value="" disabled selected>Selecione uma fonte</option>
                             <option value="Arial">Arial</option>
@@ -108,7 +108,7 @@ if (isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                         </select>
                     </div>
                     <div class="form-genero">
-                        <label class="form-texto" for="fonte">Fonte Descrição</label>
+                        <label class="form-texto" for="fonte">Fonte dos textos:</label>
                         <select class="input-genero" name="fonte_descricao" id="fonte_descricao">
                             <option value="" disabled selected>Selecione uma fonte</option>
                             <option value="Arial">Arial</option>
@@ -146,12 +146,12 @@ if (isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])) {
                             <input class="hex-input" type="text" name="cor-titulo">
                         </div>
                         <div class="form-cor">
-                            <label class="form-texto-cor" for="background-color">Cor da Descrição:</label>
+                            <label class="form-texto-cor" for="background-color">Cor dos textos:</label>
                             <input class="formcor-texto color-selector" type="color" name="border-color" value="#ffffff">
                             <input class="hex-input" type="text" name="cor-descricao">
                         </div>
                         <div class="form-cor-esquerdo">
-                            <label class="form-texto-cor">Cor de Background:</label>
+                            <label class="form-texto-cor">Cor do background:</label>
                             <input class="formcor-tamanho color-selector" id="cor" type="color" name="cor" value="#ffffff">
                             <input class="hex-input" type="text" name="hex_input">
                         </div>

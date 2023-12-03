@@ -92,7 +92,7 @@ body {
     display: block;
     width: 100%;
     padding: 10px;
-    margin-top:10%;
+    margin-top:5%;
     background-color: #8BA2FF;
     color: #fff;
     border: none;
@@ -107,7 +107,7 @@ body {
 .label-cadastro {
     color: white;
     font-weight: bold;
-
+    
 }
 
 .form-esquerdo{
